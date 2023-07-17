@@ -12,7 +12,7 @@ function App() {
 
   
   return (
-  <div>
+  <div className="app">
     <Navbar />
    <div className="pink-gradient"></div>
       <div className="blue-gradient"></div>

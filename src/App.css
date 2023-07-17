@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
 
 
 #root {
@@ -12,8 +13,9 @@
   --light-green: #c2c290;
   --vanilla: #e1c4a3;
   --off-white: #fcf4eb;
-  font-family: 'Space Mono', monospace;
-  background: url(./assets/noise.svg);
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: .07rem;
+  
   background-color: rgba(255, 238, 211, 0.129);
   
 }
@@ -57,16 +59,21 @@
   }
 }
 
+body {
+  background: url(./assets/noise.svg);
+}
+
 .app {
  width: 100%;
  font-family: 'Source Code Pro', monospace;
- background-color: #ffffff;
+ 
+ 
 }
 
 nav {
   /*display: flex;
   justify-content: space-evenly;*/
-  
+  font-family: 'Space Mono', monospace;
 }
 
 .home {
@@ -164,17 +171,22 @@ nav {
   padding-top: 5rem;
   color: rgba(68, 70, 190, 0.995);
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 2.5rem;
+  text-align: left;
   
   
 }
 
-
-
-a:hover {
-  color:#ef8c59;
+.title-span {
+  font-family: 'Space Mono', monospace;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: .01rem;
 }
+
+
 
 
 
@@ -182,11 +194,11 @@ a:hover {
   margin: 1rem;
   width: 50vw;
   height: 20vh;
-  border: .1rem solid rgba(125, 120, 215, 0.6);
+  border: .1rem solid rgba(82, 78, 142, 0.6);
   
-  color:#ffffff;
+  color:#1a28a5;
   padding: 1rem;
-  box-shadow: 20px -20px rgba(101, 85, 191, 0.489);
+  box-shadow: 20px -20px rgba(55, 46, 104, 0.716);
   
 }
 
@@ -306,6 +318,12 @@ a:hover {
   h1 {
     font-size: .5rem;
   }
+}
+
+
+div .nav-links-mobile, .mobile-menu {
+  position: relative;
+  top:0px;
 }
 
 
