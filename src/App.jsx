@@ -1,6 +1,6 @@
 
 import { useState } from 'react'
-import {Route, Routes } from 'react-router-dom'
+import {Route, Routes,  } from 'react-router-dom'
 import Home from './components/Home'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -24,10 +24,14 @@ function App() {
 
 
 <Routes>
-    <Route path="/"element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='projects' element={<Projects />} />
+    <Route path="/portfolio-website"element={<Home />} />
+    <Route path='about' element={<About />} />
+    <Route path='projects' element={<Projects />} />
+    <Route path="/" element={<Home />} />
+
         </Routes>
+
+    
   </div>
   )
 }

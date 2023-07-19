@@ -31,13 +31,13 @@ function Navbar() {
         </div>
 
         <div className="nav-links-mobile ">
-        <NavLink to='/' className="home-link">Home  </NavLink>
+        <NavLink to='/' className="home-link">home  </NavLink>
         
-        <NavLink to='/about'  className="about-link">About me</NavLink>
+        <NavLink to='/about'  className="about-link">about me</NavLink>
 
         
 
-        <NavLink to='/projects' className="projects-link">Projects</NavLink>
+        <NavLink to='/projects' className="projects-link">projects</NavLink>
         </div>
         
     </nav>
