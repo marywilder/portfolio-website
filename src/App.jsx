@@ -20,6 +20,15 @@ function App() {
       <div className="orange-gradient"></div>
       <div className="yellow-gradient"></div>
       <div className="blue-gradient-2"></div>
+      <div className="shape"></div>
+      <div className="triangle-svg"></div>
+      <div className="square-svg"></div>
+      <div className="triange-svg2"></div>
+      <div className="square-svg2"></div>
+      <div className="heart-svg"></div>
+      <div className="star-svg"></div>
+      <div className="flower-svg"></div>
+
 
 
 
@@ -31,7 +40,7 @@ function App() {
 
         </Routes>
 
-    
+  <footer><div className="linkedin" target="_blank" rel="noopener noreferrer"></div>get in touch<div className="email"></div> marywilder717@gmail.com</footer> 
   </div>
   )
 }

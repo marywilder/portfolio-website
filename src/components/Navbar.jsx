@@ -16,8 +16,11 @@ function Navbar() {
     
     
    }
+
+   
+   
   return (
-    <div>
+    <div className="nav-component">
         
         <img src={navIcon} alt="nav-icon" className="nav-mobile-menu" onClick={showNavbar}/>
            
@@ -30,7 +33,7 @@ function Navbar() {
 
         </div>
 
-        <div className="nav-links-mobile ">
+        <div className="nav-links-mobile nav-bar-desktop">
         <NavLink to='/' className="home-link">home  </NavLink>
         
         <NavLink to='/about'  className="about-link">about me</NavLink>
