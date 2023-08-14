@@ -35,9 +35,13 @@ function Home() {
         
         </h1>
         </div>
-        <section className="intro">hi! my name is mary and I am a web developer living in Charlotte, NC. I love hiking, drawing, hanging with my cat, and TV. As a self taught developer, the posibilities of coding excite me. Thanks for coming to my page!</section>
-        <div className="triangle"><p>hello</p></div>
-        <section className="home-page-skills"></section>
+        <section className="intro">The thing I love most about coding is not only is it fun, but it's usable art. Whether that is a company website, a user form, or an arcade game. Each program has a unique style, mood, and function. Deciding the design is up to the client or designer. But as the developer, you get to take their vision and bring it to life. Not only making something look good, but creating something engaging, easy to use, and enjoyable to interact with is so exciting. Every project becomes a mission!</section>
+
+        <div className="triangle"><p>
+          With my creative strengths, problem solving skills, and  curious mindset, I'm excited to continue my silly projects, but ~also~ take on the professional side of web development working and learning on a team.
+          </p></div>
+
+        <section className="home-page-skills">With HTML,CSS, and Javascript under my belt, I also am well acquainted with React, React Router, Git, JSON, and more! More info on the About Me page.</section>
         
         
     </div>
