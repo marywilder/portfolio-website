@@ -307,15 +307,16 @@ nav {
   opacity: 0;
   animation: renderContent 500ms ease-in, loadPage 700ms ease-in-out 400ms;
   margin: 3rem;
-  width: 40vw;
-  height: 60vw;
-  font-size: var(--paragraph-font);
+  width: 65vw;
+  height: 85vw;
+  font-size: 1.35rem;
   color: var(--off-white);
   padding: 2rem;
   background-color: var(--periwinkle);
-  border: 3px solid var(--deep-green);
+  border: 3px solid var(--yellow-green);
   box-shadow: 1.5rem 1.5rem var(--bubblegum);
   opacity: 1;
+  line-height: 2rem;
 }
 
 
@@ -328,14 +329,14 @@ nav {
   animation: renderContent 700ms ease-in,loadPage 700ms ease-in-out 600ms;
   display: flex; 
   justify-content: center; 
-  
-  width: 40vw;
-  height: 40vw;
-  font-size: var(--paragraph-font);
+  font-size: 1.35rem;
+  width: 50vw;
+  height: 50vw;
   color: #fff;
   background-color: var(--yellow-green);
   border: .2rem solid var(--bubblegum);
   box-shadow: 1.5rem 1.5rem var(--periwinkle);
+  padding: 1.5rem;
   margin: 2rem;
   opacity: 1;
   
@@ -346,15 +347,17 @@ nav {
   align-items: center;
   animation: renderContent 900ms ease-in, loadPage 700ms ease-in-out 800ms;
   margin: 1rem;
-  width: 50vw;
-  height: 40vw;
-  font-size: var(--paragraph-font);
+  width: 60vw;
+  height: 50vw;
+  font-size: 1.35rem;
   aspect-ratio: 1;
-  color:#010101;
+  color: white;
   background-color: var(--deep-green);
   border: .2rem solid var(--vanilla);
   box-shadow: 1.5rem 1.5rem var(--bubblegum);
   margin-top: 3rem;
+  padding: 1.25rem;
+  line-height: 2rem;
   opacity: 1;
   
 }
@@ -408,7 +411,7 @@ nav {
   justify-content: center;
   align-items: center;
   max-width: 90vw;
-  max-height: 90vw;
+  
   padding: 1rem;
   margin: 3rem;
   color: var(--off-white);
@@ -422,6 +425,7 @@ nav {
   background-color: var(--yellow-green);
   box-shadow: 1.5rem 1.5rem var(--deep-green);
   border: .2rem solid var(--bubblegum);
+  font-size: 1.35rem;
 }
 
 
@@ -432,6 +436,10 @@ nav {
   background-color: var(--periwinkle);
   border: 3px solid var(--sky-blue);
   box-shadow: 2rem 2rem var(--bubblegum);
+  font-size: 1.35rem;
+  height: 50rem;
+  padding: 2rem;
+ 
 }
 
 
@@ -448,8 +456,11 @@ nav {
 
 .about-page div:nth-of-type(4) {
   color: var(--deep-green);
-  height: 10rem;
+  height: 17rem;
   margin-bottom: 5rem;
+  padding: 1.5rem;
+  font-size: 1.35rem;
+  font-weight: 600;
 }
 .about-work {
   display: flex;
@@ -477,6 +488,8 @@ nav {
   background-color: var(--deep-green);
   box-shadow: 2rem 2rem var(--periwinkle);
   border: .2rem solid var(--yellow-green);
+  padding: 1.5rem;
+  font-size: 1.35rem;
 }
 
 .about-skills:hover {
@@ -544,9 +557,9 @@ nav {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  width: 50vw;
-  height: 50vw;
-  padding: 1rem;
+  width: 65vw;
+  height: 85vw;
+  padding: 2rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
   color: var(--off-white);
@@ -558,15 +571,14 @@ nav {
 }
 
 .projects-container p {
-  padding-left: 1rem;
-  width: 40vw;
-  font-size: .7rem;
-  line-height: 1.3rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
 }
 
 .projects-container h2 {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 700;
   
   color: var(--off-white);
@@ -721,8 +733,8 @@ div img {
 
 
 .project-preview {
-  width: 20vw;
-  height: 20vw;
+  width: 30vw;
+  height: 30vw;
   
 }
 
@@ -732,22 +744,34 @@ div img {
 
 footer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  
   align-items: center;
   font-family:'Space Mono', monospace;
+  background-color:#7a8be088;
   font-weight: 600;
- width: 35rem;
- padding-bottom: 3rem;
- font-size: .65rem;
+ width: 100vw;
+ height: 20rem;
+ padding: 3rem;
+ font-size: 1.3rem;
   color: var(--deep-green);
-  overflow-x: hidden;
+  margin-top: 4rem;
+  
   
 }
+.linkedincontainer, .emailcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -4rem;
+}
+
 
 footer a {
+  
   color: var(--deep-green);
   text-decoration: none;
-  font-size: .65rem;
+  font-size: 1.3rem;
 }
 
 footer a:hover {
@@ -757,36 +781,40 @@ footer a:hover {
 
 
  .linkedin {
+  
   background-image: url(./assets/linkedin-svgrepo-com.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-right: 7rem;
   filter: invert(41%) sepia(83%) saturate(289%) hue-rotate(191deg) brightness(86%) contrast(97%);
-  margin: 0 .5rem;
+  
   
   
 }
 
 .linkedin:hover {
   cursor: pointer;
-  filter: invert(41%) sepia(83%) saturate(289%) hue-rotate(191deg) brightness(126%) contrast(97%);
+  filter: invert(41%) sepia(83%) saturate(289%) hue-rotate(191deg) brightness(56%) contrast(97%);
+}
+.emailcontainer {
+  
+  margin-right: 3rem;
 }
 
 .email {
   background-image: url(./assets/email-svgrepo-com.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 2.5rem;
-  height: 3rem;
-  filter: invert(64%) sepia(83%) saturate(386%) hue-rotate(11deg) brightness(88%) contrast(84%);
-  margin: 0;
+  width: 7rem;
+  height: 8rem;
+  filter: invert(64%) sepia(83%) saturate(386%) hue-rotate(11deg) brightness(100%) contrast(84%);
+  margin-right: 6rem;
 
-  align-self: flex-end;
 }
 
 .email:hover {
-  cursor: pointer;
   filter: invert(64%) sepia(83%) saturate(386%) hue-rotate(11deg) brightness(128%) contrast(84%);
 }
 
@@ -937,7 +965,7 @@ footer a:hover {
     top: 0;
     right: 0;
     padding-top: 10rem;
-    background-color: rgba(227, 218, 255, 0.75);
+    background-color: rgba(239, 218, 255, 0.552);
     backdrop-filter: blur(1rem);
     justify-content: flex-start;
     transform: translateX(100rem);
@@ -979,7 +1007,7 @@ footer a:hover {
 
   .projects-link {
    
-    color: #ac827e;
+    color: #673531;
   }
 
   .home-link:hover, .about-link:hover, .projects-link:hover {
@@ -1052,18 +1080,23 @@ footer a:hover {
   .nav-mobile-menu {
     display: flex;
     width: 5rem;
+    height: 5rem;
     position: fixed;
-    top:1rem;
+    top:2rem;
     right: 2rem;
     transform: scale(-1);
-    filter: invert(37%) sepia(10%) saturate(6688%) hue-rotate(210deg) brightness(103%) contrast(102%);
+    filter: invert(100%) sepia(00%) saturate(150%) hue-rotate(241deg) brightness(103%) contrast(103%);
+    background-color: rgb(87, 56, 88);
+    padding-top: .5rem;
+    box-shadow: -.75rem -.75rem #4e8085;
     
   }
 
   
 
   .nav-mobile-menu:hover {
-    filter: invert(37%) sepia(10%) saturate(6688%) hue-rotate(210deg) brightness(153%) contrast(102%);
+    background-color: #4e8085;
+    box-shadow: -.55rem -.55rem #743c3c;
     font-weight: 700;
   }
 
@@ -1071,13 +1104,13 @@ footer a:hover {
     transform: translateX(100rem);
   } 
 
-  footer {
-    font-size: .85rem;
+  footer, footer a{
+    font-size: 1.5rem;
 
   }
 
  .linkedin, .email {
-  margin-right: .3rem;
+  margin-right: 4.3rem;
  }
   
 }
@@ -1168,7 +1201,14 @@ footer a:hover {
 
 @media (min-width: 1024px) {
  
-  
+  .linkedin {
+    width: 3rem;
+  }
+
+  .email {
+    width: 5rem;
+    transform: translate(2rem, 1rem);
+  }
 
   p {
     font-size: .55rem;
@@ -1182,6 +1222,7 @@ footer a:hover {
      justify-content: space-around;
      font-size: 1.2rem;
      padding-top: .5rem;
+     margin-top: .5rem;
      letter-spacing: .25rem;
      font-weight: 700;
      
@@ -1253,6 +1294,8 @@ footer a:hover {
     
   }
 
+  
+
  
 
   .home span {
@@ -1261,25 +1304,29 @@ footer a:hover {
   }
 
   .home {
-    justify-content: center;
+    justify-content: space-between;
     flex-flow: row wrap;
     
     
 
   }
 
+  .home .title {
+    text-align: left;
+  }
+
   .intro, .triangle, .home-page-skills {
-    font-size: .55rem;
-    line-height: 1rem;
+    font-size: .75rem;
+    line-height: 1.2rem;
     font-weight: 500;
   }
 
   .intro {
-    margin-top: 7.5rem;
-    margin-left: 4rem;
-    margin: 4rem 7.5rem 0 5rem;
-    max-width: 30vw;
-    max-height: 15vw;
+    margin-top: 2.5rem;
+    margin-left: 3rem;
+    
+    width: 40vw;
+    height: 20vw;
     text-align: center;
     
   }
@@ -1289,8 +1336,8 @@ footer a:hover {
     max-width: 20vw;
     max-height: 10vw;
     padding: 3rem;
-    margin-top: 5rem;
-    transform: translateY(-2.5rem);
+    align-self: flex-start;
+  
     
     
   }
@@ -1298,8 +1345,8 @@ footer a:hover {
   
 
   .home-page-skills {
-    margin-left: 5rem;
-    margin-top: 5rem;
+   margin-right: 10rem;
+    
     max-width: 20vw;
     max-height: 20vw;
     color: var(--off-white);
@@ -1307,6 +1354,8 @@ footer a:hover {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+
   .about-page {
   margin: 0rem;
   padding-left: 0;
@@ -1353,15 +1402,21 @@ footer a:hover {
   }
 
   .about-page div:nth-of-type(2) {
-    transform: translateY(-1rem);
+    
     margin-right: 2rem;
   }
 
   .about-page div:nth-of-type(3) {
-    transform: translateY(-7rem);
+    margin-right: 30rem;
+    transform: translateY(-10rem);
   }
 
-
+  .about-page div:nth-of-type(4) {
+    height: 10rem;
+    margin: 0;
+    margin-top: -20rem;
+    margin-left: 32rem;
+  }
   .project-page {
     flex-flow: row wrap;
     justify-content: flex-start;

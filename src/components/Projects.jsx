@@ -23,7 +23,7 @@ export default function Projects() {
             <a className="space-project" target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/space-travel-website/#/">
             <h2 >Space Tourism Website</h2>
               <img className="project-preview" src={spacewebsite}/>
-              <p>Multi-page, mobile-first design, using React Router, Create React App, React Hooks, CSS flexbox and grid, and CSS animations. This was a Frontend Mentor challenge, where I was provided with the Figma files, and then I built it from scratch to replicate the design. </p>
+              <p>Multi-page, mobile-first design, using React Router, Create React App, React Hooks, CSS flexbox and grid, and CSS animations. This was a Frontend Mentor challenge; I was provided with the Figma, then built the site from scratch with no repos or codebase. </p>
               
               
             </a>
@@ -32,7 +32,7 @@ export default function Projects() {
             <a className="weather-project"  target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/weather-app/">
             <h2>Weather Website</h2>
               <img className="project-preview" src={weatherapp}/>
-              <p>Working with APIs and JSON, I created a vanilla Javascript weather app! Using the Google Places API, and the Open Weather App API together, you can enter in your city. I also illustrated the weather icons and wrote logic for the icons to change depending in the weather. </p>
+              <p>Working with APIs and JSON, I created a vanilla Javascript weather app. This app uses the Google Places API, the Open Weather App API. Users can enter in the name of any city or state. I also illustrated the weather icons and wrote logic that tells the icons to change depending on the weather.</p>
             
               
             </a>
@@ -41,33 +41,33 @@ export default function Projects() {
             <h2 >Tic Tac Toe</h2>
               <img className="project-preview" src={tictactoe}/>
               
-              <p>This project was built using React compiled through Vite. I used React Hooks to type in each player's name, and dynamically show who's turn it is. I also had a lot of fun with this one using CSS gradients and creating that grainy effect overtop.</p>
+              <p>This project was built using React compiled through Vite. I used React Hooks to provide functionality for player names and to dynamically show who's turn it is. I also had a lot of fun with this one, using CSS gradients and creating a grainy effect.</p>
             </a>
 
             <a className="doodle-project" target="_blank" rel="noopener noreferrer">
             <h2 >Doodle Jump Clone (with added features)</h2>
               <img className="project-preview"/>
               
-              <p>This project I was really excited about and want to continue improving it. Using Vanilla Javascript, I honed my skills with arrays, array methods, scope, setInterval() and a lot more. I also drew some funny extra characters that you can choose instead of the tradition Doodle. </p>
+              <p>This project I was really excUsing Vanilla Javascript, I honed my skills with arrays, array methods, scope, setInterval() and more. I also drew some funny extra characters that you can play as rather than the original Doodle.</p>
             </a>
 
             <a className="todo-project" target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/to-do-list/">
             <h2 >To-Do List App</h2>
               <img className="project-preview" src={todolist}/>
               
-              <p>This project was built using React and React Hooks. You can enter in your to-do list item, mark it complete, and clear completed to-dos. I had a lot of fun with my own personal touch of making it look like an actual piece of paper, through my weird drawings as an added touch. </p>
+              <p>This project was built using React/React Hooks. Users can enter in a to-do list item, mark it complete, and clear completed to-dos. Again, here, I added a bit of fun with my own personal touch by making it look like an actual piece of paper.</p>
             </a>
-
-            <a className="portfolio-project" target="_blank" rel="noopener noreferrer">
-            <h2 >Portfolio Website</h2>
-            <p>The webiste you are on as we speak! Built mobile first, I used React, React Router, React Hooks, CSS Radial Gradients, CSS flexbox, and created a responsive mobile navbar that includes CSS animations and transitions. I enjoyed combining different radial gradients and the CSS filter to create the effect. </p>
-            </a>
-
+            
             <a className="accordian-project" target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/faq-accordion-card-main/">
             <h2 >Animated Accordion Q&A</h2>
               <img className="project-preview" src={accordian}/>
                
-              <p>This project was a Frontend Mentor challenge that I built using Vanilla Javascipt, using event listeners, mutating the DOM, and CSS animations. </p>
+              <p>Another challenge from Frontend Mentor; built using Vanilla Javascript, event listeners, mutating DOM, and CSS animations.</p>
+            </a>
+
+            <a className="portfolio-project" target="_blank" rel="noopener noreferrer">
+            <h2 >Portfolio Website</h2>
+            <p>This is the website you are on as we speak! Built mobile-first using React, React Router, React Hooks, CSS Radial Gradients, CSS flexbox. Created a responsive mobile navbar that includes CSS animations and transitions. I enjoyed combining different radial gradients and CSS filter() to create the site’s aesthetic.</p>
             </a>
           </div> 
         </section>

@@ -21,9 +21,9 @@ function Navbar() {
    
   return (
     <div className="nav-component">
-        
+       
         <img src={navIcon} alt="nav-icon" className="nav-mobile-menu" onClick={showNavbar}/>
-           
+         
         
         <nav className="mobile-menu" ref={navRef}>
 

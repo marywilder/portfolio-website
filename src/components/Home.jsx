@@ -35,13 +35,14 @@ function Home() {
         
         </h1>
         </div>
-        <section className="intro">The thing I love most about coding is not only is it fun, but it's usable art. Whether that is a company website, a user form, or an arcade game. Each program has a unique style, mood, and function. Deciding the design is up to the client or designer. But as the developer, you get to take their vision and bring it to life. Not only making something look good, but creating something engaging, easy to use, and enjoyable to interact with is so exciting. Every project becomes a mission!</section>
+        <section className="intro">The thing I love most about coding- it's usable, interactive art! Whether it’s a small business website, a user form, or an arcade game, each has a unique style, mood, and function. 
+        Developers get to align with others on project visions and make designs come to life. It’s not just about making something look good, but also creating something engaging, easy to use, and enjoyable to interact with. Every project becomes a user-focused, creative mission!</section>
 
         <div className="triangle"><p>
-          With my creative strengths, problem solving skills, and  curious mindset, I'm excited to continue my silly projects, but ~also~ take on the professional side of web development working and learning on a team.
+        While I’ll always love making fun and goofy side projects, I’m excited to take my creative strengths, problem solving skills, and curious mindset and use them alongside a team in a professional setting.
           </p></div>
 
-        <section className="home-page-skills">With HTML,CSS, and Javascript under my belt, I also am well acquainted with React, React Router, Git, JSON, and more! More info on the About Me page.</section>
+        <section className="home-page-skills">Fluent with HTML, CSS, and Javascript, I’m also well-acquainted with React, React Router, Git, JSON, and more! Learn more on my About page.</section>
         
         
     </div>

@@ -32,7 +32,13 @@ function App() {
 
         </Routes>
 
-  <footer><div className="linkedin" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mary-wilder-ab13b5285/"></div><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mary-wilder-ab13b5285/">get in touch</a><div className="email"></div> marywilder717@gmail.com</footer> 
+  <footer>
+    <div className="linkedincontainer"><a className="linkedin" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mary-wilder-ab13b5285/"></a>
+  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mary-wilder-ab13b5285/">get in touch</a></div>
+  <br/>
+  <div className="emailcontainer">
+  <div className="email"></div><div> marywilder717@gmail.com</div>
+  </div> </footer> 
   </div>
   )
 }
