@@ -307,7 +307,7 @@ nav {
   opacity: 0;
   animation: renderContent 500ms ease-in, loadPage 700ms ease-in-out 400ms;
   margin: 3rem;
-  width: 65vw;
+  width: 6vw;
   height: 85vw;
   font-size: 1.35rem;
   color: var(--off-white);
@@ -437,7 +437,7 @@ nav {
   border: 3px solid var(--sky-blue);
   box-shadow: 2rem 2rem var(--bubblegum);
   font-size: 1.35rem;
-  height: 50rem;
+  height: 55rem;
   padding: 2rem;
  
 }

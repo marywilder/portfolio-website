@@ -44,7 +44,7 @@ export default function About() {
         <div className="about-work">
           <h2>Work with me</h2>
 
-          <p>You can contact find me on LinkedIn, or email me at marywilder717@gmail.com. </p>
+          <p>You can contact me on LinkedIn, or email me at marywilder717@gmail.com. </p>
           
           <a>Resume</a>
         </div>
