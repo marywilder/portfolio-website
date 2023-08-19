@@ -4,6 +4,7 @@ import tictactoe from "../assets/Screenshot (4).png";
 import accordian from "../assets/Screenshot (6).png";
 import todolist from "../assets/Screenshot (8).png";
 import weatherapp from "../assets/Screenshot (9).png";
+import doodlejump from "../assets/Screenshot (11).png";
 
 export default function Projects() {
   return (
@@ -44,18 +45,21 @@ export default function Projects() {
               <p>This project was built using React compiled through Vite. I used React Hooks to provide functionality for player names and to dynamically show who's turn it is. I also had a lot of fun with this one, using CSS gradients and creating a grainy effect.</p>
             </a>
 
-            <a className="doodle-project" target="_blank" rel="noopener noreferrer">
-            <h2 >Doodle Jump Clone (with added features)</h2>
-              <img className="project-preview"/>
-              
-              <p>This project I was really excUsing Vanilla Javascript, I honed my skills with arrays, array methods, scope, setInterval() and more. I also drew some funny extra characters that you can play as rather than the original Doodle.</p>
-            </a>
-
             <a className="todo-project" target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/to-do-list/">
             <h2 >To-Do List App</h2>
               <img className="project-preview" src={todolist}/>
               
               <p>This project was built using React/React Hooks. Users can enter in a to-do list item, mark it complete, and clear completed to-dos. Again, here, I added a bit of fun with my own personal touch by making it look like an actual piece of paper.</p>
+            </a>
+
+            <a className="doodle-project" target="_blank" rel="noopener noreferrer">
+            <h2 >Doodle Jump Clone (with added features)</h2>
+              <img className="project-preview" src={doodlejump}/>
+              <div className="doodle-links">
+              <a href="https://marywilder.github.io/doodle-jump/" target="_blank" rel="noopener noreferrer" className="doodle-link">Mobile Version</a>
+              <a href="https://marywilder.github.io/doodle-jump-desktop/" target="_blank" rel="noopener noreferrer" className="doodle-link">Desktop Version</a>
+              </div>
+              <p>This project I was really excUsing Vanilla Javascript, I honed my skills with arrays, array methods, scope, setInterval() and more. I also drew some funny extra characters that you can play as rather than the original Doodle.</p>
             </a>
             
             <a className="accordian-project" target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/faq-accordion-card-main/">

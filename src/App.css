@@ -569,6 +569,27 @@ nav {
   
   
 }
+.doodle-links {
+  display: flex;
+}
+
+ a.doodle-link {
+  margin-top: 0.8rem;
+  margin-bottom: .3rem;
+  padding: .3rem;
+  font-size: .9rem;
+  height: 10vw;
+  width: 23vw;
+  color: #faa3fe;
+  font-weight: 600;
+}
+.doodle-link:nth-of-type(1) {
+  color: #caf3fc;
+}
+
+a.doodle-link:hover {
+  color:#b4a65e;
+}
 
 .projects-container p {
   font-weight: 500;
@@ -1444,6 +1465,23 @@ footer a:hover {
     
     
   }
+
+  a.doodle-link {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 0;
+    
+    padding: 0rem;
+    
+    width: 8.5vw;
+    font-size: .5rem;
+    height: 2vw;
+    
+    color: #faa3fe;
+    font-weight: 600;
+  }
   
   .projects-container p {
     padding-left: 1rem;
@@ -1459,6 +1497,10 @@ footer a:hover {
     margin-right: 3vw;
     font-weight: 700;
     color: var(--off-white);
+  }
+
+  .accordian-project h2 {
+    color: var(--deep-green);
   }
 
   
