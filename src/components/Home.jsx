@@ -42,7 +42,7 @@ function Home() {
         While I’ll always love making fun and goofy side projects, I’m excited to take my creative strengths, problem solving skills, and curious mindset and use them alongside a team in a professional setting.
           </p></div>
 
-        <section className="home-page-skills">Fluent with HTML, CSS, and Javascript, I’m also well-acquainted with React, React Router, Git, JSON, and more! Learn more on my About page.</section>
+        <section className="home-page-skills">Fluent with HTML, CSS, Javascript, React, React Router, Git, JSON, Figmaa, Adobe Illustrator, and more! Learn more on my About page.</section>
         
         
     </div>
