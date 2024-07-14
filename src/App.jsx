@@ -6,6 +6,7 @@ import './App.css'
 import Projects from './components/Projects'
 import About from './components/About'
 import Navbar from './components/Navbar'
+import Illustration from './components/Illustration'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
     <Route path="/portfolio-website/"element={<Home />} />
     <Route path='about' element={<About />} />
     <Route path='projects' element={<Projects />} />
+    <Route path='illustration' element={<Illustration />} />
     <Route path="/" element={<Home />} />
 
         </Routes>

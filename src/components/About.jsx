@@ -23,7 +23,7 @@ export default function About() {
         <div className="about-skills">
           <h2>Skills</h2>
           
-          <p >I completed Codecademy’s extensive certificate in Front End Engineering in 2023 while continuing my work as a digital illustrator. CSS, (Flexbox, grid, animation, responsive development), Javascript, HTML, React, React Router, Redux, AJAX, TDD, JSON, Git, Vite, and CRP are some of the skills I’m excited to put to use.</p>
+          <p >I completed Codecademy’s extensive certificate in Front End Engineering in 2023 while continuing my work as a digital illustrator. CSS, (Flexbox, grid, animation, responsive development), Javascript, HTML, React,  Redux, AJAX, TDD, JSON, and Git are some of the skills I’m excited to put to use.</p>
           
               
           <p>I have a Bachelors in Communication Studies from Ohio University, where I honed many of my soft skills, including interpersonal and organizational Communication. I’m a friendly collaborator and passionate teammate, and am excited to use those skills working alongside development, design, and content teams.</p>
@@ -31,9 +31,9 @@ export default function About() {
         </div>
 
         <div className="about-background">
-          <h2>A little more about me</h2>
+          <h2>Illustration</h2>
 
-          <p>The past few years, I've been working as a digital illustrator, running a successful e-commerce business via Etsy and other marketplaces. I've also worked with individual clients and businesses on special projects to help them realize their vision. Art and design will always be a passion of mine, and I'm excited to use my design skills in my Frontend career. This work has given strong skills in Color Theory, aesthetics, and taught how to make clients and stakeholders thrilled with the end results. 
+          <p>The past few years, I've been working as a digital illustrator, running a successful e-commerce business via Etsy and other marketplaces. I've also worked with individual clients and businesses on special projects to help them realize their vision. Art and design will always be a passion of mine, and I'm excited to use my design skills in my tech career. This work has given strong skills in Color Theory, aesthetics, and taught how to make clients and stakeholders thrilled with the end results. 
             <br/>
 
             Check out my etsy here: <a href="https://www.etsy.com/shop/MaryWilderStudio" target="_blank" rel="noopener noreferrer">Mary Wilder Studio</a></p>

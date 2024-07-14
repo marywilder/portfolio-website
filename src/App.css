@@ -250,7 +250,7 @@ nav {
   display: none;
 }
 
-.home, .about-page, .project-page {
+.home, .about-page, .project-page, .illustration-page {
   display: flex;
   justify-content: center;
   flex-flow: column nowrap; 
@@ -260,7 +260,9 @@ nav {
   margin: 0;
   overflow-x: hidden;
 }
-
+.illustration-page {
+  border:.25rem solid #444f85; 
+}
 
 /*/////////////////\\\\\\\\\\\\\\\\\\\\*/
           /* mobile intro*/
@@ -293,6 +295,10 @@ nav {
   letter-spacing: .01rem;
   line-height: 6.5rem;
   
+}
+
+#and {
+  color:#dde3e6;
 }
 
 
@@ -405,7 +411,6 @@ nav {
 }
 
 .about-page div {
-  cursor: pointer;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -452,6 +457,12 @@ nav {
   transform: rotate(-5deg);
   box-shadow: 1.5rem 1.5rem #c7b399;
   
+}
+
+.about-background a {
+  font-weight: 800;
+  color:#faa3fe;
+  text-decoration: underline;
 }
 
 .about-page div:nth-of-type(4) {
@@ -891,6 +902,10 @@ footer a:hover {
   color: transparent;
   animation: renderText 3100ms, typewriter 200ms linear 2900ms 1;
   color: var(--off-white);
+}
+
+#and {
+  animation: renderText 3350ms, typewriter 220ms linear 3500ms 1;
 }
 
 .space {

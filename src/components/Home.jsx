@@ -9,14 +9,18 @@ function Home() {
        <h1 className="title">Mary Wilder 
        <br></br>
        <div className="title-span">
-        <span className="f">f</span>
-        <span className="r">r</span>
-        <span className="o">o</span>
-        <span className="n">n</span>
-        <span className="t">t</span>
-        <span className="e">e</span>
-        <span className="n2">n</span>
-        <span className="d">d</span>
+        <span className="f">d</span>
+        <span className="r">e</span>
+        <span className="o">s</span>
+        <span className="n">i</span>
+        <span className="t">g</span>
+        <span className="e">n</span>
+        <span className="n2">e</span>
+        <span className="d">r</span>
+        <span className="new space">r</span>
+        <span className="d" id="and">
+        +
+        </span>
         <span className="space">
         <br/>
         </span>
@@ -35,8 +39,9 @@ function Home() {
         
         </h1>
         </div>
-        <section className="intro">The thing I love most about coding- it's usable, interactive art! Whether it’s a small business website, a user form, or an arcade game, each has a unique style, mood, and function. 
-        Developers get to align with others on project visions and make designs come to life. It’s not just about making something look good, but also creating something engaging, easy to use, and enjoyable to interact with. Every project becomes a user-focused, creative mission!</section>
+        <section className="intro">The thing I love most about the world of software development - it's usable, interactive art! Whether it’s a small business website, a user form, or an arcade game, each has a unique style, mood, and function. 
+        Designers and developers get to come together on project visions and make designs come to life. It’s not just about making something look good, but also creating something engaging, easy to use, and enjoyable to interact with. Every project becomes a user-focused, creative mission!
+</section>
 
         <div className="triangle"><p>
         While I’ll always love making fun and goofy side projects, I’m excited to take my creative strengths, problem solving skills, and curious mindset and use them alongside a team in a professional setting.

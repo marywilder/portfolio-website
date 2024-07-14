@@ -21,6 +21,7 @@ export default function Projects() {
           </span>
         <br></br>I'm proud of</h1>
           <div className="projects-container">
+            <h2>Frontend Development</h2>
             <a className="space-project" target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/space-travel-website/#/">
             <h2 >Space Tourism Website</h2>
               <img className="project-preview" src={spacewebsite}/>
@@ -74,6 +75,8 @@ export default function Projects() {
             <p>This is the website you are on as we speak! Built mobile-first using React, React Router, React Hooks, CSS Radial Gradients, CSS flexbox. Created a responsive mobile navbar that includes CSS animations and transitions. I enjoyed combining different radial gradients and CSS filter() to create the site’s aesthetic.</p>
             </a>
           </div> 
+          <h2>Illustration</h2>
+          
         </section>
        
   )
