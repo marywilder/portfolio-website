@@ -4,7 +4,7 @@ export default function Illustration() {
   return (
     <section className="illustration-page">
                 <h1 className="title illustration"><span className=" title-span">
-          <span className="p-projects">i</span>
+          
           <span className="r-projects">l</span>
           <span className="r-projects">l</span>
           <span className="o-projects">u</span>
