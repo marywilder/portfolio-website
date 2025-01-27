@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 import { useRef } from "react";
 import navIcon from '../assets/mobile-nav.svg';
 import "../App.css";
@@ -40,7 +40,7 @@ function Navbar() {
 
         
 
-        <NavLink to='/projects' className="projects-link">projects</NavLink>
+        <NavLink to='/projects' className="projects-link">portfolio</NavLink>
         </div>
         
     </nav>

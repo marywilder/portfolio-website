@@ -7,6 +7,12 @@ import Projects from './components/Projects'
 import About from './components/About'
 import Navbar from './components/Navbar'
 import Illustration from './components/Illustration'
+import Productdesign from './components/Productdesign'
+import Webdev from './components/Webdev'
+import cloud1 from './assets/cloud1.svg';
+import cloud2 from './assets/cloud2.svg';
+import cloud3 from './assets/cloud3.svg';
+import cloud4 from './assets/cloud4.svg';
 
 function App() {
 
@@ -20,19 +26,24 @@ function App() {
       <div className="orange-gradient"></div>
       <div className="yellow-gradient"></div>
       <div className="blue-gradient-2"></div>
-      
-
+    
+<img src={cloud1} className="cloud1"/>
+<img src={cloud2} className="cloud2"/>
+<img src={cloud3} className="cloud3"/>
+<img src={cloud4} className="cloud4"/>
 
 
 
 <Routes>
     <Route path="/portfolio-website/"element={<Home />} />
     <Route path='about' element={<About />} />
-    <Route path='projects' element={<Projects />} />
+    <Route path='projects' element={<Productdesign/>} />
     <Route path='illustration' element={<Illustration />} />
+    <Route path='productdesign' element={<Productdesign />}/>
+    <Route path='webdev' element={<Webdev/>}/>
     <Route path="/" element={<Home />} />
 
-        </Routes>
+</Routes>
 
   <footer>
     <div className="linkedincontainer"><a className="linkedin" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mary-wilder-ab13b5285/"></a>
@@ -40,7 +51,8 @@ function App() {
   <br/>
   <div className="emailcontainer">
   <div className="email"></div><div> marywilder717@gmail.com</div>
-  </div> </footer> 
+  </div> </footer>
+
   </div>
   )
 }
