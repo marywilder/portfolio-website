@@ -32,11 +32,10 @@ function Home() {
         </h1>
         </div>
         <br/>
-        <section className="intro">The thing I love most about the world of software development - it's usable, interactive art! Whether it’s a small business website, a user form, or an arcade game, each has a unique style, mood, and function. 
-        Designers and developers get to come together on project visions and make designs come to life. It’s not just about making something look good, but also creating something engaging, easy to use, and enjoyable to interact with. Every project becomes a user-focused, creative mission!
+        <section className="intro">Hi, I’m Mary—a product designer who loves turning ideas into thoughtful, user-centered experiences. Whether it’s crafting intuitive designs or exploring creative solutions, I’m always up for the challenge. Welcome to my world!
 </section>
 
-        <section className="home-page-skills">Fluent with HTML, CSS, Javascript, React, React Router, Git, JSON, Figma, Adobe Illustrator, and more! Learn more on my About page.</section>
+        <section className="home-page-skills">As a product designer, I blend creativity and technical know-how to craft thoughtful, user-centered experiences. My skills include wireframing, prototyping, interaction design, and UX research, alongside a strong foundation in front-end development. (i built this website using React.js) Whether I’m solving complex problems or fine-tuning the details, I thrive at the intersection of design and technology, always up to learn a new skill and grow no matter how painful it is.</section>
         
         <section className="home-page-work">Here is some of my most recent work!</section>
     </div>

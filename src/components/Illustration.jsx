@@ -17,10 +17,10 @@ export default function Illustration() {
     <section className="illustration-page">
       <Subnav/>
         <section className="illustration-section">
-          <img src={appleorchard} className="appleorchard"/>
-
+ 
+            <div className="illustration-intro">
                 <p>Drawing has always been something that brings me a lot of joy! I've worked with clients and commissions over the years, and have been a top seller on Society6 as well as run and manage an Etsy store selling art prints on the side.</p>
-
+            </div>
                 <div className="art-project">
                     <div><h2>National Parks Series</h2>
                     <p>I've always loved the style retro travel posters are in, and thought it would be fun to do my own groovy style of posters, which led me to illustrating about 30 of the National Parks!</p>
@@ -41,16 +41,17 @@ export default function Illustration() {
                 <p>I have a lot of fun! hehe</p>
                 </div>
                 <div className="artworkimages">
+                <img src={appleorchard} />
                     <img src={wolf}/>
                     <img src={treeandcat} />
-                    <img src={strawberries}/>
+                    <img src={strawberries} id="strawberries"/>
                     <img src={owls}/>
                     <img src={birdwithbanjo}/>
                     </div>
 
                     
                 </div>
-                <a><button>Etsy Store</button></a>
+                <a href="https://www.etsy.com/shop/MaryWilderStudio" target="_blank" rel="noopener noreferrer"><button>Etsy Store</button></a>
 
         </section>
 

@@ -37,6 +37,14 @@ html {
   
   overflow-x: hidden;
 }
+
+body {
+  overflow-x: hidden;
+}
+
+.app {
+  overflow-x: hidden;
+}
 /* responsive fontsizes */
 
 @media only screen and (min-width: 720px) {
@@ -76,14 +84,14 @@ body {
 /*/////////////////ANIMATIONS\\\\\\\\\\\\\\\\\\\\*/
 @keyframes cloudfloat {
   0% {transform: translate(0px, 0px)}
-  0% {transform: translateY(-10px)}
-  100% {transform: translate(2000px, 10px)}
+  0% {transform: translateY(-10vh)}
+  100% {transform: translate(100vw, 10vh)}
 }
 
 @keyframes cloudfloat2 {
-  0% {transform: translate(-1000px, 0px)}
-  0% {transform: translateY(-10px)}
-  100% {transform: translate(-2000px, 10px)}
+  0% {transform: translate(60vw, 0px)}
+  0% {transform: translateY(-10vh)}
+  100% {transform: translate(-60vw, 10px)}
 }
 
 @keyframes cloudfloat3 {
@@ -482,9 +490,6 @@ nav {
 .about-skills:hover {
   
   transition: all 100ms ease-in;
-  margin-left: 3.5rem;
-  margin-top: 3.3rem;
-  transform: rotate(-5deg);
 
   
   
@@ -624,7 +629,7 @@ footer a:hover {
   width:7rem;
   position: absolute;
   right: 0;
-  top: 15rem;
+  top: 50vh;
   animation: cloudfloat2 60s linear infinite;
   z-index: -1;
   border: none;
@@ -634,7 +639,7 @@ footer a:hover {
   width:7rem;
   position: absolute;
   left: 0;
-  top: 20rem;
+  top: 70vh;
   animation: cloudfloat 60s linear infinite;
   z-index: -1;
   border: none;
@@ -930,9 +935,39 @@ footer a:hover {
   font-size: 1rem;
   color: var(--black)
 }
-
 .starbucksimg {
+  width: 15rem;
+  height: auto;
+}
+.starbucksimg, .shopify-logo {
   border: none;
+}
+
+.shopify-logo {
+  width: auto;
+  height: auto;
+  max-width: 10rem;
+}
+
+.design-project button {
+  cursor: pointer;
+  padding: .5rem 1rem;
+  width: 8rem;
+  border: .1rem solid var(--black);
+  font-family: var(--paragraph-font);
+  font-weight: 700;
+  background-color: var(--dark-pink);
+  border-radius: .5rem;
+  margin-left: 1rem;
+  font-size: .8rem;
+}
+
+.design-project button:hover {
+  cursor: pointer;
+  background-color: var(--light-pink);
+  
+  box-shadow: 0 0 10rem #e17d35;
+  transition: all 500ms;
 }
 
 /*///////////////////////////\\\\\\\\\\\\\\\\\\\\\\*/
@@ -1177,6 +1212,8 @@ div img {
   
 }
 
+
+
 .illustration-page .illustration-link {
   position: relative;
   z-index: 5;
@@ -1202,7 +1239,7 @@ div img {
   border: .1rem solid var(--black);
   border-top: none;
   border-radius: 1rem;
-  padding: 0rem;
+  padding: 2rem;
   margin-top: 0;
   z-index:0;
   border-top: .1rem solid var(--black);
@@ -1213,6 +1250,8 @@ div img {
 
 .art-project {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 2rem;
   padding-left: 0;
 }
@@ -1223,12 +1262,12 @@ div img {
   margin-left: 2rem;
 }
 
-.art-project
-
-.artworkimages {
-  display: flex;
-  flex-flow: row wrap;
+.art-project p {
+  max-width: 40rem;
+  align-self: flex-start;
 }
+
+
 
 .illustration-section p {
   
@@ -1237,7 +1276,6 @@ div img {
   text-align: left;
   font-size: .9rem;
   line-height: 1.7rem;
-  width: 30rem;
 }
 
 .illustration-section img {
@@ -1245,6 +1283,7 @@ div img {
   height: auto;
   border-radius: .1rem;
   margin: .25rem;
+  border: none;
 }
 
 .appleorchard {
@@ -1256,7 +1295,21 @@ div img {
 }
 .artworkimages img {
   padding: 0;
-  width: 5rem;
+  max-width: 7rem;
+  height: auto;
+}
+
+.artworkimages {
+  display: flex;
+  flex-flow: row wrap;
+  
+}
+
+#strawberries {
+  aspect-ratio: 1;
+  width: 7rem;
+  height: 7rem;
+  vertical-align: bottom;
 }
 .design-project {
   display: flex;
@@ -1268,6 +1321,30 @@ div img {
 .design-project h2 {
   font-size: 1rem;
   color: var(--black);
+}
+
+.illustration-page a {
+  align-self: left;
+}
+.illustration-page button {
+  cursor: pointer;
+  padding: .5rem 1rem;
+  width: 8rem;
+  border: .1rem solid var(--black);
+  font-family: var(--paragraph-font);
+  font-weight: 700;
+  background-color: var(--dark-pink);
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+  font-size: .8rem;
+}
+
+.illustration-page button:hover {
+  cursor: pointer;
+  background-color: var(--light-pink);
+  
+  box-shadow: 0 0 10rem #e17d35;
+  transition: all 500ms;
 }
 
 .webdev-container section {
@@ -1786,9 +1863,7 @@ a.doodle-link {
 
   .home-page-skills {
    margin-right: 10rem;
-    
-    max-width: 20vw;
-    max-height: 20vw;
+    max-width: 40vw;
     color: var(--black);
     padding: 3rem;
     font-size: 1rem;
@@ -1861,9 +1936,10 @@ a.doodle-link {
 
 
   .about-intro p {
-    width: 25rem;
-    margin-left: -2rem;
+    width: 20rem;
+    margin-left: 2rem;
     margin-top: -2rem;
+    font-size: .6rem
   }
 
   .about-page div:nth-of-type(2) {
@@ -1907,6 +1983,11 @@ a.doodle-link {
     width: 12rem;
     height: 12rem;
     right: 3rem;
+  }
+
+  .about-skills {
+    margin-left: 0;
+    align-self: center;
   }
   .design-project {
     flex-flow: row nowrap;
@@ -2085,5 +2166,43 @@ a.doodle-link {
     left: 37rem;
     opacity: .3;
     overflow: hidden;
+  }
+
+  .cloud1 {
+    width:7rem;
+    position: absolute;
+    left: 0;
+    animation: cloudfloat 30s linear infinite;
+    z-index: -1;
+  }
+  
+  .cloud2 {
+    width:7rem;
+    position: absolute;
+    right: 0;
+    top: 30rem;
+    animation: cloudfloat2 60s linear infinite;
+    z-index: -1;
+    border: none;
+  }
+  
+  .cloud3 {
+    width:7rem;
+    position: absolute;
+    right: 0;
+    top: 15rem;
+    animation: cloudfloat2 60s linear infinite;
+    z-index: -1;
+    border: none;
+  }
+  
+  .cloud4 {
+    width:7rem;
+    position: absolute;
+    left: 0;
+    top: 20rem;
+    animation: cloudfloat 60s linear infinite;
+    z-index: -1;
+    border: none;
   }
 }

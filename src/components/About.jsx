@@ -20,7 +20,7 @@ export default function About() {
          <h1>I'm so happy you're here!</h1>
          <br></br>
         <div className="about-intro">
-        <p>Hi there! I'm Mary, a product designer based in Charlotte, NC. My path to product design has been anything but linear—starting with a passion for design, diving into the world of coding, and now pursuing my Master’s in UX Design at MICA. Along the way, I’ve been driven by a curious mind and a love for continuous growth and learning.</p>
+        <p>Hi there! I'm Mary, a product designer based in Charlotte, NC. My path to product design has been anything but linear—starting with a passion for art, diving into the world of coding, and now pursuing my Master’s in UX Design at MICA. Along the way, I’ve been driven by a curious mind and a love for continuous growth and learning.</p>
         <div className="about-profileicon">
 
         <img src={hithere} className="hi-there"/>
@@ -33,10 +33,35 @@ export default function About() {
 
           <h2>Skills</h2>
           
-          <p >I completed Codecademy’s extensive certificate in Front End Engineering in 2023 while continuing my work as a digital illustrator. CSS, (Flexbox, grid, animation, responsive development), Javascript, HTML, React,  Redux, AJAX, TDD, JSON, and Git are some of the skills I’m excited to put to use.</p>
-          
-              
-          <p>I have a Bachelors in Communication Studies from Ohio University, where I honed many of my soft skills, including interpersonal and organizational Communication. I’m a friendly collaborator and passionate teammate, and am excited to use those skills working alongside development, design, and content teams.</p>
+          <p >What I Bring to the Table:
+            <ul>
+              <li><b>Wireframing & Prototyping:</b> Creating everything from quick sketches to detailed, fully interactive prototypes.</li>
+              <li><b>Design Systems:</b> organization is key for a successful product team, and using Figma’s wide range of advanced tools such as components, variables, auto-layout, styles, and everything in between- I love it.</li>
+              <li><b>UX Research:</b> Conducting user interviews, usability testing, and analyzing data to uncover actionable insights.</li>
+              <li><b>Interaction Design:</b> Designing intuitive user flows, microinteractions, and implementing delightful animations to enhance usability and engagement.</li>
+              <li><b>Creative Problem-Solving:</b> Tackling complex challenges by balancing user needs, business objectives, and technical constraints. Sometimes the solution is </li>
+              <li><b>Technical Skills:</b> Figma, Adobe Illustrator, Front-end development (HTML, CSS, JavaScript), responsive design, animation, accessibility, SEO.</li>
+              <li><b>Creative Problem-Solving:</b> Tackling complex challenges by balancing user needs, business objectives, and technical constraints.</li>
+              <li><b>Collaboration & Communication:</b> Working closely with cross-functional teams, developers, and stakeholders to bring ideas to life.</li>
+              <li><b>Continuous Learning:</b> Always experimenting with new tools, design trends, and methodologies to stay sharp and innovative.</li>
+            </ul>
+
+
+
+
+
+
+
+
+
+<b>Education:</b>
+<br/>
+<b>2024-25</b> Masters of Professional Studies in UX Design, Maryland Institute College of Art
+<br/>
+<b>2022:</b> Front-end engineering Career path certificate, Codecademy
+<br/>
+<b>2015-2019</b> Bachelors in Communication Studies, Ohio University
+</p>
 
         </div>
 
