@@ -8,14 +8,6 @@ html {
   margin: 0 auto;
   box-sizing: border-box;
   text-align: center;
-  --periwinkle: #5866aa;
-  --yellow-green: #bba531;
-  --deep-green: #5b4f20;
-  --sky-blue: #dde3e6;
-  --bubblegum: #e9b7b2;
-  --vanilla: #fbe3c4;
-  --off-white: #fbf4eb;
-
   --light-green: #a2c787;
   --dark-green: #87b367;
   --light-blue: #b0d9ff;
@@ -277,7 +269,6 @@ nav {
 }
 .project-page {
   margin: 1rem;
-  margin-right: 4rem;
 }
 
 /*/////////////////\\\\\\\\\\\\\\\\\\\\*/
@@ -285,11 +276,15 @@ nav {
 /*/////////////////\\\\\\\\\\\\\\\\\\\\*/
 
 .home {
+  display: flex;
+  flex-flow: column nowrap;
   align-items: center;
   overflow-x: hidden;
 }
 .home .title {
   animation: renderContent 200ms ease-in, loadPage 700ms ease-in-out 100ms;
+  align-self: flex-start;
+  align-items: flex-start;
   padding: 2rem;
   padding-bottom: 0;
   padding-right: 1rem;
@@ -307,7 +302,7 @@ nav {
   font-family: "Cherry Bomb One", serif;
   color: var(--vanilla);
   font-weight: 700;
-  font-size: var(--title-font);
+  font-size: 5rem;
   letter-spacing: .2rem;
   line-height: 6.5rem;
   
@@ -335,34 +330,48 @@ nav {
   animation: renderContent 500ms ease-in, loadPage 700ms ease-in-out 400ms;
   margin: 5rem;
   margin-top: 2rem;
-  font-size: 1rem;
+  font-size: 1.8rem;
   color: var(--black);
   padding: 2rem;
-
+  text-align: left;
   opacity: 1;
-  line-height: 2rem;
+  line-height: 3.5rem;
   background-color: var(--light-orange);
   border-radius: 2rem;
   border: .1rem solid var(--black);
+  box-shadow: 0 0 10rem #46a6ff7b;
 }
 
+.home-image {
+  width: 0;
+  position: relative;
+}
 
+.home-image img {
+  position: absolute;
+  border: none;
+  height: 10rem;
+  width: auto;
+  top: -12rem;
+  left: 28rem;
+}
 .home-page-skills {
   display: flex;
   align-items: center;
   animation: renderContent 900ms ease-in, loadPage 700ms ease-in-out 800ms;
-  margin: 1rem;
-  width: 60vw;
-  font-size: 1rem;
+  margin: 5rem;
+  margin-top: 1rem;
+  font-size: 1.8rem;
   color: var(--black);
-  padding: 1.25rem;
-  line-height: 2rem;
+  padding: 2rem;
+  line-height: 3.5rem;
   opacity: 1;
   text-align: left;
   text-align: left;
   background-color: var(--light-green);
   border-radius: 1rem;
   border: .1rem solid var(--black);
+  box-shadow: 0 0 10rem #fe9db07f;
   
 }
 
@@ -370,15 +379,15 @@ nav {
   background-color: var(--light-pink);
   border-radius: 1rem;
   border: .1rem solid var(--black);
-  box-shadow: 0 0 5rem #fe345c25;
+  box-shadow: 0 0 7rem #a2c787aa;
   text-align: left;
-  max-width: 20vw;
   color: var(--black);
-  padding: 3rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  padding: 2rem;
+  font-size: 1.8rem;
+  line-height: 3.5rem;
   text-align: left;
-  margin: 3rem;
+  margin: 5rem;
+  margin-top: 1rem;
 }
 
 
@@ -433,56 +442,24 @@ nav {
   padding: 2rem;
   background-color: var(--light-orange);
   border-radius: 2rem;
-  font-size: .8rem;
-  line-height: 1.6rem;
+  font-size: 1.35rem;
+  line-height: 2.2rem;
   box-shadow: 0rem 0rem 10rem #fa822c73;
   border: .1rem solid var(--black);
-  margin-right: 3rem;
   text-align: left;
-  width: 12rem;
-}
-
-
-
-.about-work {
-  display: flex;
-  align-items: center;
-  background-color: var(--light-blue);
-  box-shadow: 0rem 0rem 10rem #e0dca392;
-  color: var(--black);
-  border-radius: 2rem;
-  color: var(--black);
-  padding: 1.5rem;
-  font-size: 1.35rem;
-  font-weight: 600;
-  border: .1rem solid var(--black);
-  text-align: left;
-}
-
-
-
-.about-work:hover {
-  
-  transition: all 100ms ease-in;
-  margin-left: 3.5rem;
-  margin-top: 3.3rem;
-  transform: rotate(-5deg);
-  box-shadow: 1.5rem 1.5rem rgb(142, 142, 126)531;
- 
 }
 
 .about-skills {
   box-shadow: 0rem 0rem 20rem #46a6ff72;
   border-radius: 2rem;
   background-color: var(--lightgreen-yellow);
-  padding: 1.5rem;
-  font-size: .8rem;
-  width: 30rem;
-  align-self: flex-end;
+  padding: 2rem;
+  line-height: 2.2rem;
+  font-size: 1.35rem;
+  align-self: center;
   border: .1rem solid var(--black);
   text-align: left;
-  margin-right: 2rem;
-  line-height: 1.5rem;
+  margin: 2rem;
 }
 
 
@@ -651,119 +628,107 @@ footer a:hover {
 
 .p, .p-projects, .a-about {
   color: transparent;
-  animation: renderText 250ms, typewriter 100ms linear 10ms 1;
+  animation: renderText 100ms, typewriter 200ms linear 10ms 1;
   color: var(--dark-blue);
 }
 
 .r, .r-projects, .b-about {
   color: transparent;
-  animation: renderText 250ms, typewriter 350ms linear 450ms 1;
+  animation: renderText 300ms, typewriter 200ms linear 300ms 1;
   color: var(--dark-blue);
 }
 
 
 .o, .o-projects, .o-about {
   color: transparent;
-  animation: renderText 250ms, typewriter 600ms linear 750ms 1;
+  animation: renderText 500ms, typewriter 200ms linear 500ms 1;
   color: var(--dark-blue);
 }
 
 .n, .j-projects, .u-about {
   color: transparent;
-  animation: renderText 250ms, typewriter 850ms linear 1250ms 1;
+  animation: renderText 700ms, typewriter 200ms linear 700ms 1;
   color: var(--dark-blue);
   
 }
 
 .t, .e-projects, .t-about {
   color: transparent;
-  animation: renderText 250ms, typewriter 1100ms linear 1600ms 1;
+  animation: renderText 900ms, typewriter 200ms linear 900ms 1;
   color: var(--dark-blue);
 }
 
 .e, .c-projects, .space-about {
   color: transparent;
-  animation: renderText 250ms, typewriter 1350ms linear 2250ms 1;
+  animation: renderText 1100ms, typewriter 200ms linear 1100ms 1;
   color: var(--dark-blue);
 }
 
 .n2, .t-projects, .m-about {
   color: transparent;
-  animation: renderText 250ms, typewriter 1600ms linear 2500ms 1;
+  animation: renderText 1300ms, typewriter 200ms linear 1300ms 1;
   color: var(--dark-blue);
 }
 
 .d2, .s-projects, .e-about {
   color: transparent;
-  animation: renderText 250ms, typewriter 1850ms linear 2900ms 1;
+  animation: renderText 1500ms, typewriter 200ms linear 1500ms 1;
   color: var(--dark-blue);
 }
-
-#and {
-  animation: renderText 250ms, typewriter 2100ms linear 3500ms 1;
-}
-
-.space {
-  color: transparent;
-  animation: typewriter 250ms ease-out 3500ms 1, renderText var(--dark-blue);
-  
-  
-}
-
 
 
 .e2 {
   color: transparent;
-  animation: typewriter 300ms ease-out 4100ms 1, renderText 4600ms;
+  animation: renderText 1700ms, typewriter 200ms ease-out 1700ms 1;
   color: var(--dark-blue);
   
 }
 
 .v {
   color: transparent;
-  animation: typewriter 400ms ease-out 4500ms 1, renderText 5150ms;
+  animation: renderText 1900ms, typewriter 200ms ease-out 1900ms 1 ;
   color: var(--dark-blue);
   
 }
 
 .e3 {
   color: transparent;
-  animation: typewriter 410ms ease-out 5110ms 1, renderText 5610ms;
+  animation: renderText 2100ms, typewriter 200ms ease-out 2100ms 1;
   color: var(--dark-blue);
   
 }
 
 .l {
   color: transparent;
-  animation: typewriter 400ms ease-out 5600ms 1, renderText 5960ms;
+  animation: renderText 2300ms, typewriter 200ms ease-out 2300ms 1;
   color:var(--dark-blue);
   
 }
 
 .o2 {
   color: transparent;
-  animation: typewriter 300ms ease-out 5900ms 1, renderText 6500ms;
+  animation: renderText 2500ms, typewriter 200ms ease-out 2500ms 1;
   color: var(--dark-blue);
   
 }
 
 .z {
   color: transparent;
-  animation: typewriter 350ms ease-out 6400ms 1, renderText 7030ms;
+  animation: renderText 2700ms, typewriter 200ms ease-out 2700ms 1;
   color: var(--dark-blue);
   
 }
 
 .e4 {
   color: transparent;
-  animation: renderText 7100ms, typewriter 420ms ease-out 8000ms 1;
+  animation: renderText 2900ms, typewriter 200ms ease-out 2900ms 1;
   color: var(--dark-blue);
   
 }
 
 .r2 {
   color: transparent;
-  animation: typewriter 350ms ease-out 6900ms 1, renderText 9000ms;
+  animation: renderText 9000ms,typewriter 200ms ease-out 9000ms 1;
   color: var(--dark-blue);
   
 }
@@ -779,7 +744,7 @@ footer a:hover {
   margin-right: 15rem;
   padding-bottom: 0;
   text-decoration: none;
-  
+  font-size: 1.25rem;
   top: 3rem;
   z-index: 1;
   margin-bottom: 0;
@@ -797,6 +762,7 @@ footer a:hover {
   color: var(--black);
   border: .1rem solid var(--black);
   border-bottom: none;
+  
   transition: all 750ms ease-in-out;
   
 }
@@ -847,8 +813,8 @@ footer a:hover {
   border-bottom: none;
   color: var(--black);
   z-index: 0;
-  width: 6rem;
-  padding-bottom:0;
+  width: 7rem;
+  padding-bottom:0.5rem;
   transition: all 750ms ease-in-out;
 }
 
@@ -867,10 +833,11 @@ footer a:hover {
 .design-page {
   display: flex;
   flex-direction: column;
-  margin: 3rem;
-  margin-top: 0;
+  margin: 4.5rem;
+  margin-top: 5rem;
   position: relative;
   z-index: 0;
+  overflow-x: hidden;
 
 }
 
@@ -880,14 +847,19 @@ footer a:hover {
   position: relative;
   top: .1rem;
   z-index: 1;
+  width: auto;
+  
 }
 
 .design-page .web-dev-link {
   border-bottom: .1rem solid var(--black);
+  margin-bottom: .1rem;
+  padding-bottom: .5rem;
 }
 
 .design-page .illustration-link {
   border-bottom: .1rem solid var(--black);
+  margin-bottom: .1rem;
 }
 
 .design-page .product-link {
@@ -895,18 +867,6 @@ footer a:hover {
   z-index: 6;
 }
 
-.design-rect {
-  position: relative;
-  height: .1rem;
-  
-  top: 0rem;
-  z-index: -5;
-  margin-left: .9rem;
-  margin-right: .9rem;
-  margin-bottom: 0;
-  margin-top: 0;
-
-}
 .product-design-page {
   position:relative;
   z-index: -1;
@@ -918,10 +878,13 @@ footer a:hover {
   border-top: none;
   text-align: left;
   box-shadow: 0 -.1rem var(--black);
+  font-size: 1.5rem;
+  line-height: 2.8rem;
 }
 
-.product-design-page h1 {
-  text-align: center;
+.product-design-page h2 {
+  text-align: left;
+  font-size: 2rem !important;
 }
 
 .design-project {
@@ -929,10 +892,11 @@ footer a:hover {
   flex-direction: column;
   padding: 1rem;
   text-align: left;
+  
 }
 
 .design-project h2 {
-  font-size: 1rem;
+  font-size: 2rem;
   color: var(--black)
 }
 .starbucksimg {
@@ -959,7 +923,7 @@ footer a:hover {
   background-color: var(--dark-pink);
   border-radius: .5rem;
   margin-left: 1rem;
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 .design-project button:hover {
@@ -973,6 +937,13 @@ footer a:hover {
 /*///////////////////////////\\\\\\\\\\\\\\\\\\\\\\*/
 /*///////////////////Web dev\\\\\\\\\\\\\\\\\*/
 /*//////////////////////////\\\\\\\\\\\\\\\\\\\\\\*/
+.webdev-page {
+  margin: 4.5rem;
+  margin-top: 5rem;
+}
+.webdev-page .sub-nav {
+  margin-left: .5rem;
+}
 .webdev-page .product-link {
 border-bottom:.1rem solid var(--black);
 }
@@ -980,9 +951,11 @@ border-bottom:.1rem solid var(--black);
   border-bottom:.1rem solid var(--black);
   }
 
-  .webdev-page .web-dev-link {
-    border-bottom:.1rem solid var(--light-orange);
-    z-index: 6;
+.webdev-page .web-dev-link {
+    z-index: 10;
+    position: relative;
+    top: .05rem;
+   
     }
 .webdev-container {
   display: flex;
@@ -991,7 +964,6 @@ border-bottom:.1rem solid var(--black);
   border: .1rem solid var(--black);
   border-top: none;
   border-radius: 1rem;
-  margin: 3rem;
   margin-top: 0;
   position:relative;
   z-index: -1;
@@ -1022,7 +994,6 @@ border-bottom:.1rem solid var(--black);
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
-  align-items: flex;
   padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1044,7 +1015,7 @@ border-bottom:.1rem solid var(--black);
   font-weight: 700;
   background-color: var(--dark-pink);
   border-radius: .5rem;
-  margin-left: 2rem;
+  margin-left: 0rem;
 }
 
 .webdev-container button:hover {
@@ -1090,8 +1061,8 @@ a.doodle-link:hover {
 
 .webdev-container p {
   font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.8rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .webdev-container h2 {
@@ -1134,12 +1105,7 @@ div img {
 
 }
 
-.about-profileicon {
-  width: 0;
-  height: 0;
-  position: absolute;
-  right: 0;
-}
+
 
 .hi-there {
   border: none;
@@ -1152,12 +1118,9 @@ div img {
 }
 
 .profile-pic1 {
-  position: relative;
-  border-radius: 100%;
-  aspect-ratio: 1;
-  width: 12rem;
-  height: 12rem;
-  right: 15rem;
+  width: auto;
+  height: 16rem;
+  border: none;
 }
 .cloud1 {
   border: none;
@@ -1169,11 +1132,6 @@ div img {
 }
 
 
-
-.project-preview {
-
-  
-}
 
 .project-preview:hover {
   box-shadow: 0 0 5rem #46a6ff;
@@ -1190,7 +1148,9 @@ div img {
 
 .webdev-container {
   display: flex;
-  flex-direction: row;
+
+  font-size: 1.5rem;
+  z-index: 6;
 }
 
 /*///////////////////////////\\\\\\\\\\\\\\\\\\\\\\*/
@@ -1199,8 +1159,8 @@ div img {
 .illustration-page {
   display: flex;
   flex-direction: column;
-  margin: 3rem;
-  margin-top: 0;
+  margin: 4.5rem;
+  margin-top: 5rem;
   overflow: visible;
   z-index: 0;
   position: relative;
@@ -1258,31 +1218,32 @@ div img {
 
 .art-project h2 {
   text-align: left;
-  font-size: 1rem;
-  margin-left: 2rem;
+  font-size: 1.8rem;
+
 }
 
 .art-project p {
-  max-width: 40rem;
+
   align-self: flex-start;
+ 
 }
 
 
 
 .illustration-section p {
   
-  margin: 1rem 2rem;
+  
   font-weight: 500;
   text-align: left;
-  font-size: .9rem;
-  line-height: 1.7rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 .illustration-section img {
   width: auto;
   height: auto;
   border-radius: .1rem;
-  margin: .25rem;
+  margin: .5rem;
   border: none;
 }
 
@@ -1295,21 +1256,17 @@ div img {
 }
 .artworkimages img {
   padding: 0;
-  max-width: 7rem;
+  width: auto;
   height: auto;
+  max-height: 15rem;
 }
 
 .artworkimages {
   display: flex;
+  justify-content: center;
   flex-flow: row wrap;
+  align-items: baseline;
   
-}
-
-#strawberries {
-  aspect-ratio: 1;
-  width: 7rem;
-  height: 7rem;
-  vertical-align: bottom;
 }
 .design-project {
   display: flex;
@@ -1350,8 +1307,8 @@ div img {
 .webdev-container section {
     
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
+  flex-flow:column nowrap;
+  justify-content: center;
   align-content: center;
   align-items: flex-start;
 
@@ -1360,7 +1317,7 @@ div img {
   color: var(--black);
   text-decoration: none;
   text-align: left;
-  z-index: 2;
+  z-index: 6;
   
   
   
@@ -1374,7 +1331,7 @@ div img {
 .webdev-container button {
   cursor: pointer;
   padding: .5rem 1rem;
-  width: 5rem;
+  width: auto;
   border: .1rem solid var(--black);
   font-family: var(--paragraph-font);
   font-weight: 700;
@@ -1409,26 +1366,23 @@ a.doodle-link {
 }
 
 .webdev-container p {
-  padding-left: 2rem;
   max-width: 70vw;
-  font-size: .8rem;
+  font-size: 1.25rem;
   line-height: 2rem;
 }
 
 .webdev-container h2 {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 2rem;
   margin-right: 3vw;
   margin-bottom: 2rem;
   font-weight: 700;
   color: var(--black);
 }
-
-.webdev-container div {
-  display: flex;
-  z-index: 2;
+.webdev-container img {
+  width: 20rem;
+  height: 20rem;
 }
-
 /*///////////////////////////\\\\\\\\\\\\\\\\\\\\\\*/
 /*///////////////////mobile NAVBAR\\\\\\\\\\\\\\\\\*/
 /*//////////////////////////\\\\\\\\\\\\\\\\\\\\\\*/
@@ -1496,39 +1450,41 @@ a.doodle-link {
   }
 
   .projects-link:hover, .projects-link:focus {
-   
+    transition: all 700ms ease-in-out;
     background-image: url(./assets/cloud1.svg);
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-    transform: rotate(10deg);
-    color: var(--dark-green);
-    font-size: 1rem;
-    letter-spacing: 2rem;
+    color: #064c8ea3;
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
   }
 
   .about-link:hover, .about-link:focus {
-    transition: all 200ms ease-in-out;
+    transition: all 700ms ease-in-out;
     background-image: url(./assets/cloud1.svg);
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-    transform: rotate(10deg);
-    color: var(--dark-pink);
+    color: #064c8ea3;
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
 
   }
 
   .home-link:hover, .home-link:focus {
-    transition: all 200ms ease-in-out;
+    transition: all 700ms ease-in-out;
     background-image: url(./assets/cloud1.svg);
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-    transform: rotate(10deg);
-    color: var(--dark-blue);
+    color: #064c8ea3;
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
 
   }
 
-  .home-link:active, .about-link:active, .projects-link:active {
-    transform: rotate(-30deg);
-  }
+
 
   .nav-expanded {
     transform: translateX(0rem);
@@ -1668,14 +1624,12 @@ a.doodle-link {
 }
 
 .home-link:active, .about-link:active, .projects-link:active {
-  transform: rotate(-30deg);
-}
-
-.about-profileicon {
-  width: 0;
-  height: 0;
-  position: absolute;
-  right: 0;
+  transition: all 200ms ease-in-out;
+  background-image: url(./assets/cloud1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(10deg);
+  color: var(--dark-blue);
 }
 
 .hi-there {
@@ -1688,15 +1642,6 @@ a.doodle-link {
   top: -3rem;
 }
 
-.profile-pic1 {
-  position: absolute;
-  border-radius: 100%;
-  aspect-ratio: 1;
-  width: 10rem;
-  height: 10rem;
-  right: 3rem;
-}
-
 }
 
 
@@ -1705,7 +1650,9 @@ a.doodle-link {
 /*//////////////////////////\\\\\\\\\\\\\\\\\\\\\\*/
 
 @media (min-width: 1024px) {
- 
+  .sub-nav {
+    font-size: 1rem;
+  }
   .linkedin {
     width: 3rem;
   }
@@ -1799,17 +1746,18 @@ a.doodle-link {
     
   }
 
+
   
 
  
 
   .home span {
-    font-size: 3.5rem;
+    font-size: 5rem;
     
   }
 
   .home {
-    justify-content: space-between;
+    justify-content: space-around;
     flex-flow: row wrap;
     
     
@@ -1827,7 +1775,7 @@ a.doodle-link {
     background-color: var(--light-green);
     border-radius: 1rem;
     border: .1rem solid var(--black);
-
+    align-self: flex-start;
   }
 
   .home-page-work {
@@ -1849,43 +1797,67 @@ a.doodle-link {
   }
 
   .intro {
-    margin-top: 10rem;
+    margin-top: 7rem;
     margin-left: 3rem;
     width: 20rem;
     text-align: left;
     font-size: .75rem;
     line-height: 1.2rem;
     font-weight: 500;
+    margin-right: 3rem;
   }
 
 
   
 
   .home-page-skills {
-   margin-right: 10rem;
-    max-width: 40vw;
     color: var(--black);
+    width: 20rem;
     padding: 3rem;
-    font-size: 1rem;
+    font-size: .8rem;
     line-height: 1.5rem;
-    text-align: left;
+    margin:0rem;
   }
 
   .home-page-work {
-    
-     
-     max-height: 20vw;
+    margin:3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
      color: var(--black);
      padding: 3rem;
      font-size: 1rem;
      line-height: 1.5rem;
      text-align: left;
+     background-color: none;
    }
+
+   .home-design-container {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+   }
+
+   .home-page-work .design-project {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  
+
+  
+
+   }
+
+  .home-page-work .design-project p {
+    width: auto;
+  }
 
 
   .about-page {
-  margin: 0rem;
-  padding: 5rem;
+  flex-flow: row wrap;
+  margin-top: 5rem;
+  padding: 0rem;
   padding-top: 2rem;
   overflow: visible;
   
@@ -1909,61 +1881,28 @@ a.doodle-link {
     
   }
 
-   .profile-pic1 {
-  margin: 5rem;
-  margin-top: 0rem;
-  width: 13rem;
-  height: 13rem;
-  box-shadow: 0rem 0rem 10rem var(--dark-blue);
-  border-radius: 100%;
-  aspect-ratio: 1 / 1;
-  }
-
   
 
 
   .about-page div {
   
-    font-size: .6rem;
+    font-size: 1rem;
     line-height: 1rem;
     font-weight: 500;
   }
 
-
-  .about-page div:nth-of-type(1) {
-
-  }
 
 
   .about-intro p {
     width: 20rem;
     margin-left: 2rem;
     margin-top: -2rem;
-    font-size: .6rem
+    font-size: .8rem
   }
 
   .about-page div:nth-of-type(2) {
     
     margin-right: 2rem;
-  }
-
-  .about-page div:nth-of-type(3) {
-   
-    transform: translateY(-10rem);
-  }
-
-  .about-page div:nth-of-type(4) {
-    height: 10rem;
-    margin: 0;
-    margin-top: -20rem;
-    margin-left: 32rem;
-  }
-
-  .about-profileicon {
-    width: 0;
-    height: 0;
-    position: absolute;
-    right: 0;
   }
   
   .hi-there {
@@ -1975,19 +1914,17 @@ a.doodle-link {
     right: 5rem;
     top: -4rem;
   }
-  
-  .profile-pic1 {
-    position: absolute;
-    border-radius: 100%;
-    aspect-ratio: 1;
-    width: 12rem;
-    height: 12rem;
-    right: 3rem;
-  }
+
 
   .about-skills {
     margin-left: 0;
     align-self: center;
+    font-size: .8rem;
+  }
+
+  .about-skills p {
+    font-size: .8rem;
+    line-height: 1.6rem;
   }
   .design-project {
     flex-flow: row nowrap;
@@ -2044,7 +1981,7 @@ a.doodle-link {
     align-items: flex-start;
  
     padding: 3rem;
-  
+    padding-bottom: 0rem;
     color: var(--black);
     text-decoration: none;
     text-align: left;
@@ -2054,15 +1991,10 @@ a.doodle-link {
     
   }
 
-  .web-description {
-    display: flex;
-    flex-direction: column;
-  }
-
   .webdev-container button {
     cursor: pointer;
     padding: .5rem 1rem;
-    width: 5rem;
+    width: auto;
     border: .1rem solid var(--black);
     font-family: var(--paragraph-font);
     font-weight: 700;
@@ -2099,23 +2031,35 @@ a.doodle-link {
   .webdev-container p {
     padding-left: 2rem;
     max-width: 70vw;
-    font-size: .8rem;
+    font-size: 1rem;
     line-height: 2rem;
   }
   
   .webdev-container h2 {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-right: 3vw;
     margin-bottom: 2rem;
     font-weight: 700;
     color: var(--black);
   }
 
+  .web-description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .webdev-container img {
+    width: 15rem;
+    height: 15rem;
+  }
+
   .webdev-container div {
     display: flex;
-    z-index: 2;
+
   }
+
+  
 
   .accordian-project h2 {
 

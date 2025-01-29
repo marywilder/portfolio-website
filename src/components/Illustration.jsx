@@ -23,7 +23,7 @@ export default function Illustration() {
             </div>
                 <div className="art-project">
                     <div><h2>National Parks Series</h2>
-                    <p>I've always loved the style retro travel posters are in, and thought it would be fun to do my own groovy style of posters, which led me to illustrating about 30 of the National Parks!</p>
+                    <p>I've always loved the style of retro travel posters, and thought it would be fun to do my own groovy style of posters, which led me to illustrating about 30 of the National Parks!</p>
                     </div>
                     <div className="artworkimages">
                     <img src={mountrainier}/>
@@ -37,8 +37,7 @@ export default function Illustration() {
 
                 <div className="art-project">
                 <div>
-                <h2>Other Drawings</h2>
-                <p>I have a lot of fun! hehe</p>
+                <h2>More Stuff</h2>
                 </div>
                 <div className="artworkimages">
                 <img src={appleorchard} />

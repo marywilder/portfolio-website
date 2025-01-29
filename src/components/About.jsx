@@ -1,6 +1,5 @@
 import React from 'react'
-import profilepic from '../assets/profile-pic.png';
-import hithere from '../assets/hiimmary.svg';
+import hello from '../assets/hello.png';
 
 export default function About() {
   return (
@@ -16,16 +15,12 @@ export default function About() {
          <span className="e-about">e</span>       
          </h1>
          */}
-
-         <h1>I'm so happy you're here!</h1>
          <br></br>
+         <div className="about-profileicon">
+        <img src={hello} className="profile-pic1"/>
+        </div>
         <div className="about-intro">
         <p>Hi there! I'm Mary, a product designer based in Charlotte, NC. My path to product design has been anything but linear—starting with a passion for art, diving into the world of coding, and now pursuing my Master’s in UX Design at MICA. Along the way, I’ve been driven by a curious mind and a love for continuous growth and learning.</p>
-        <div className="about-profileicon">
-
-        <img src={hithere} className="hi-there"/>
-        <img src={profilepic} className="profile-pic1"/>
-        </div>
 
         </div>
         
