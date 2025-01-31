@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from './Navbar'
 import hello from '../assets/hello.png'
 import starbucksimg from '../assets/starbucksmockup.png'
+import starbucksgif from '../assets/setprefs.gif';
+import prototypepng from '../assets/prototype-phone.png';
 import shopifylogo from '../assets/shopifylogo.png'
 function Home() {
   return (
@@ -42,10 +44,16 @@ function Home() {
         <section className="home-page-skills">As a product designer, I blend creativity and technical know-how to craft thoughtful, user-centered experiences. My skills include wireframing, prototyping, interaction design, and UX research, alongside a strong foundation in front-end development (I built this website using React.js). I thrive at the intersection of design and technology, always up to learn a new skill and grow no matter how painful it is.</section>
         
         <section className="home-page-work">Here is some of my most recent work!
-            <div className="design-project">
+        <h2>Starbucks Case Study</h2>
+            <div 
+            className="design-project">
                 <div>
-                  <h2>Starbucks Case Study</h2>
-                  <img src={starbucksimg} className="starbucksimg"/>
+                <div className="prototype-container">
+                    <div className="prototype-img">
+                      <img src={prototypepng} className="proto-phone"/>
+                      <img src={starbucksgif} className="starbucksimg"/>
+                    </div>
+                    </div>
                 </div>
                 <div>
                   <p>During my MPS program, my design team of 3 worked to create a new feature set for an existing product. We chose to make some improvements to the Starbucks app, and we went go through the full product design process from wireframing and prototyping to usability testing. After multiple design iterations, we landed on features that address the dietary uncertainty users face in the Starbucks app.</p> 
@@ -54,10 +62,10 @@ function Home() {
                 </div>
                               
             </div>
-          
+            <h2>Shopify Case Study</h2>
             <div className="design-project">
                <div>
-                <h2>Shopify Case Study</h2>
+               
                 <img src={shopifylogo} className='shopify-logo'/>
               </div>
               <div>

@@ -898,10 +898,39 @@ footer a:hover {
   font-size: 2rem;
   color: var(--black)
 }
-.starbucksimg {
-  width: 15rem;
-  height: auto;
+
+.prototype-container-of-container {
+  align-self: center;
 }
+
+.prototype-container {
+  width: 18rem;
+  height: 20rem;
+  align-self: center;
+}
+.prototype-img {
+  position: relative;
+  width: 0; 
+  height: 0;
+  left: 3rem;
+}
+.starbucksimg, .proto-phone {
+  position: absolute;
+  
+}
+.proto-phone {
+  z-index: 6;
+  border: none;
+  width: auto;
+  height: 19.5rem;
+}
+.starbucksimg {
+  border-radius: 1rem;
+  width: auto;
+  left: .5rem;
+  height: 19rem;
+}
+
 .starbucksimg, .shopify-logo {
   border: none;
 }
@@ -1793,22 +1822,23 @@ a.doodle-link {
     border: .1rem solid var(--black);
     box-shadow: 0 0 5rem #fe345c25;
     text-align: left;
-    
-    max-height: 20vw;
+    max-width: 40vw;
     color: var(--black);
     padding: 3rem;
     font-size: 1rem;
     line-height: 1.5rem;
     text-align: left;
+    margin: 0rem;
+    margin-top: 0;
   }
 
   .intro {
-    margin-top: 7rem;
-    margin-left: 3rem;
+    margin-top: 5rem;
+    
     width: 20rem;
     text-align: left;
     font-size: .75rem;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
     font-weight: 500;
     margin-right: 3rem;
   }
@@ -1818,21 +1848,20 @@ a.doodle-link {
 
   .home-page-skills {
     color: var(--black);
-    width: 20rem;
-    padding: 3rem;
+    width: 18rem;
+    padding: 2rem;
     font-size: .8rem;
     line-height: 1.5rem;
     margin:0rem;
   }
 
   .home-page-work {
-    margin:3rem;
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
      color: var(--black);
-     padding: 3rem;
+     padding: 2rem;
      font-size: 1rem;
      line-height: 1.5rem;
      text-align: left;
@@ -1847,6 +1876,7 @@ a.doodle-link {
 
    .home-page-work .design-project {
     display: flex;
+    flex-flow: column;
     width: 100%;
     height: 100%;
   
@@ -1939,15 +1969,33 @@ a.doodle-link {
     align-items: center;
   }
 
-  .design-project img {
-    width: 10rem;
-    padding-top: 1rem;
-    cursor: pointer;
+  .prototype-container {
+    width: 18rem;
+    height: 20rem;
   }
-
-  .design-project img:hover {
+  .prototype-img {
+    position: relative;
+    width: 0; 
+    height: 0
+  }
+  .starbucksimg, .proto-phone {
+    position: absolute;
+    width: 9rem;
+    height: auto;
     
   }
+  .proto-phone {
+    z-index: 6;
+    border: none;
+  }
+  .starbucksimg {
+    border-radius: 1.2rem;
+    left: .35rem;
+    width: 8.25rem;
+    height: 18rem;
+  }
+
+ 
 
   .design-project button {
     padding:.5rem 1rem;
