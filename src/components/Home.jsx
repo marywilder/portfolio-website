@@ -36,10 +36,10 @@ function Home() {
         
         </div>
         
-        <section className="intro"> Hi, I’m Mary—a product designer who loves turning ideas into thoughtful, user-centered experiences. Whether it’s crafting intuitive designs or exploring creative solutions, I’m always up for the challenge. Welcome to my world!
+        <section className="intro"> Hi, I’m Mary—a product designer who loves creating thoughtful, user-centered experiences to solve problems. Whether it’s brand new designs or exploring creative solutions, I’m always up for the challenge. Welcome to my world!
 </section>
 
-        <section className="home-page-skills">As a product designer, I blend creativity and technical know-how to craft thoughtful, user-centered experiences. My skills include wireframing, prototyping, interaction design, and UX research, alongside a strong foundation in front-end development. (i built this website using React.js) Whether I’m solving complex problems or fine-tuning the details, I thrive at the intersection of design and technology, always up to learn a new skill and grow no matter how painful it is.</section>
+        <section className="home-page-skills">As a product designer, I blend creativity and technical know-how to craft thoughtful, user-centered experiences. My skills include wireframing, prototyping, interaction design, and UX research, alongside a strong foundation in front-end development (I built this website using React.js). I thrive at the intersection of design and technology, always up to learn a new skill and grow no matter how painful it is.</section>
         
         <section className="home-page-work">Here is some of my most recent work!
             <div className="design-project">
@@ -48,7 +48,7 @@ function Home() {
                   <img src={starbucksimg} className="starbucksimg"/>
                 </div>
                 <div>
-                  <p>During my MPS program, I worked on a design team with 2 of my collegues to select a product and go through the product design process of wireframing, prototyping, and usability testing. Through our design iterations, we landed on addressing the dietary uncertainty users face using the Starbucks app.</p> 
+                  <p>During my MPS program, my design team of 3 worked to create a new feature set for an existing product. We chose to make some improvements to the Starbucks app, and we went go through the full product design process from wireframing and prototyping to usability testing. After multiple design iterations, we landed on features that address the dietary uncertainty users face in the Starbucks app.</p> 
                   <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/starbucks-case-study/#/">
                   <button href="">Case Study</button></a>
                 </div>
@@ -61,7 +61,7 @@ function Home() {
                 <img src={shopifylogo} className='shopify-logo'/>
               </div>
               <div>
-                <p>During my UX Reasearch course at MICA, I explored the very popular eccomerce platform SHopify, to identify pain points and evaluate users' experience. I did competitive research, identified user types, and conducted User Research with 6 individuals. Through identifying common themes and insights, I made reccomendations to stakeholders.</p>
+                <p>During my UX Research course at MICA, I explored the market-leading ecommerce platform, Shopify, to identify pain points and evaluate users' experience. I did competitive research, identified user types, and conducted User Research with 6 participants. Common themes and insights were used to make recommendations to stakeholders for a new feature that would help solve the problem of frequent internal human error.</p>
 
                 <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/presentation/d/16woy_tF5s1jivtYbo7HTMVenhsW-O2QUg6O8YdWxwso/edit?usp=sharing"><button>Case Study</button></a>
 

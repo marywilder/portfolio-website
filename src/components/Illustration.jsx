@@ -19,7 +19,7 @@ export default function Illustration() {
         <section className="illustration-section">
  
             <div className="illustration-intro">
-                <p>Drawing has always been something that brings me a lot of joy! I've worked with clients and commissions over the years, and have been a top seller on Society6 as well as run and manage an Etsy store selling art prints on the side.</p>
+                <p>Drawing has always been something that brings me a lot of joy! I've worked with clients and commissions over the years, and have been a top seller on Society6, as well as run and manage an Etsy store selling art prints on the side.</p>
             </div>
                 <div className="art-project">
                     <div><h2>National Parks Series</h2>

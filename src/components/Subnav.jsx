@@ -6,7 +6,7 @@ export default function Subnav() {
              <div className="sub-nav">
                     <NavLink to='/productdesign' className="product-link">product design</NavLink>
                     <NavLink to='/webdev'  className="web-dev-link">web dev</NavLink>
-                    <NavLink to='/illustration' className="illustration-link">illustration</NavLink>
+                    <NavLink to='/illustration' className="illustration-link">artwork</NavLink>
               </div>
   )
 }
