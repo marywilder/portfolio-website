@@ -741,14 +741,14 @@ footer a:hover {
   justify-content: space-around;
   overflow: visible;
   padding: 3rem;
-  margin-right: 15rem;
+  
   padding-bottom: 0;
   text-decoration: none;
   
   top: 3rem;
   z-index: 1;
   margin-bottom: 0;
-  margin-left: 2rem;
+  margin-left: 3.5rem;
 }
 
 .sub-nav .web-dev-link {
