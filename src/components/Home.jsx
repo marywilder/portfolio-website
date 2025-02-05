@@ -56,7 +56,7 @@ function Home() {
                     </div>
                 </div>
                 <div>
-                  <p>During my MPS program, my design team of 3 worked to create a new feature set for an existing product. We chose to make some improvements to the Starbucks app, and we went go through the full product design process from wireframing and prototyping to usability testing. After multiple design iterations, we landed on features that address the dietary uncertainty users face in the Starbucks app.</p> 
+                  <p>During my MPS program, my design team of 3 worked to create a new feature set for an existing product. We chose to make some improvements to the Starbucks app, and we went through the full product design process from wireframing and prototyping to usability testing. After multiple design iterations, we landed on features that address the dietary uncertainty users face in the Starbucks app.</p> 
                   <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/starbucks-case-study/#/">
                   <button href="">Case Study</button></a>
                 </div>
