@@ -738,7 +738,7 @@ footer a:hover {
 
 .sub-nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   overflow: visible;
   padding: 3rem;
   
@@ -748,7 +748,7 @@ footer a:hover {
   top: 3rem;
   z-index: 1;
   margin-bottom: 0;
-  margin-left: 3.5rem;
+  
 }
 
 .sub-nav .web-dev-link {
