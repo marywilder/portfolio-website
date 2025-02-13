@@ -39,9 +39,15 @@ function Home() {
         </div>
         
         <section className="intro"> Hi, I’m Mary—a product designer who loves creating thoughtful, user-centered experiences to solve problems. Whether it’s brand new designs or exploring creative solutions, I’m always up for the challenge. Welcome to my world!
-</section>
-
+        </section>
+      <div className="home-skills-container">
         <section className="home-page-skills">As a product designer, I blend creativity and technical know-how to craft thoughtful, user-centered experiences. My skills include wireframing, prototyping, interaction design, and UX research, alongside a strong foundation in front-end development (I built this website using React.js). I thrive at the intersection of design and technology, always up to learn a new skill and grow no matter how painful it is.</section>
+
+        <section className="home-page-skills2"><h3>Letterboxd Wireframes: New Feature Set</h3>As a Letterboxd user, I noticed that the platform lacks personalized recommendations, making it harder for users to organically discover new movies. To address this, I designed a "Film Finder" quiz, a personalized "Film DNA" feature, and improved movie suggestions to enhance user engagement and discovery. This project is part of my master's program, and the prototype is currently in progress.
+          <a target="_blank" rel="noopener noreferrer" href='https://www.figma.com/design/mOafiRr4yObVnkLl3kuKAz/MUXD5103.02?node-id=140-2027&t=53H1WOrK7Fg8afp9-1'><button>Figma Design File</button></a>
+        </section>
+      </div>
+
         
         <section className="home-page-work">Here is some of my most recent work!
         <h2>Starbucks Case Study</h2>
@@ -74,6 +80,11 @@ function Home() {
                 <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/presentation/d/16woy_tF5s1jivtYbo7HTMVenhsW-O2QUg6O8YdWxwso/edit?usp=sharing"><button>Case Study</button></a>
 
               </div> 
+              
+        <section className="case-study-letterboxd"><h3>Letterboxd Wireframes: New Feature Set</h3>As a Letterboxd user, I noticed that the platform lacks personalized recommendations, making it harder for users to organically discover new movies. To address this, I designed a "Film Finder" quiz, a personalized "Film DNA" feature, and improved movie suggestions to enhance user engagement and discovery. This project is part of my master's program, and the prototype is currently in progress.
+        <br/>
+          <a target="_blank" rel="noopener noreferrer" href='https://www.figma.com/design/mOafiRr4yObVnkLl3kuKAz/MUXD5103.02?node-id=140-2027&t=53H1WOrK7Fg8afp9-1'><button>Figma Design File</button></a>
+        </section>
             </div>
         </section>
     </div>
