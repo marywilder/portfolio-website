@@ -27,10 +27,10 @@ function App() {
       <div className="yellow-gradient"></div>
       <div className="blue-gradient-2"></div>
     
-<img src={cloud1} className="cloud1"/>
-<img src={cloud2} className="cloud2"/>
-<img src={cloud3} className="cloud3"/>
-<img src={cloud4} className="cloud4"/>
+<img src={cloud1} className="cloud1" alt="an illustrated cloud floating across the screen"/>
+<img src={cloud2} className="cloud2" alt="an illustrated cloud floating across the screen"/>
+<img src={cloud3} className="cloud3" alt="an illustrated cloud floating across the screen"/>
+<img src={cloud4} className="cloud4" alt="an illustrated cloud floating across the screen"/>
 
 
 

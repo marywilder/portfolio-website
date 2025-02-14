@@ -32,7 +32,7 @@ export default function Webdev() {
             <h2 >Space Tourism Website</h2>
             <div>
               <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/space-travel-website/#/">
-              <img className="project-preview" src={spacewebsite} />
+              <img className="project-preview" src={spacewebsite} alt="a screenshot of space tourism website"/>
               </a>
               <div className='web-description'><p>Multi-page, mobile-first design, using React Router, Create React App, React Hooks, CSS flexbox and grid, and CSS animations. This was a Frontend Mentor challenge; I was provided with the Figma, then built the site from scratch with no repos or codebase. </p>
               <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/space-travel-website/#/"><button target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/space-travel-website/#/">View Here</button></a></div>
@@ -45,7 +45,7 @@ export default function Webdev() {
             <h2>Weather Website</h2>
             <div>
               <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/weather-app/">
-              <img className="project-preview" src={weatherapp}/>
+              <img className="project-preview" src={weatherapp} alt="a screenshot of the weather app"/>
               </a>
               <div className='web-description'>
               <p>Working with APIs and JSON, I created a vanilla Javascript weather app. This app uses the Google Places API, the Open Weather App API. Users can enter in the name of any city or state. I also illustrated the weather icons and wrote logic that tells the icons to change depending on the weather.</p>
@@ -59,7 +59,7 @@ export default function Webdev() {
             <section className="tictac-project" >
             <h2 >Tic Tac Toe</h2>
             <div>
-              <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/marys-tic-tac-toe/">
+              <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/marys-tic-tac-toe/" alt="a screenshot of tic tac toe">
               <img className="project-preview" src={tictactoe}/>
               </a>
               <div className='web-description'>
@@ -74,7 +74,7 @@ export default function Webdev() {
             <h2 >To-Do List App</h2>
             <div>
               <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/to-do-list/">
-              <img className="project-preview" src={todolist}/>
+              <img className="project-preview" src={todolist} alt="a screenshot of to do list project"/>
               </a>
               <div className='web-description'>
               <p>This project was built using React/React Hooks. Users can enter in a to-do list item, mark it complete, and clear completed to-dos. Again, here, I added a bit of fun with my own personal touch by making it look like an actual piece of paper.</p>
@@ -88,7 +88,7 @@ export default function Webdev() {
             <h2 >Doodle Jump Clone (with added features)</h2>
             <div>
               <a>
-              <img className="project-preview" src={doodlejump}/>
+              <img className="project-preview" src={doodlejump} alt="a screenshot of a remade doodle jump game"/>
               </a>
             
               <div className='web-description'>
@@ -109,7 +109,7 @@ export default function Webdev() {
             <h2 >Animated Accordion Q&A</h2>
             <div>
               <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/faq-accordion-card-main/">
-              <img className="project-preview" src={accordian}/>
+              <img className="project-preview" src={accordian} alt="a screenshot of accordian project"/>
               </a>
               <div className='web-description'>
               <p>Another challenge from Frontend Mentor; built using Vanilla Javascript, event listeners, mutating DOM, and CSS animations.</p>

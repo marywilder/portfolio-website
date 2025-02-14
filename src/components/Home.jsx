@@ -56,8 +56,8 @@ function Home() {
                 <div>
                 <div className="prototype-container">
                     <div className="prototype-img">
-                      <img src={prototypepng} className="proto-phone"/>
-                      <img src={starbucksgif} className="starbucksimg"/>
+                      <img src={prototypepng} className="proto-phone" alt="iphone displaying starbucks app"/>
+                      <img src={starbucksgif} className="starbucksimg" alt="taste preferences page for starbucks app, displaying how settings are selected through checkboxes"/>
                     </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ function Home() {
             <div className="design-project">
                <div>
                
-                <img src={shopifylogo} className='shopify-logo'/>
+                <img src={shopifylogo} className='shopify-logo' alt="shopify logo"/>
               </div>
               <div>
                 <p>During my UX Research course at MICA, I explored the market-leading ecommerce platform, Shopify, to identify pain points and evaluate users' experience. I did competitive research, identified user types, and conducted User Research with 6 participants. Common themes and insights were used to make recommendations to stakeholders for a new feature that would help solve the problem of frequent internal human error.</p>

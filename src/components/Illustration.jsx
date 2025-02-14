@@ -26,11 +26,11 @@ export default function Illustration() {
                     <p>I've always loved the style of retro travel posters, and thought it would be fun to do my own groovy style of posters, which led me to illustrating about 30 of the National Parks!</p>
                     </div>
                     <div className="artworkimages">
-                    <img src={mountrainier}/>
-                    <img src={grandcanyon}/>
-                    <img src={yosemite}/>
-                    <img src={joshuatree}/>
-                    <img src={smokies}/>
+                    <img src={mountrainier}alt="illustrated poster of mount rainier national park, with fields of flowers and a path leading to the mount rainier, and clouds in the background with 'Mount Rainer national park' written on the bottom of the poster."/>
+                    <img src={grandcanyon} alt="illustrated poster of grand canyon national park, with the iconic view of the grand canyon and gorge running through it at sunset. 'Grand Canyon national park' written on the bottom of the poster."/>
+                    <img src={yosemite} alt="illustrated poster of yosemite national park, with the view of yosemite falls. 'Yosemite National Park' written on the bottom of the poster. "/>
+                    <img src={joshuatree} alt="illustrated poster of joshua tree national park, with a joshua tree and some others in the background, at sunset. 'Joshua National Park' written on the bottom of the poster. " />
+                    <img src={smokies} alt="illustrated poster of great smokey mountain national park, with the view of a wooded path, with flowers, and overlooking the smokey mountains. 'Great Smokey Mountains National Park' written on the bottom of the poster. "/>
                     </div>
                     
                 </div>
@@ -40,12 +40,12 @@ export default function Illustration() {
                 <h2>More Stuff</h2>
                 </div>
                 <div className="artworkimages">
-                <img src={appleorchard} />
-                    <img src={wolf}/>
-                    <img src={treeandcat} />
-                    <img src={strawberries} id="strawberries"/>
-                    <img src={owls}/>
-                    <img src={birdwithbanjo}/>
+                <img src={appleorchard} alt="a drawing of a colorful apple orchard, with a bluebird flying across the sky, a worm in an apple in a tree, a cat peeking through the leaves of another tree, a duck sitting under a tree eating apples, and a person picking apples."/>
+                    <img src={wolf} alt="a drawing of a black wolf sitting on rocks over looking a forest, playing a ukulele with a book sitting below him titled 'mele hula'"/>
+                    <img src={treeandcat} alt="a drawing of a cat reading a book titled 'feline field guide', sitting between two large sequoia trees."/>
+                    <img src={strawberries} id="strawberries" alt="an imagitive illustration of different strawberries floating in the clouds. objects floating around them include: daisies, a rocket ship, a cup of coffee, a house with a chimney, a turtle wearing a top hat, a muffin and a telephone."/>
+                    <img src={owls} alt="an illustrated poster of different kinds of owls: great horned owl, barn owl, snowy owl, spotted owl, whiskered screech owl, saw whet owl, northern hawk owl, long earred owl and elf owl."/>
+                    <img src={birdwithbanjo} alt="a bluebird playing the banjo with rounded glasses and top hat, sitting on a tree branch, overlooking a forest of hibernating trees and a pink sunset"/>
                     </div>
 
                     
