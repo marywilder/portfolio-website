@@ -27,10 +27,10 @@ function App() {
       <div className="yellow-gradient"></div>
       <div className="blue-gradient-2"></div>
     
-<img src={cloud1} className="cloud1" alt="an illustrated cloud floating across the screen"/>
-<img src={cloud2} className="cloud2" alt="an illustrated cloud floating across the screen"/>
-<img src={cloud3} className="cloud3" alt="an illustrated cloud floating across the screen"/>
-<img src={cloud4} className="cloud4" alt="an illustrated cloud floating across the screen"/>
+<img src={cloud1} className="cloud1" alt="an illustrated cloud floating from left to right across the upper screen"/>
+<img src={cloud2} className="cloud2" alt="an illustrated cloud floating right to left across the upper screen"/>
+<img src={cloud3} className="cloud3" alt="an illustrated cloud floating left to right across the lower screen"/>
+<img src={cloud4} className="cloud4" alt="an illustrated cloud floating right to left across the lower screen"/>
 
 
 
@@ -46,7 +46,7 @@ function App() {
 </Routes>
 
   <footer>
-    <div className="linkedincontainer"><a className="linkedin" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mary-wilder-ab13b5285/"></a>
+    <div className="linkedincontainer"><div className="linkedin"></div>
   <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mary-wilder-ab13b5285/">get in touch</a></div>
   <br/>
   <div className="emailcontainer">

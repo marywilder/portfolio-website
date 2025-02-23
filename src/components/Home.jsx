@@ -43,8 +43,8 @@ function Home() {
       <div className="home-skills-container">
         <section className="home-page-skills">As a product designer, I blend creativity and technical know-how to craft thoughtful, user-centered experiences. My skills include wireframing, prototyping, interaction design, and UX research, alongside a strong foundation in front-end development (I built this website using React.js). I thrive at the intersection of design and technology, always up to learn a new skill and grow no matter how painful it is.</section>
 
-        <section className="home-page-skills2"><h3>Letterboxd Wireframes: New Feature Set</h3>As a Letterboxd user, I noticed that the platform lacks personalized recommendations, making it harder for users to organically discover new movies. To address this, I designed a "Film Finder" quiz, a personalized "Film DNA" feature, and improved movie suggestions to enhance user engagement and discovery. This project is part of my master's program, and the prototype is currently in progress.
-          <a target="_blank" rel="noopener noreferrer" href='https://www.figma.com/design/mOafiRr4yObVnkLl3kuKAz/MUXD5103.02?node-id=1-5&t=OSLsGEKCGpNImabN-1'><button>Figma Design File</button></a>
+        <section className="home-page-skills2"><h2>Letterboxd Wireframes: New Feature Set</h2>As a Letterboxd user, I noticed that the platform lacks personalized recommendations, making it harder for users to organically discover new movies. To address this, I designed a "Film Finder" quiz, a personalized "Film DNA" feature, and improved movie suggestions to enhance user engagement and discovery. This project is part of my master's program, and the prototype is currently in progress.
+          <a target="_blank" rel="noopener noreferrer" href='https://www.figma.com/design/mOafiRr4yObVnkLl3kuKAz/MUXD5103.02?node-id=1-5&t=OSLsGEKCGpNImabN-1'><button className="figma-button">Figma Design File</button></a>
         </section>
       </div>
 
