@@ -6,6 +6,7 @@ import accordian from "../assets/Screenshot (6).png";
 import todolist from "../assets/Screenshot (8).png";
 import weatherapp from "../assets/Screenshot (9).png";
 import doodlejump from "../assets/Screenshot (11).png";
+import starbucks from '../assets/Starbucks-case-study.png';
 import Subnav from './Subnav';
 import Productdesign from './Productdesign';
 
@@ -40,7 +41,18 @@ export default function Webdev() {
               
             </section>
 
-            
+            <section className="space-project" >
+            <h2 >Starbucks Case Study</h2>
+            <div>
+              <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/space-travel-website/#/">
+              <img className="project-preview" src={starbucks} alt="a screenshot of the starbucks case study website"/>
+              </a>
+              <div className='web-description'><p>During my MPS program, my design team of 3 worked to create a new feature set for the Starbucks app. I made this responsive website using HTML and CSS, with media quieres, smooth scrolling, and animations.</p>
+              <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/starbucks-case-study/#/"><button target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/starbucks-case-study/#/">View Here</button></a></div>
+            </div> 
+              
+            </section>
+
             <section className="weather-project"  >
             <h2>Weather Website</h2>
             <div>
