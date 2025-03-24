@@ -4,6 +4,7 @@ import starbucksimg from '../assets/phonemockup_.png'
 import starbucksgif from '../assets/setprefs.gif'
 import shopifylogo from '../assets/shopifylogo.png'
 import prototypepng from '../assets/prototype-phone.png';
+import letterboxd from '../assets/letterboxdprototype.gif'
 export default function Productdesign() {
   return (
     <section className="design-page">
@@ -34,6 +35,19 @@ export default function Productdesign() {
                 <p>During my UX Research course at MICA, I explored the market-leading ecommerce platform, Shopify, to identify pain points and evaluate users' experience. I did competitive research, identified user types, and conducted User Research with 6 participants. Common themes and insights were used to make recommendations to stakeholders for a new feature that would help solve the problem of frequent internal human error.</p>
                 <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/presentation/d/16woy_tF5s1jivtYbo7HTMVenhsW-O2QUg6O8YdWxwso/edit?usp=sharing"><button>Case Study</button></a>
                 </div>  
+                </div>
+                <h2>Letterboxd Case Study</h2>
+                <div className="design-project">
+                    <div className="prototype-container-of-container">
+                    <div className="prototype-container">
+                    <div className="prototype-img">
+                     <img src={letterboxd} alt="letterboxd prototype" className="letterboxd-gif-desktop"/>
+                    </div>
+                    </div>
+
+                    </div>
+                    <div><p>Letterboxd user, I noticed that the platform lacks personalized recommendations, making it harder for users to organically discover new movies. To address this, I designed a "Film Finder" quiz, a personalized "Film DNA" feature, and improved movie suggestions to enhance user engagement and discovery. This project is part of my master's program.</p> <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/mOafiRr4yObVnkLl3kuKAz/MUXD5103.02?node-id=879-7633&t=GVj8JSBW43lkcfle-0&scaling=scale-down-width&content-scaling=fixed&page-id=857%3A1541&starting-point-node-id=879%3A7633"><button href="">Case Study</button></a></div>
+                    
                 </div>
 
         </section>

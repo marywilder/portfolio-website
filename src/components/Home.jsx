@@ -4,7 +4,8 @@ import hello from '../assets/hello.png'
 import starbucksimg from '../assets/starbucksmockup.png'
 import starbucksgif from '../assets/setprefs.gif';
 import prototypepng from '../assets/prototype-phone.png';
-import shopifylogo from '../assets/shopifylogo.png'
+import shopifylogo from '../assets/shopifylogo.png';
+import letterboxd from '../assets/letterboxdprototype.gif'
 function Home() {
   return (
     <div className="home">
@@ -43,8 +44,11 @@ function Home() {
       <div className="home-skills-container">
         <section className="home-page-skills">As a product designer, I blend creativity and technical know-how to craft thoughtful, user-centered experiences. My skills include wireframing, prototyping, interaction design, and UX research, alongside a strong foundation in front-end development (I built this website using React.js). I thrive at the intersection of design and technology, always up to learn a new skill and grow no matter how painful it is.</section>
 
-        <section className="home-page-skills2"><h2>Letterboxd: New Feature Set</h2>As a Letterboxd user, I noticed that the platform lacks personalized recommendations, making it harder for users to organically discover new movies. To address this, I designed a "Film Finder" quiz, a personalized "Film DNA" feature, and improved movie suggestions to enhance user engagement and discovery. This project is part of my master's program, and the finished case study is currently in progress.
-          <a target="_blank" rel="noopener noreferrer" href='https://www.figma.com/design/mOafiRr4yObVnkLl3kuKAz/MUXD5103.02?node-id=1-5&t=OSLsGEKCGpNImabN-1https://www.figma.com/proto/mOafiRr4yObVnkLl3kuKAz/MUXD5103.02?node-id=504-5615&t=Zm11cmmCV0k0l4KO-1&scaling=min-zoom&content-scaling=fixed&page-id=1%3A7&starting-point-node-id=504%3A5615'><button className="figma-button">View the Prototype</button></a>
+        <section className="home-page-skills2"><h2>Letterboxd: New Feature Set</h2>
+        <img src={letterboxd} alt="letterboxd prototype" className="letterboxd-gif-desktop"/>
+        <br/>
+          As a Letterboxd user, I noticed that the platform lacks personalized recommendations, making it harder for users to organically discover new movies. To address this, I designed a "Film Finder" quiz, a personalized "Film DNA" feature, and improved movie suggestions to enhance user engagement and discovery. This project is part of my master's program.
+          <a target="_blank" rel="noopener noreferrer" href='https://www.figma.com/proto/mOafiRr4yObVnkLl3kuKAz/MUXD5103.02?node-id=879-7633&t=GVj8JSBW43lkcfle-0&scaling=scale-down-width&content-scaling=fixed&page-id=857%3A1541&starting-point-node-id=879%3A7633'><button className="figma-button">View the Prototype</button></a>
         </section>
       </div>
 
@@ -62,7 +66,7 @@ function Home() {
                     </div>
                 </div>
                 <div>
-                  
+
                   <p>During my MPS program, my design team of 3 worked to create a new feature set for an existing product. We chose to make some improvements to the Starbucks app, and we went through the full product design process from wireframing and prototyping to usability testing. After multiple design iterations, we landed on features that address the dietary uncertainty users face in the Starbucks app.</p> 
                   <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/starbucks-case-study/#/">
                   <button href="">Case Study</button></a>
@@ -82,9 +86,13 @@ function Home() {
 
               </div> 
               
-        <section className="case-study-letterboxd"><h3>Letterboxd Wireframes: New Feature Set</h3>As a Letterboxd user, I noticed that the platform lacks personalized recommendations, making it harder for users to organically discover new movies. To address this, I designed a "Film Finder" quiz, a personalized "Film DNA" feature, and improved movie suggestions to enhance user engagement and discovery. This project is part of my master's program, and the prototype is currently in progress.
+        <section className="case-study-letterboxd"><h3>Letterboxd Wireframes: New Feature Set</h3>
+        <img src={letterboxd} alt="letterboxd prototype" className="letterboxd-gif"/>
         <br/>
-          <a target="_blank" rel="noopener noreferrer" href='https://www.figma.com/design/mOafiRr4yObVnkLl3kuKAz/MUXD5103.02?node-id=140-2027&t=53H1WOrK7Fg8afp9-1'><button>Figma Design File</button></a>
+        As a Letterboxd user, I noticed that the platform lacks personalized recommendations, making it harder for users to organically discover new movies. To address this, I designed a "Film Finder" quiz, a personalized "Film DNA" feature, and improved movie suggestions to enhance user engagement and discovery. This project is part of my master's program.
+        <br/>
+
+          <a target="_blank" rel="noopener noreferrer" href='https://www.figma.com/proto/mOafiRr4yObVnkLl3kuKAz/MUXD5103.02?node-id=879-7633&t=GVj8JSBW43lkcfle-0&scaling=scale-down-width&content-scaling=fixed&page-id=857%3A1541&starting-point-node-id=879%3A7633'><button>Figma Design File</button></a>
         </section>
             </div>
         </section>

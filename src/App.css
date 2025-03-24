@@ -1439,6 +1439,12 @@ a.doodle-link {
   width: 20rem;
   height: 20rem;
 }
+
+.letterboxd-gif {
+  border-radius: 1.5rem;
+  max-width: 40rem;
+  height: auto;
+}
 /*///////////////////////////\\\\\\\\\\\\\\\\\\\\\\*/
 /*///////////////////mobile NAVBAR\\\\\\\\\\\\\\\\\*/
 /*//////////////////////////\\\\\\\\\\\\\\\\\\\\\\*/
@@ -1611,6 +1617,11 @@ a.doodle-link {
   margin-right: 4.3rem;
  }
   
+ .letterboxd-gif-desktop {
+  border-radius: 2rem;
+  width: 10rem;
+  height: auto
+}
 }
 
 /*///////////////////////////\\\\\\\\\\\\\\\\\\\\\\*/
@@ -2264,4 +2275,12 @@ a.doodle-link {
     z-index: -1;
     border: none;
   }
+
+  .letterboxd-gif-desktop {
+    border-radius: 2rem;
+    max-width: 10rem;
+    height: auto;
+  }
 }
+
+
