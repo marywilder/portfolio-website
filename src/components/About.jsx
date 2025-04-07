@@ -20,7 +20,7 @@ export default function About() {
         <img src={hello} className="profile-pic1"alt="headshot of Mary cropped in a circle, with the word 'hello!' and illustrated flowers bordering the top of the image."/>
         </div>
         <div className="about-intro">
-        <p>Hi there! I'm Mary, a product designer based in Charlotte, NC. My path to product design has been anything but linear—I started  with a passion for art and spent a few years creating digital illustrations before diving into the world of coding. Now, I’m completing a Master’s in UX Design at MICA. Along the way, I’ve been driven by a curious mind and a love for continuous growth and learning, and I’ve learned a lot about how to work with stakeholders and leverage design principles to create satisfaction.</p>
+        <p>Hi there! I'm Mary, a product designer based in <b>Charlotte, NC.</b> My path to product design has been anything but linear—I started  with a passion for art and spent a few years creating digital illustrations before diving into the world of coding. Now, I’m completing a <b>Master’s in UX Design</b> at MICA. Along the way, I’ve been driven by a <b>curious mind</b> and a love for <b>continuous growth and learning</b>, and I’ve learned a lot about how to<b> work with stakeholders</b> and leverage <b>design principles to create satisfaction.</b></p>
 
         </div>
         

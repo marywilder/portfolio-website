@@ -324,8 +324,7 @@ nav {
 
 
 .intro {
-  display: flex;
-  align-items: center;
+  
   opacity: 0;
   animation: renderContent 500ms ease-in, loadPage 700ms ease-in-out 400ms;
   margin: 5rem;
@@ -337,7 +336,7 @@ nav {
   opacity: 1;
   line-height: 3.5rem;
   background-color: var(--light-orange);
-  border-radius: 2rem;
+  border-radius: 1rem;
   border: .1rem solid var(--black);
   box-shadow: 0 0 10rem #46a6ff7b;
 }
@@ -363,7 +362,7 @@ nav {
 
 }
 .home-page-skills {
-  display: flex;
+  
   align-items: center;
   animation: renderContent 900ms ease-in, loadPage 700ms ease-in-out 800ms;
   margin: 5rem;
@@ -400,6 +399,7 @@ nav {
   border-radius: 1rem;
   border: .1rem solid var(--black);
   box-shadow: 0 0 10rem #fe9db07f;
+  font-size: 1.8rem;
   
 }
 
@@ -461,27 +461,41 @@ nav {
 
 .about-intro {
   display: flex;
-  flex-flow:row nowrap;
+  justify-content: flex-start;
+  flex-flow:column;
   align-items: left;
   font-size: 1.35rem;
   padding: 2rem;
   padding-top: 0;
-}
-
-.about-intro p {
   padding: 2rem;
   background-color: var(--light-orange);
-  border-radius: 2rem;
-  font-size: 1.35rem;
-  line-height: 2.2rem;
+  border-radius: 1.5rem;
   box-shadow: 0rem 0rem 10rem #fa822c73;
   border: .1rem solid var(--black);
   text-align: left;
+  max-width: 33rem;
+}
+
+.about-page .aboutme-title {
+  line-height: 3rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  max-width: 30rem;
+  font-size: 2rem;
+  text-align: left;
+  
+}
+
+.about-intro p {
+
+  font-size: 1.35rem;
+  line-height: 2.5rem;
+
 }
 
 .about-skills {
   box-shadow: 0rem 0rem 20rem #46a6ff72;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   background-color: var(--lightgreen-yellow);
   padding: 2rem;
   line-height: 2.2rem;
@@ -779,7 +793,7 @@ footer a:hover {
   
 }
 
-.sub-nav .web-dev-link {
+.sub-nav .web-dev-link, .illustration-link {
   text-decoration: none;
   font-weight: 700;
   background-color: var(--light-orange);
@@ -969,23 +983,20 @@ footer a:hover {
   max-width: 10rem;
 }
 
-.design-project button {
+.design-project button, .letterboxd-button {
   cursor: pointer;
   padding: .5rem 1rem;
-  width: 8rem;
   border: .1rem solid var(--black);
   font-family: var(--paragraph-font);
   font-weight: 700;
   background-color: var(--dark-pink);
   border-radius: .5rem;
   margin-left: 1rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .design-project button:hover {
   cursor: pointer;
-  background-color: var(--light-pink);
-  
   box-shadow: 0 0 10rem #e17d35;
   transition: all 500ms;
 }
@@ -1730,7 +1741,7 @@ a.doodle-link {
   .sub-nav .illustration-link {
     align-self: flex-end;
     padding-bottom:0.8rem;
-    padding-top:1.8rem;
+   
     vertical-align:bottom;
   }
   .linkedin {
@@ -1742,9 +1753,6 @@ a.doodle-link {
     transform: translate(2rem, 1rem);
   }
 
-  p {
-    font-size: .55rem;
-  }
 
   .nav-component {
     width: 100vw;
@@ -1999,13 +2007,14 @@ a.doodle-link {
     font-weight: 500;
   }
 
-
+.about-intro {
+  margin-left: 3rem;
+}
 
   .about-intro p {
-    width: 20rem;
-    margin-left: 2rem;
-    margin-top: -2rem;
-    font-size: .8rem
+    width: 25rem;
+    font-size: .8rem;
+    line-height: 1.75rem;
   }
 
   .about-page div:nth-of-type(2) {
@@ -2069,7 +2078,7 @@ a.doodle-link {
 
  
 
-  .design-project button {
+  .design-project button, .letterboxd-button {
     padding:.5rem 1rem;
     border: .1rem solid var(--black);
     border-radius: .5rem;
@@ -2077,12 +2086,20 @@ a.doodle-link {
     background-color: var(--dark-pink);
     font-family: var(--paragraph-font);
     font-weight: 700;
+    font-size: .75rem;
   }
 
   .design-project button:hover {
-    background-color: var(--light-pink);
+    background-color: var(--dark-orange);
     cursor: pointer;
     box-shadow: 0rem 0rem 10rem #fe345d;
+    transition: all 500ms;
+  }
+
+  .letterboxd-button:hover {
+    background-color: var(--dark-orange);
+    cursor: pointer;
+    box-shadow: 0rem 0rem 10rem #348ee2ba;
     transition: all 500ms;
   }
 
