@@ -1285,13 +1285,19 @@ div img {
 
 .art-project h2 {
   text-align: left;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 
+}
+
+.art-project h3 {
+  text-align: left;
+  font-size: 1.2rem;
 }
 
 .art-project p {
 
   align-self: flex-start;
+  font-size: 1rem;
  
 }
 
@@ -1302,7 +1308,7 @@ div img {
   
   font-weight: 500;
   text-align: left;
-  font-size: 1.2rem;
+  font-size: .8rem;
   line-height: 2rem;
 }
 
@@ -1326,6 +1332,15 @@ div img {
   width: auto;
   height: auto;
   max-height: 15rem;
+}
+
+.artworkimages .pskyimg {
+  padding: 0;
+  width: auto;
+  height: auto;
+  max-height: 15rem;
+  max-width: 20rem;
+  align-self: flex-start;
 }
 
 .artworkimages {

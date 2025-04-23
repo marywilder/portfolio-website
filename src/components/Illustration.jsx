@@ -11,6 +11,8 @@ import joshuatree from '../assets/joshuatree_.jpg';
 import grandcanyon from '../assets/grandcanyon_.jpg';
 import yosemite from '../assets/yosemite_.jpg';
 import smokies from '../assets/smokymountains_.jpg';
+import flyer from '../assets/hotelflyer.png';
+import postcard from '../assets/postcard.png';
 
 export default function Illustration() {
   return (
@@ -19,8 +21,9 @@ export default function Illustration() {
         <section className="illustration-section">
  
             <div className="illustration-intro">
-                <p>Drawing has always been something that brings me a lot of joy! I've worked with clients and commissions over the years, and have been a top seller on Society6, as well as run and manage an Etsy store selling art prints on the side.</p>
+                <p>Drawing and design have always been my happy place. I’ve done commissions, been a top seller on Society6, and run an Etsy shop for my art prints. At Paper Skyscraper, I brought that same creativity to the marketing team - designing fun, eye-catching assets for both print and digital campaigns.</p>
             </div>
+            
                 <div className="art-project">
                     <div><h2>National Parks Series</h2>
                     <p>I've always loved the style of retro travel posters, and thought it would be fun to do my own groovy style of posters, which led me to illustrating about 30 of the National Parks!</p>
@@ -34,7 +37,27 @@ export default function Illustration() {
                     </div>
                     
                 </div>
-
+                <div className="art-project">
+              <div><h2>Paper Skyscraper</h2>
+              <p>As the e-commerce and marketing manager at Paper Skyscraper, I designed many marketing materials - digital and physical.
+              </p>
+              <h3>Local Guide</h3>
+              <p>
+              Following the launch of our new location in Uptown Charlotte, we developed a campaign to partner with local hotels and attract tourists to our gift shop. I designed a promotional flyer featuring a custom illustrated map in Adobe Illustrator to help drive foot traffic to the store.
+              </p>
+              </div>
+              <div className="art-project">
+              <div className="artworkimages">
+                <img src={flyer} className="pskyimg"/>
+              </div>
+              </div>
+              <h3>Unboxing Joy</h3>
+              <p>To boost online sales and foster customer loyalty, I designed a branded postcard to include in shipped orders—creating a thoughtful unboxing experience that delighted customers and encouraged repeat purchases.</p> 
+              <div className="artworkimages">
+                <img src={postcard} className="pskyimg"/>
+              </div>
+              </div>
+         
                 <div className="art-project">
                 <div>
                 <h2>More Stuff</h2>
