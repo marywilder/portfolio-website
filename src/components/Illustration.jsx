@@ -13,6 +13,9 @@ import yosemite from '../assets/yosemite_.jpg';
 import smokies from '../assets/smokymountains_.jpg';
 import flyer from '../assets/hotelflyer.png';
 import postcard from '../assets/postcard.png';
+import brochure from '../assets/brochureee.JPG';
+import brochure2 from '../assets/brochureee (1).JPG';
+import brochuremockup from '../assets/Untitled_Artwork (1).jpg';
 
 export default function Illustration() {
   return (
@@ -46,21 +49,36 @@ export default function Illustration() {
               Following the launch of our new location in Uptown Charlotte, we developed a campaign to partner with local hotels and attract tourists to our gift shop. I designed a promotional flyer featuring a custom illustrated map in Adobe Illustrator to help drive foot traffic to the store.
               </p>
               </div>
-              <div className="art-project">
+              
               <div className="artworkimages">
                 <img src={flyer} className="pskyimg"/>
               </div>
-              </div>
+              <div className="art-project">
               <h3>Unboxing Joy</h3>
               <p>To boost online sales and foster customer loyalty, I designed a branded postcard to include in shipped orders—creating a thoughtful unboxing experience that delighted customers and encouraged repeat purchases.</p> 
               <div className="artworkimages">
                 <img src={postcard} className="pskyimg"/>
               </div>
               </div>
-         
+              </div>
+              <h2>More Stuff</h2>
+              <p>Designed a playful brochure for a fictional chair store using InDesign - just a fun project to sharpen layout and print design skills.</p>
+              <div className="brochure-design">
+              <div className="brochure-column-1">
+                 <img src={brochuremockup} /> 
+
+              </div>
+              <div className="brochure-column-2">
+                 <img src={brochure} /> 
+                 <img src={brochure2} /> 
+              </div>
+              
+
+              </div>
                 <div className="art-project">
+             
                 <div>
-                <h2>More Stuff</h2>
+                <h2>Digital Illustrations</h2>
                 </div>
                 <div className="artworkimages">
                 <img src={appleorchard} alt="a drawing of a colorful apple orchard, with a bluebird flying across the sky, a worm in an apple in a tree, a cat peeking through the leaves of another tree, a duck sitting under a tree eating apples, and a person picking apples."/>

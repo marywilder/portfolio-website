@@ -1301,7 +1301,18 @@ div img {
  
 }
 
+.brochure-design {
+  display: flex;
+}
 
+.brochure-design img {
+  max-width: 15rem;
+}
+
+.brochure-column-2 {
+  display: flex;
+  flex-direction: column;
+}
 
 .illustration-section p {
   
