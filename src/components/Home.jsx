@@ -39,10 +39,14 @@ function Home() {
         
         </div>
         
-        <section className="intro"> Hi, I’m Mary—a product designer who loves creating thoughtful, user-centered experiences to solve problems. Whether it’s brand new designs or exploring creative solutions, <b>I’m always up for the challenge.</b> Welcome to my world!
+        <section className="intro"> Hi, I'm Mary - a Product Designer based in Charlotte, NC, with a Master's in UX Design from MICA and experience spanning digital design, e-commerce, and end-to-end product development. I care deeply about understanding people and turning those insights into experiences that are intuitive, accessible, and genuinely useful. Whether I'm deep in a research sprint or polishing a high-fidelity prototype, I bring curiosity, craft, and cross-functional collaboration to everything I do.
         </section>
       <div className="home-skills-container">
-        <section className="home-page-skills">As a product designer, I blend creativity and technical know-how to craft thoughtful, user-centered experiences. My skills include <b>wireframing, prototyping, interaction design</b>, and <b>UX research</b>, alongside a love for <b>front-end development (I built this website using HTML, CSS, and React.js)</b>. I thrive at the intersection of design and technology, always up to learn a new skill and grow no matter how painful it is.</section>
+        <section className="home-page-skills">I design across the full product lifecycle - research, design systems, prototyping, and  usability testing.
+        <br /> 
+        In addition to my fluency in Figma, I also have a working knowledge of  front-end development (this site was built by me with HTML, CSS, and React.js),  which means I can communicate more clearly with engineers and design with implementation in mind - not just in theory. 
+        <br />
+        In this ever-changing world I'm always sharpening my practice - including how I leverage emerging tools to design smarter and move faster.</section>
 
         <section className="home-page-skills2"><h2>Letterboxd: New Feature Set</h2>
         <img src={letterboxd} alt="letterboxd prototype" className="letterboxd-gif-desktop"/>
