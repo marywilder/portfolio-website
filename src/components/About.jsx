@@ -20,7 +20,17 @@ export default function About() {
         <img src={hello} className="profile-pic1"alt="headshot of Mary cropped in a circle, with the word 'hello!' and illustrated flowers bordering the top of the image."/>
         </div>
         <div className="about-intro">
-        <p>Hi there! I'm Mary, a product designer based in <b>Charlotte, NC.</b> My path to product design has been anything but linear—I started  with a passion for art and spent a few years creating digital illustrations before diving into the world of coding. Now, I’m completing a <b>Master’s in UX Design</b> at MICA. Along the way, I’ve been driven by a <b>curious mind</b> and a love for <b>continuous growth and learning</b>, and I’ve learned a lot about how to<b> work with stakeholders</b> and leverage <b>design principles to create satisfaction.</b></p>
+        <p>
+        
+        Hi! I'm Mary, a UX/Product Designer based in <b>Charlotte, NC.</b> 
+        <br/>
+
+        With my career starting in digital art and illustration, I learned <b>Front-end Engineering</b> which marked my transition into the tech industry. As I worked in the e-commerce world and then as a digital designer, I earned my <b>Master's in UX Design</b> from the Maryland Institute College of Art (MICA) in 2025. 
+        <br/>
+        That combination of <b>visual craft</b>, real-world <b>product experience</b>, and <b>rigorous research training</b> shapes how I approach every project.
+        <br/>
+        I've had the chance to work across cross-functional teams, collaborate with internal and external stakeholders, and <b>navigate the full design process from fuzzy problem space to polished, tested solution.</b> I care about asking the right questions before jumping to answers, and I believe <b>the best designs are built when user needs, business objectives, and technical constraints are all held in balance.</b>
+        </p>
 
         </div>
         
@@ -35,7 +45,6 @@ export default function About() {
               <li><b>UX Research & Usability Testing:</b> Designing and conducting user interviews/usability testing, and analyzing data to uncover actionable insights.
               </li>
               <li><b>Interaction Design:</b> Mapping out intuitive user flows, microinteractions, and delightful animations to enhance usability and increase engagement.</li>
-              <li><b>Creative Problem-Solving:</b> Fall in love with the problem, not the solution. This ensures your creative energy goes toward the best outcome for the user.</li>
               <li><b>Technical and Software Skills:</b> Figma, Adobe Illustrator, Front-end development (HTML, CSS, JavaScript), responsive design, animation, accessibility, SEO.</li>
               <li><b>Creative Problem-Solving:</b> Tackling complex challenges by balancing user needs, business objectives, and technical constraints.</li>
               <li><b>Collaboration & Communication:</b>  From my experiences in digital art and ecommerce, as well as my Master’s program, I’ve worked closely on cross-functional teams, and internal/external stakeholders to bring ideas to life.</li>

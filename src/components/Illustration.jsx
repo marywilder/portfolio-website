@@ -13,8 +13,8 @@ import yosemite from '../assets/yosemite_.jpg';
 import smokies from '../assets/smokymountains_.jpg';
 import flyer from '../assets/hotelflyer.png';
 import postcard from '../assets/postcard.png';
-import brochure from '../assets/brochureee.JPG';
-import brochure2 from '../assets/brochureee (1).JPG';
+import brochure from '../assets/brochureee.jpg';
+import brochure2 from '../assets/brochureee (1).jpg';
 import brochuremockup from '../assets/Untitled_Artwork (1).jpg';
 
 export default function Illustration() {

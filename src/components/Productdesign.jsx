@@ -4,15 +4,27 @@ import starbucksimg from '../assets/phonemockup_.png'
 import starbucksgif from '../assets/setprefs.gif'
 import shopifylogo from '../assets/shopifylogo.png'
 import prototypepng from '../assets/prototype-phone.png';
-import letterboxd from '../assets/letterboxdprototype.gif'
+import letterboxd from '../assets/letterboxdprototype.gif';
+import tbdprototype from '../assets/alignment-comparison-tbd.gif'
 export default function Productdesign() {
   return (
     <section className="design-page">
         <Subnav />
         <div className="design-rect"></div>
             <section className="product-design-page">
+            <h2>TBD</h2>
+               <div className="design-project">
+                    <div className="prototype-container-of-container">
+                    <div className="prototype-container">
+                    <div className="prototype-img">
+                      <img src={tbdprototype} className="starbucksimg" alt="Product coparison app"/>
+                    </div>
+                    </div>
 
-                <p></p>
+                    </div>
+                    <div><p>TBD is a personalized product comparison app designed to cut through the noise of online shopping. Built with a team of four during my graduate program at MICA, TBD guides users toward confident, value-aligned purchase decisions.</p> <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/tbd_case_study/#/"><button href="">View the case study</button></a></div>
+                    
+                </div>
                 <h2>Starbucks Case Study</h2>
                 <div className="design-project">
                     <div className="prototype-container-of-container">
