@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import { NavLink } from 'react-router-dom';
 import hello from '../assets/hello.png'
 import starbucksimg from '../assets/starbucksmockup.png'
 import starbucksgif from '../assets/setprefs.gif';
@@ -9,97 +10,29 @@ import letterboxd from '../assets/letterboxdprototype.gif'
 function Home() {
   return (
     <div className="home">
-    
+    <div className="name">
        <div className="title-container">
-       <h1 className="title">Mary Wilder 
+       <h1 >
+        <div className="title">mary wilder</div>
        <br></br>
        <div className="title-span">
-        <span className="p">p</span>
-        <span className="r">r</span>
-        <span className="o">o</span>
-        <span className="n">d</span>
-        <span className="t">u</span>
-        <span className="e">c</span>
-        <span className="n2">t</span>
-        <br/>
-        <span className="d2">d</span>
-        <span className="e2">e</span>
-        <span className="v">s</span>
-        <span className="e3">i</span>
-        <span className="l">g</span>
-        <span className="o2">n</span>
-        <span className="z">e</span>
-        <span className="e4">r</span>
-        
-        
-        </div>
-        
+        Product Designer
+      </div>
         </h1>
        {/**<div className="home-image"><img src={hello}/></div> */} 
         
         </div>
         
-        <section className="intro"> Hi, I'm Mary - a Product Designer based in Charlotte, NC, with a Master's in UX Design from MICA and experience spanning digital design, e-commerce, and end-to-end product development. I care deeply about understanding people and turning those insights into experiences that are intuitive, accessible, and genuinely useful. Whether I'm deep in a research sprint or polishing a high-fidelity prototype, I bring curiosity, craft, and cross-functional collaboration to everything I do.
+        <section className="intro"> UX designer blending research, creativity, and front-end thinking into experiences people actually enjoy using.
         </section>
-      <div className="home-skills-container">
-        <section className="home-page-skills">I design across the full product lifecycle - research, design systems, prototyping, and  usability testing.
-        <br /> 
-        In addition to my fluency in Figma, I also have a working knowledge of  front-end development (this site was built by me with HTML, CSS, and React.js),  which means I can communicate more clearly with engineers and design with implementation in mind - not just in theory. 
-        <br />
-        In this ever-changing world I'm always sharpening my practice - including how I leverage emerging tools to design smarter and move faster.</section>
-
-        <section className="home-page-skills2"><h2>Letterboxd: New Feature Set</h2>
-        <img src={letterboxd} alt="letterboxd prototype" className="letterboxd-gif-desktop"/>
+        </div>
         <br/>
-          <p>As a Letterboxd user, I noticed that the platform lacks personalized recommendations, making it harder for users to organically discover new movies. To address this, I designed a "Film Finder" quiz, a personalized "Film DNA" feature, and improved movie suggestions to <b>enhance user engagement and discovery.</b> Through this project, I conducted <b>user research</b>, created <b>wireframes</b> that iterated through multiple designs, created a fully-functioning <b>prototype</b>, explored <b>UX choreography</b> ideas, and conducted <b>Usability Testing.</b> This project was part of my master's program.</p>
-          <a target="_blank" rel="noopener noreferrer" href='https://www.figma.com/proto/mOafiRr4yObVnkLl3kuKAz/MUXD5103.02?node-id=879-7633&t=GVj8JSBW43lkcfle-0&scaling=scale-down-width&content-scaling=fixed&page-id=857%3A1541&starting-point-node-id=879%3A7633'><button className="letterboxd-button">View the Case Study</button></a>
-        </section>
-      </div>
+        <NavLink to='/projects' className="recent-work">see my recent work!</NavLink>
+    
 
-        
-        <section className="home-page-work">Here is some of my most recent work!
-        <h2>Starbucks Case Study</h2>
-            <div 
-            className="design-project">
-                <div>
-                <div className="prototype-container">
-                    <div className="prototype-img">
-                      <img src={prototypepng} className="proto-phone" alt="iphone displaying starbucks app"/>
-                      <img src={starbucksgif} className="starbucksimg" alt="taste preferences page for starbucks app, displaying how settings are selected through checkboxes"/>
-                    </div>
-                    </div>
-                </div>
-                <div>
-
-                  <p>During my MPS program, my design team of 3 worked to create a new feature set for an existing product. We chose to make some improvements to the Starbucks app, and we went through the full product design process from <b>wireframing</b> and <b>prototyping</b> to <b>usability testing.</b> After multiple design iterations, we landed on features that address the <b>dietary uncertainty users face</b> in the Starbucks app.</p> 
-                  <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/starbucks-case-study/#/">
-                  <button href="" className="">View the case study</button></a>
-                </div>
-                              
-            </div>
-            <h2>Shopify Case Study</h2>
-            <div className="design-project">
-               <div>
-               
-                <img src={shopifylogo} className='shopify-logo' alt="shopify logo"/>
-              </div>
-              <div>
-                <p>During my UX Research course at MICA, I explored the market-leading ecommerce platform, Shopify, to <b>identify pain points</b> and <b>evaluate users' experience.</b> I did <b>competitive research, identified user types,</b> and <b>conducted User Research</b> with 6 participants. Common themes and insights were used to make <b>recommendations to stakeholders</b> for a new feature that would help solve the problem of <b>frequent internal human error.</b></p>
-
-                <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/presentation/d/16woy_tF5s1jivtYbo7HTMVenhsW-O2QUg6O8YdWxwso/edit?usp=sharing"><button>View the research presentation</button></a>
-
-              </div> 
-              
-        <section className="case-study-letterboxd"><h3>Letterboxd Wireframes: New Feature Set</h3>
-        <img src={letterboxd} alt="letterboxd prototype" className="letterboxd-gif"/>
-        <br/>
-        <p>As a Letterboxd user, I noticed that the platform lacks personalized recommendations, making it harder for users to organically discover new movies. To address this, I designed a "Film Finder" quiz, a personalized "Film DNA" feature, and improved movie suggestions to <b>enhance user engagement and discovery.</b> Through this project, I conducted <b>user research</b>, created <b>wireframes</b> that iterated through multiple designs, created a fully-functioning <b>prototype</b>, explored <b>UX choreography</b> ideas, and conducted <b>Usability Testing.</b> This project was part of my master's program.</p>
-        <br/>
-
-          <a target="_blank" rel="noopener noreferrer" href='https://www.figma.com/proto/mOafiRr4yObVnkLl3kuKAz/MUXD5103.02?node-id=879-7633&t=GVj8JSBW43lkcfle-0&scaling=scale-down-width&content-scaling=fixed&page-id=857%3A1541&starting-point-node-id=879%3A7633'><button>View the case study</button></a>
-        </section>
-            </div>
-        </section>
+       
+                      
+       
     </div>
   )
 }
