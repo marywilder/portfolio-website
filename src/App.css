@@ -31,6 +31,7 @@ html {
 }
 
 body {
+  margin: 0;
   overflow-x: hidden;
 }
 
@@ -280,88 +281,67 @@ nav {
 
 .home {
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  overflow-x: hidden;
-
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  padding: 2rem;
+  padding-top: 16rem;
+  gap: 2rem;
 }
- .title {
-  font-family: "Cherry Bomb One", serif;
-  font-size: 5rem;
-  animation: renderContent 200ms ease-in, loadPage 700ms ease-in-out 100ms;
-  align-self: flex-start;
-  align-items: flex-start;
-  color: var(--black);
-  line-height: 3.5rem;
+
+.name, .home-intro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
   text-align: center;
-  padding-left: 0rem;
-   color: var(--dark-blue);
-  
 }
 
+.title {
+  font-family: "Cherry Bomb One", serif;
+  font-size: 3rem;
+  color: var(--dark-blue);
+  line-height: 1.1;
+  animation: renderContent 200ms ease-in, loadPage 700ms ease-in-out 100ms;
+}
 
 .title-span {
   font-family: 'Quicksand', sans-serif;
-  color: var(--vanilla);
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.3rem;
   letter-spacing: .2rem;
-  line-height: 6.5rem;
-  
-  
 }
 
-#and {
-  color:#dde3e6;
+.location-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+  font-size: 1.4rem;
 }
 
-
-/*/////////////////\\\\\\\\\\\\\\\\\\\\*/
-       /* mobile home page*/
-/*/////////////////\\\\\\\\\\\\\\\\\\\\*/
-.name {
-  
+.location-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 0;
+  flex-shrink: 0;
 }
 
 .intro {
+  font-size: 1.6rem;
   
-  opacity: 0;
-  animation: renderContent 500ms ease-in, loadPage 700ms ease-in-out 400ms;
-  margin-top: 2rem;
-  font-size: 1.8rem ;
+  padding: 2rem;
   color: var(--black);
-  text-align: left;
-  opacity: 1;
-  line-height: 3rem;
-  border-radius: 1rem;
-  width: 80vw;
-}
-
-.home-image {
-  width: 0;
-  position: relative;
-}
-
-.home-image img {
-  position: absolute;
-  border: none;
-  height: 10rem;
-  width: auto;
-  top: -12rem;
-  left: 28rem;
-}
-
-
-.figma-button {
-  background-color: #fe486d;
+  line-height: 2.8rem;
+  animation: renderContent 500ms ease-in, loadPage 700ms ease-in-out 400ms;
 }
 
 .recent-work {
+  display: block;
   font-family: "Cherry Bomb One", serif;
   text-decoration: none;
   color: var(--dark-blue);
-  font-size: 1.5rem;
-  padding: left 4rem;
+  font-size: 1.8rem;
 }
 /*/////////////////\\\\\\\\\\\\\\\\\\\\*/
        /* about first design*/
@@ -887,7 +867,7 @@ footer a:hover {
 
 .title {
   font-weight: 500;
-  font-size: var(--subtitle-font);
+  
 }
 
 
@@ -1494,7 +1474,7 @@ a.doodle-link {
   }
 
   .app {
-    padding-bottom: 20rem;
+    padding-bottom: 0;
   }
 
  .linkedin, .email {
@@ -1709,50 +1689,45 @@ a.doodle-link {
 
 
   .home {
-    justify-content: space-around;
-    flex-flow: column nowrap;
+    flex-direction: row;
     align-items: center;
-    align-content: center;
-    align-self: center;
-    
-    
-
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem 6rem;
   }
 
- .title-container {
-  padding-top: 2rem;
-  align-self: center;
- }
+  .intro {
+    font-size: 1rem;
+    padding: 0;
+    padding-top: 4rem;
+  }
+
+  .name, .home-intro {
+    flex: 1;
+    text-align: center;
+  }
 
   .title {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 4rem;
+  }
+  .title-span {
+    text-align: center;
+    align-items: center;
     align-self: center;
     align-content: center;
-    align-self: center;
-    letter-spacing: .2rem;
-    line-height: 1rem;
-    font-size: 4rem;
-    color: var(--dark-blue);
-    
-    
-  }
-
-  .name {
-    display: flex;
-    flex-flow: row wrap;
     justify-content: center;
-    padding: 2rem;
   }
-  .intro {
-    margin-left: 5rem;
+  .location-container {
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .recent-work {
     text-align: center;
-    font-weight: 500;
-    
-    font-size: 1.3rem;
-    width: 30vw;
-    padding: 2rem;
   }
-
-
   .case-study-letterboxd {
     display: none;
    }
