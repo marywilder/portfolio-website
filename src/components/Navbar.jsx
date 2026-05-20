@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import { useRef } from "react";
-import navIcon from '../assets/mobile-nav.svg';
+import navIcon from '../assets/sun.svg';
 import "../App.css";
 import xIcon from '../assets/mobile-x.svg';
 

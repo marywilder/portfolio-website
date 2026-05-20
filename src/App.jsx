@@ -13,6 +13,7 @@ import cloud1 from './assets/cloud1.svg';
 import cloud2 from './assets/cloud2.svg';
 import cloud3 from './assets/cloud3.svg';
 import cloud4 from './assets/cloud4.svg';
+import sun from './assets/sun.svg';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
       <div className="yellow-gradient"></div>
       <div className="blue-gradient-2"></div>
     
+<img src={sun} className="sun-desktop" alt="" aria-hidden="true" />
 <img src={cloud1} className="cloud1" alt="an illustrated cloud floating from left to right across the upper screen"/>
 <img src={cloud2} className="cloud2" alt="an illustrated cloud floating right to left across the upper screen"/>
 <img src={cloud3} className="cloud3" alt="an illustrated cloud floating left to right across the lower screen"/>

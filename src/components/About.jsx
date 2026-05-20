@@ -32,13 +32,20 @@ export default function About() {
         I've had the chance to work across cross-functional teams, collaborate with internal and external stakeholders, and <b>navigate the full design process from fuzzy problem space to polished, tested solution.</b> I care about asking the right questions before jumping to answers, and I believe <b>the best designs are built when user needs, business objectives, and technical constraints are all held in balance.</b>
         </p>
 
+        <a
+          href="https://docs.google.com/document/d/10OHxTkpYHKbpynRaW5ShkBiY3waKh6tDhuqj9qIR1KY/edit?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="resume-link"
+        >
+          view my resume
+        </a>
         </div>
-        
         <div className="about-skills">
 
           <h2>Skills</h2>
           
-          <p >What I Bring to the Table:
+          <p >
             <ul>
               <li><b>Wireframing & Prototyping:</b> Low-fi, hi-fi, functional prototypes. They’re all in my toolkit and I know when to leverage each of these tools.Creating everything from quick sketches to detailed, fully interactive prototypes.</li>
               <li><b>Design Systems:</b> In all of my work, I prioritize creating design systems that are flexible, cohesive, and capable of supporting a dynamic and varied product. Organization is key for a successful product team; I’m skilled with using Figma’s wide range of advanced tools such as components, variables, auto-layout, styles, and everything in between.</li>

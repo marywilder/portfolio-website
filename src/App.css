@@ -185,6 +185,17 @@ nav {
   display: none;
 }
 
+.sun-desktop {
+  display: none;
+  transition: transform 600ms ease-in-out;
+  z-index: -4;
+}
+
+.sun-desktop:hover {
+  transition: transform 600ms ease-in-out;
+  transform: rotate(360deg);
+}
+
 .home, .about-page, .project-page, .illustration-page {
   display: flex;
   justify-content: center;
@@ -264,9 +275,26 @@ nav {
   display: block;
   font-family: "Cherry Bomb One", serif;
   text-decoration: none;
-  color: var(--dark-blue);
+  color: var(--dark-pink);
   font-size: 1.8rem;
 }
+
+.resume-link {
+  display: inline-block;
+  font-family: "Cherry Bomb One", serif;
+  font-size: 1.4rem;
+  color: var(--dark-blue);
+  text-decoration: none;
+  margin-top: 1.5rem;
+}
+
+
+.resume-link:hover {
+  color: var(--black);
+  border-bottom-color: var(--dark-pink);
+  transition: all 200ms ease-in-out;
+}
+
 /*/////////////////\\\\\\\\\\\\\\\\\\\\*/
        /* about first design*/
 /*/////////////////\\\\\\\\\\\\\\\\\\\\*/
@@ -544,6 +572,7 @@ footer a:hover {
  padding-bottom: .2rem;
  font-weight: bolder;
  font-family: "Cherry Bomb One", serif;
+ font-size: 1.2rem;
  transition: all 300ms ease-out;
  
 
@@ -849,12 +878,23 @@ div img {
 /*//////////////////////////\\\\\\\\\\\\\\\\\\\\\\*/
 .illustration-link-wrapper,
 .product-link-wrapper,
-.web-dev-link-wrapper {
+.web-dev-link-wrapper,
+.recent-work-wrapper {
   position: relative;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  
+}
+
+.recent-work-wrapper {
+  width: fit-content;
+}
+
+.recent-work-wrapper .wavy-line {
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: -14px;
 }
 
 .wavy-line {
@@ -924,6 +964,12 @@ div img {
   align-items: center;
   padding: 2rem;
   padding-left: 0;
+}
+
+.art-project--row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .art-project h2 {
@@ -1277,22 +1323,17 @@ a.doodle-link {
     width: 5rem;
     height: 5rem;
     position: fixed;
-    top:2rem;
-    right: 2rem;
-    transform: scale(-1);
-    background-color: #e0dca3;
-    padding-top: .5rem;
-    box-shadow: 0.2rem -1rem 5rem #fe9db1;
+    top: 3rem;
+    right: 3rem;
+    border-radius: 0;
+    background-color: transparent;
     z-index: 10;
     cursor: pointer;
+    transition: transform 600ms ease-in-out;
   }
 
-  
-
   .nav-mobile-menu:hover {
-    background-color: #46a6ff;
-    box-shadow: 0.2rem -1rem 5rem #a2c787;
-    font-weight: 700;
+    transform: rotate(360deg);
   }
 
   .close-menu {
@@ -1442,6 +1483,19 @@ a.doodle-link {
 @media (min-width: 1024px) {
   .app {
     padding-top: 4rem;
+  }
+
+  .sun-desktop {
+    display: block;
+    position: fixed;
+    top: 4.5rem;
+    right: 5.5rem;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    border-radius: 0;
+    
+    cursor: pointer;
   }
 
   .sub-nav {
@@ -1597,8 +1651,6 @@ a.doodle-link {
   padding: 0rem;
   padding-top: 2rem;
   overflow: visible;
-  z-index: -1;
-  
   }
 
   .about-page h1 {

@@ -16,6 +16,11 @@ import postcard from '../assets/postcard.png';
 import brochure from '../assets/brochureee.jpg';
 import brochure2 from '../assets/brochureee (1).jpg';
 import brochuremockup from '../assets/Untitled_Artwork (1).jpg';
+import greaselockad from '../assets/548200-Full-Page-Ad-Final_page-0001.jpg';
+import bssthumbnail1 from '../assets/590900 - Web -Graphic - SharePoint Icons_page-0001.jpg';
+import bssthumbnail2 from '../assets/590900 - Web -Graphic - SharePoint Icons_page-0002.jpg';
+import bssthumbnail3 from '../assets/590900 - Web -Graphic - SharePoint Icons_page-0003.jpg';
+import bssthumbnail4 from '../assets/590900 - Web -Graphic - SharePoint Icons_page-0004.jpg';
 
 export default function Illustration() {
   return (
@@ -23,12 +28,48 @@ export default function Illustration() {
       <Subnav/>
         <section className="illustration-section">
             <div className="illustration-intro">
-                <p>Drawing and design have always been my happy place. I’ve done commissions, been a top seller on Society6, and run an Etsy shop for my art prints. At Paper Skyscraper, I brought that same creativity to the marketing team - designing fun, eye-catching assets for both print and digital campaigns.</p>
+              
             </div>
-            
+              <div>
+                <h2>Brooks Safety Solutions</h2>
+                <p>As a Digital Designer at Brooks, I wore many hats across multiple different brands - designing hundreds of digital and print assets, from UI elements to massive tradeshow banners.In addition to graphic design, I also doubled as a UX + Front-end specialist, conducting UX audits of our sites,and building responsive front-end code.
+              </p>
+                <div className="art-project art-project--row">
+                  <div className="artworkimages">
+                <img src={greaselockad} className="pskyimg"/>
+              </div>
+                <div className="artworkimages">
+                <img src={bssthumbnail1} className="pskyimg"/>
+              </div>
+              <div className="artworkimages">
+                <img src={bssthumbnail2} className="pskyimg"/>
+              </div>
+              <div className="artworkimages">
+                <img src={bssthumbnail3} className="pskyimg"/>
+              </div>
+              <div className="artworkimages">
+                <img src={bssthumbnail4} className="pskyimg"/>
+              </div>
+              </div>
+                
+              </div>
+              <div><h2>Paper Skyscraper</h2>
+              <p>As the e-commerce and marketing manager at Paper Skyscraper, I designed many marketing materials - digital and physical.
+              </p>
+              </div>
+              
+              
+              <div className="art-project art-project--row">
+                <div className="artworkimages">
+                <img src={flyer} className="pskyimg"/>
+              </div>
+              <div className="artworkimages">
+                <img src={postcard} className="pskyimg"/>
+              </div>
+              </div>
                 <div className="art-project">
-                    <div><h2>National Parks Series</h2>
-                    <p>I've always loved the style of retro travel posters, and thought it would be fun to do my own groovy style of posters, which led me to illustrating about 30 of the National Parks!</p>
+                    <div>
+                    <h2>Digital Illustrations</h2>
                     </div>
                     <div className="artworkimages">
                     <img src={mountrainier}alt="illustrated poster of mount rainier national park, with fields of flowers and a path leading to the mount rainier, and clouds in the background with 'Mount Rainer national park' written on the bottom of the poster."/>
@@ -40,45 +81,11 @@ export default function Illustration() {
                     
                 </div>
                 <div className="art-project">
-              <div><h2>Paper Skyscraper</h2>
-              <p>As the e-commerce and marketing manager at Paper Skyscraper, I designed many marketing materials - digital and physical.
-              </p>
-              <h3>Local Guide</h3>
-              <p>
-              Following the launch of our new location in Uptown Charlotte, we developed a campaign to partner with local hotels and attract tourists to our gift shop. I designed a promotional flyer featuring a custom illustrated map in Adobe Illustrator to help drive foot traffic to the store.
-              </p>
-              </div>
               
-              <div className="artworkimages">
-                <img src={flyer} className="pskyimg"/>
-              </div>
-              <div className="art-project">
-              <h3>Unboxing Joy</h3>
-              <p>To boost online sales and foster customer loyalty, I designed a branded postcard to include in shipped orders—creating a thoughtful unboxing experience that delighted customers and encouraged repeat purchases.</p> 
-              <div className="artworkimages">
-                <img src={postcard} className="pskyimg"/>
-              </div>
-              </div>
-              </div>
-              <h2>More Stuff</h2>
-              <p>Designed a playful brochure for a fictional chair store using InDesign - just a fun project to sharpen layout and print design skills.</p>
-              <div className="brochure-design">
-              <div className="brochure-column-1">
-                 <img src={brochuremockup} /> 
-
-              </div>
-              <div className="brochure-column-2">
-                 <img src={brochure} /> 
-                 <img src={brochure2} /> 
-              </div>
-              
-
               </div>
                 <div className="art-project">
              
-                <div>
-                <h2>Digital Illustrations</h2>
-                </div>
+                
                 <div className="artworkimages">
                 <img src={appleorchard} alt="a drawing of a colorful apple orchard, with a bluebird flying across the sky, a worm in an apple in a tree, a cat peeking through the leaves of another tree, a duck sitting under a tree eating apples, and a person picking apples."/>
                     <img src={wolf} alt="a drawing of a black wolf sitting on rocks over looking a forest, playing a ukulele with a book sitting below him titled 'mele hula'"/>
@@ -90,7 +97,7 @@ export default function Illustration() {
 
                     
                 </div>
-                <a href="https://www.etsy.com/shop/MaryWilderStudio" target="_blank" rel="noopener noreferrer"><button>Etsy Store</button></a>
+                <a href="https://www.etsy.com/shop/MaryWilderStudio" target="_blank" rel="noopener noreferrer"><button>My Shop</button></a>
 
         </section>
 
