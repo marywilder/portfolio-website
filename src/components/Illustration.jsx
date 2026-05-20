@@ -22,7 +22,6 @@ export default function Illustration() {
     <section className="illustration-page">
       <Subnav/>
         <section className="illustration-section">
- 
             <div className="illustration-intro">
                 <p>Drawing and design have always been my happy place. I’ve done commissions, been a top seller on Society6, and run an Etsy shop for my art prints. At Paper Skyscraper, I brought that same creativity to the marketing team - designing fun, eye-catching assets for both print and digital campaigns.</p>
             </div>

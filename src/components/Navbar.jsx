@@ -40,7 +40,7 @@ function Navbar() {
 
         
 
-        <NavLink to='/projects' className="projects-link">portfolio</NavLink>
+        <NavLink to='/productdesign' className="projects-link">portfolio</NavLink>
         </div>
         
     </nav>

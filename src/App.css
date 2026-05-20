@@ -25,19 +25,12 @@ html {
   min-height: 100vh;
   width: 100vw;
   background: #b0d9ff url(./assets/noise.svg);
+  background-size: contain;
 
 
   overflow-x: hidden;
 }
 
-body {
-  margin: 0;
-  overflow-x: hidden;
-}
-
-.app {
-  overflow-x: hidden;
-}
 /* responsive fontsizes */
 
 @media only screen and (min-width: 720px) {
@@ -64,39 +57,33 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  margin: 0;
   font-family: 'Quicksand', sans-serif;
   --title-font: 4rem;
   --subtitle-font: 2rem;
-  --paragraph-font: 1rem;
   overflow-x: hidden;
   width: auto;
   min-height: 100vh;
-
 }
 
 
 /*/////////////////ANIMATIONS\\\\\\\\\\\\\\\\\\\\*/
 @keyframes cloudfloat {
-  0% {transform: translate(0px, 0px)}
   0% {transform: translateY(-10vh)}
   100% {transform: translate(100vw, 10vh)}
 }
 
 @keyframes cloudfloat2 {
-  0% {transform: translate(60vw, 0px)}
   0% {transform: translateY(-10vh)}
   100% {transform: translate(-60vw, 10px)}
 }
 
 @keyframes cloudfloat3 {
-  0% {transform: translate(0px, 0px)}
   0% {transform: translateY(-10px)}
   100% {transform: translate(2000px, 10px)}
 }
 
 @keyframes cloudfloat4 {
-  0% {transform: translate(0px, 0px)}
   0% {transform: translateY(-10px)}
   100% {transform: translate(2000px, 10px)}
 }
@@ -172,6 +159,7 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  padding-bottom: 0;
 }
 
 /*/////////////////\\\\\\\\\\\\\\\\\\\\*/
@@ -179,70 +167,6 @@ body {
 /*/////////////////\\\\\\\\\\\\\\\\\\\\*/
 
 
-/*.pink-gradient {
-  width: 30rem;
-  position: absolute;
-  filter: blur(2.5rem);
-  bottom: 20rem;
-  right: 5rem;
-  z-index: -3;
-  background: radial-gradient(circle, #89c6ff 60%, rgb(179, 151, 243) 77%);
-  opacity: .3;
-  overflow: hidden;
-  
-}
-/*
-.blue-gradient {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  filter: blur(2.5rem);
-  top: 12rem;
-  left: 15rem;
-  z-index: -3;
-  background: radial-gradient(circle, var(--deep-green) 30%, rgba(255,255,255,0) 67%);
-  opacity: .3;
-  overflow: hidden;
-}
-
-.orange-gradient {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  filter: blur(4.5rem);
-  top: 10rem;
-  left: 10rem;
-  z-index: -3;
- background: radial-gradient(circle, var(--bubblegum), rgba(255,255,255,0) 90%);
-  opacity: .3;
-  overflow: hidden;
-}
-
-.yellow-gradient {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  filter: blur(3rem);
-  top: 25rem;
-  right: 5rem;
-  z-index: -4;
-  background: radial-gradient(circle, var(--yellow-green) 40%, rgba(255,255,255,0) 20%);
-  opacity: .3;
-  overflow: hidden;
-}
-
-.green-gradient {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  filter: blur(5.5rem);
-  bottom: 20rem;
-  left: 25rem;
-  z-index: -3;
-  background: radial-gradient(circle, #b0e4fe 30%, rgba(255,255,255,0) 60%);
-  opacity: .3;
-  overflow: hidden;
-}*/
 
 
 
@@ -285,7 +209,7 @@ nav {
   justify-content: flex-start;
   flex: 1;
   padding: 2rem;
-  padding-top: 16rem;
+  padding-top: 10rem;
   gap: 2rem;
 }
 
@@ -299,7 +223,7 @@ nav {
 
 .title {
   font-family: "Cherry Bomb One", serif;
-  font-size: 3rem;
+  font-size: 5rem;
   color: var(--dark-blue);
   line-height: 1.1;
   animation: renderContent 200ms ease-in, loadPage 700ms ease-in-out 100ms;
@@ -383,10 +307,8 @@ nav {
   display: flex;
   justify-content: flex-start;
   flex-flow:column;
-  align-items: left;
+  align-items: flex-start;
   font-size: 1.35rem;
-  padding: 2rem;
-  padding-top: 0;
   padding: 2rem;
   
   border-radius: 1.5rem;
@@ -596,10 +518,8 @@ footer a:hover {
   justify-content: center;
   overflow: visible;
   padding: 3rem;
-  
   padding-bottom: 0;
   text-decoration: none;
-  
   top: 3rem;
   z-index: 1;
   margin-bottom: 0;
@@ -609,58 +529,44 @@ footer a:hover {
 .sub-nav .web-dev-link, .illustration-link {
   text-decoration: none;
   font-weight: 700;
-  background-color: var(--light-orange);
   padding: 1rem;
   padding-bottom: 0;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   color: var(--black);
-  
   border-bottom: none;
-  
   transition: all 750ms ease-in-out;
   
 }
 
-.web-dev-link:hover {
+.web-dev-link:hover, .illustration-link:hover, .product-link:hover {
+ transition: all 300ms ease-out;
  padding-bottom: .2rem;
- font-weight: 700;
- font-style: bold;
- color:#b94a01;
- background-color: #ff9e5d;
- box-shadow: 0 0 10rem var(--dark-orange);
+ font-weight: bolder;
+ font-family: "Cherry Bomb One", serif;
+ transition: all 300ms ease-out;
+ 
+
 }
 
 .sub-nav .product-link {
   text-decoration: none;
   font-weight: 700;
-  background-color: var(--light-blue);
-  
   padding: 1rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   color: var(--black);
   z-index: 0;
-  
   border-bottom: none;
-  padding-bottom:0;
-  transition: all 750ms ease-in-out;
+  transition: all 550ms ease-in-out;
 }
 
-.product-link:hover {
-  padding-bottom: .2rem;
-  font-weight: 700;
-  font-style: bold;
-  color:#064c8e;
-  background-color: #94c2ed;
-  box-shadow: 0 0 5rem #76aee3;
- }
+
 
 
 .sub-nav .illustration-link {
   text-decoration: none;
   font-weight: 700;
-  background-color: var(--light-green);
   padding: 1rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -668,17 +574,10 @@ footer a:hover {
   color: var(--black);
   z-index: 0;
   padding-bottom: 0.2rem;
-  transition: all 750ms ease-in-out;
+  transition: all 550ms ease-in-out;
 }
 
-.illustration-link:hover {
-  padding-bottom: .2rem;
-  font-weight: 700;
-  font-style: bold;
-  color:#33690c;
-  background-color: #a8d785;
-  box-shadow: 0 0 5rem var(--dark-green);
- }
+
 
 /*///////////////////////////\\\\\\\\\\\\\\\\\\\\\\*/
 /*///////////////////PRODUCT DESIGN\\\\\\\\\\\\\\\\\*/
@@ -726,7 +625,6 @@ footer a:hover {
   border-radius: 1rem;
   padding: 2rem;
   margin-top: 0rem;
-  background-color: #b0d9ff;
   
   border-top: none;
   text-align: left;
@@ -738,19 +636,6 @@ footer a:hover {
 .product-design-page h2 {
   text-align: left;
   font-size: 1.5rem !important;
-}
-
-.design-project {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  text-align: left;
-  
-}
-
-.design-project h2 {
-  font-size: 2rem;
-  color: var(--black)
 }
 
 .prototype-container-of-container {
@@ -799,7 +684,7 @@ footer a:hover {
   cursor: pointer;
   padding: .5rem 1rem;
   
-  font-family: var(--paragraph-font);
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   background-color: var(--dark-pink);
   border-radius: .5rem;
@@ -809,7 +694,6 @@ footer a:hover {
 
 .design-project button:hover {
   cursor: pointer;
-  box-shadow: 0 0 10rem #e17d35;
   transition: all 500ms;
 }
 
@@ -823,12 +707,6 @@ footer a:hover {
 .webdev-page .sub-nav {
   margin-left: .5rem;
 }
-.webdev-page .product-link {
-
-}
-.webdev-page .illustration-link {
- 
-  }
 
 .webdev-page .web-dev-link {
     z-index: 10;
@@ -836,19 +714,6 @@ footer a:hover {
     top: .05rem;
    
     }
-.webdev-container {
-  display: flex;
-  flex-flow: row wrap;
-  background-color: var(--light-orange);
-  
-  border-top: none;
-  border-radius: 1rem;
-  margin-top: 0;
-  position:relative;
-  z-index: -1;
-  
- 
-}
 
 .project-page .title {
   animation: renderContent 200ms ease-in, loadPage 700ms ease-in-out 100ms;
@@ -872,43 +737,6 @@ footer a:hover {
 
 
 
-.webdev-container section {
-
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  padding: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  color: var(--black);
-  text-decoration: none;
-  
-  
-  
-  
-}
-
-
-.webdev-container button {
-  cursor: pointer;
-  padding: .5rem 1rem;
-  width: 9rem;
-  
-  font-family: var(--paragraph-font);
-  font-weight: 700;
-  background-color: var(--dark-pink);
-  border-radius: .5rem;
-  margin-left: 0rem;
-}
-
-.webdev-container button:hover {
-  cursor: pointer;
-  background-color: var(--light-pink);
-  
-  box-shadow: 0 0 10rem #e17d35;
-  transition: all 500ms;
-}
-
 .webdev-container span {
   color:#064c8e;
   text-decoration: underline;
@@ -918,22 +746,12 @@ footer a:hover {
 
 .webdev-container span:hover {
   color:#fe345d;
-  transition: all 500 ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 .doodle-links {
   display: flex;
 }
 
- a.doodle-link {
-  margin-top: 0.8rem;
-  margin-bottom: .3rem;
-  padding: .3rem;
-  font-size: .9rem;
-  height: 10vw;
-  width: 23vw;
-  color: #faa3fe;
-  font-weight: 600;
-}
 .doodle-link:nth-of-type(1) {
   color: #caf3fc;
 }
@@ -942,19 +760,6 @@ a.doodle-link:hover {
   color:#b4a65e;
 }
 
-.webdev-container p {
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.webdev-container h2 {
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: left;
-  color: var(--off-white);
-}
 
 .webdev-container a:nth-of-type(1) {
   animation: renderContent 500ms ease-in, loadPage 700ms ease-in-out 400ms;
@@ -1017,7 +822,6 @@ div img {
 
 
 .project-preview:hover {
-  box-shadow: 0 0 5rem #46a6ff;
   transform: scale(1.03);
   transition: all 500ms ease-in-out;
   cursor: pointer;
@@ -1031,7 +835,11 @@ div img {
 
 .webdev-container {
   display: flex;
-
+  flex-flow: row wrap;
+  border-top: none;
+  border-radius: 1rem;
+  margin-top: 0;
+  position: relative;
   font-size: 1.5rem;
   z-index: 6;
 }
@@ -1039,6 +847,42 @@ div img {
 /*///////////////////////////\\\\\\\\\\\\\\\\\\\\\\*/
 /*///////////////////ILLUSTRATION\\\\\\\\\\\\\\\\\*/
 /*//////////////////////////\\\\\\\\\\\\\\\\\\\\\\*/
+.illustration-link-wrapper,
+.product-link-wrapper,
+.web-dev-link-wrapper {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.wavy-line {
+  display: none;
+  position: absolute;
+  bottom: -8px;
+  left: 1rem;
+  right: 1rem;
+  height: 30px;
+  background-image: url("./assets/wavy_line.svg");
+  background-repeat: repeat-x;
+  background-size: 500px 80px;
+  background-position-y: center;
+  animation: wave-flow 8s linear infinite;
+  z-index: 2;
+}
+
+.illustration-link.active ~ .wavy-line,
+.product-link.active ~ .wavy-line,
+.web-dev-link.active ~ .wavy-line {
+  display: block;
+}
+
+@keyframes wave-flow {
+  from { background-position-x: 0; }
+  to { background-position-x: 500px; }
+}
+
 .illustration-page {
   display: flex;
   flex-direction: column;
@@ -1051,9 +895,6 @@ div img {
   
 }
 
-.illustration-page:active {
-  
-}
 
 
 
@@ -1063,15 +904,6 @@ div img {
   transition: all 500ms;
 }
 
-.illustration-page .web-dev-link {
-  
-
-}
-
-.illustration-page .product-link {
-
-
-}
 
 .illustration-page .illustration-link:hover {
   position: relative;
@@ -1079,15 +911,11 @@ div img {
   
 }
 .illustration-section {
-
   border-top: none;
   border-radius: 1rem;
   padding: 2rem;
   margin-top: 0;
-  z-index:0;
-
-  border-top: none;
-  background-color: var(--light-green);
+  z-index: 0;
 }
 
 .art-project {
@@ -1189,14 +1017,13 @@ div img {
 }
 
 .illustration-page a {
-  align-self: left;
+  align-self: flex-start;
 }
 .illustration-page button {
   cursor: pointer;
   padding: .5rem 1rem;
-  width: 8rem;
-  
-  font-family: var(--paragraph-font);
+  width: 8rem; 
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   background-color: var(--dark-pink);
   border-radius: .5rem;
@@ -1207,28 +1034,20 @@ div img {
 .illustration-page button:hover {
   cursor: pointer;
   background-color: var(--light-pink);
-  
-  box-shadow: 0 0 10rem #e17d35;
   transition: all 500ms;
 }
 
 .webdev-container section {
-    
   display: flex;
-  flex-flow:column nowrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-content: center;
   align-items: flex-start;
-
   padding: 3rem;
-
   color: var(--black);
   text-decoration: none;
   text-align: left;
   z-index: 6;
-  
-  
-  
 }
 
 .web-description {
@@ -1240,8 +1059,7 @@ div img {
   cursor: pointer;
   padding: .5rem 1rem;
   width: auto;
-  
-  font-family: var(--paragraph-font);
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   background-color: var(--dark-pink);
   border-radius: .5rem;
@@ -1251,8 +1069,6 @@ div img {
 .webdev-container button:hover {
   cursor: pointer;
   background-color: var(--light-pink);
-  
-  box-shadow: 0 0 10rem #e17d35;
   transition: all 500ms;
 }
 
@@ -1274,6 +1090,7 @@ a.doodle-link {
 }
 
 .webdev-container p {
+  font-weight: 500;
   max-width: 70vw;
   font-size: 1.25rem;
   line-height: 2rem;
@@ -1282,9 +1099,10 @@ a.doodle-link {
 .webdev-container h2 {
   text-decoration: none;
   font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
   margin-right: 3vw;
   margin-bottom: 2rem;
-  font-weight: 700;
   color: var(--black);
 }
 .webdev-container img {
@@ -1304,6 +1122,34 @@ a.doodle-link {
 
 
 @media (max-width: 770px) {
+
+  .wavy-line {
+    display: none;
+    position: absolute;
+    bottom: -14px;
+    left: 1rem;
+    right: 1rem;
+    height: 30px;
+    background-image: url("./assets/wavy_line.svg");
+    background-repeat: repeat-x;
+    background-size: 500px 40px;
+    background-position-y: center;
+    animation: wave-flow 6s linear infinite;
+    z-index: 2;
+  }
+
+  .sub-nav {
+    padding: 2rem 0.5rem 0;
+    gap: 0.25rem;
+  }
+
+  .sub-nav .web-dev-link,
+  .sub-nav .product-link,
+  .sub-nav .illustration-link {
+    font-size: 1.4rem;
+    white-space: nowrap;
+    padding-bottom: 0.6rem;
+  }
 
  
   .mobile-menu {
@@ -1364,18 +1210,16 @@ a.doodle-link {
   }
 
   .projects-link:hover, .projects-link:focus {
-    transition: all 700ms ease-in-out;
     background-image: url(./assets/cloud1.svg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    color: #064c8ea3;
+    color: var(--dark-pink);
     transform: scale(1.1);
     transition: all 1s ease-in-out;
   }
 
   .about-link:hover, .about-link:focus {
-    transition: all 700ms ease-in-out;
     background-image: url(./assets/cloud1.svg);
     background-size: contain;
     background-position: center;
@@ -1383,11 +1227,9 @@ a.doodle-link {
     color: #064c8ea3;
     transform: scale(1.1);
     transition: all 1s ease-in-out;
-
   }
 
   .home-link:hover, .home-link:focus {
-    transition: all 700ms ease-in-out;
     background-image: url(./assets/cloud1.svg);
     background-size: contain;
     background-position: center;
@@ -1395,7 +1237,6 @@ a.doodle-link {
     color: #064c8ea3;
     transform: scale(1.1);
     transition: all 1s ease-in-out;
-
   }
 
 
@@ -1473,10 +1314,6 @@ a.doodle-link {
 
   }
 
-  .app {
-    padding-bottom: 0;
-  }
-
  .linkedin, .email {
   margin-right: 4.3rem;
  }
@@ -1552,7 +1389,7 @@ a.doodle-link {
   background-image: url(./assets/cloud1.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  transform: rotate(10deg);
+  
   color: var(--dark-green);
 
 }
@@ -1562,7 +1399,7 @@ a.doodle-link {
   background-image: url(./assets/cloud1.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  transform: rotate(10deg);
+  
   color: var(--dark-pink);
 
 }
@@ -1572,7 +1409,6 @@ a.doodle-link {
   background-image: url(./assets/cloud1.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  transform: rotate(10deg);
   color: var(--dark-blue);
 
 }
@@ -1582,7 +1418,7 @@ a.doodle-link {
   background-image: url(./assets/cloud1.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  transform: rotate(10deg);
+ 
   color: var(--dark-blue);
 }
 
@@ -1591,7 +1427,7 @@ a.doodle-link {
   position: absolute;
   width: 8rem;
   z-index: 4;
-  transform: rotate(90deg);
+  
   right: 1.2rem;
   top: -3rem;
 }
@@ -1670,14 +1506,13 @@ a.doodle-link {
   }
 
   .projects-link:hover, .home-link:hover, .about-link:hover {
-    transition: all 700ms ease-in-out;
     background-image: url(./assets/cloud1.svg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    color: #064c8ea3;
+    color: var(--dark-pink);
     transform: scale(1.1);
-    transition: all 1s ease-in-out;
+    transition: all 500ms ease-in-out;
 
 
   }
@@ -1871,22 +1706,18 @@ a.doodle-link {
     border-radius: .5rem;
     color: var(--black);
     background-color: var(--dark-pink);
-    font-family: var(--paragraph-font);
+    font-family: 'Quicksand', sans-serif;
     font-weight: 700;
     font-size: .75rem;
   }
 
   .design-project button:hover {
-    background-color: var(--dark-orange);
     cursor: pointer;
-    box-shadow: 0rem 0rem 10rem #fe345d;
     transition: all 500ms;
   }
 
   .letterboxd-button:hover {
-    background-color: var(--dark-orange);
     cursor: pointer;
-    box-shadow: 0rem 0rem 10rem #348ee2ba;
     transition: all 500ms;
   }
 
@@ -1926,7 +1757,7 @@ a.doodle-link {
     padding: .5rem 1rem;
     width: auto;
     
-    font-family: var(--paragraph-font);
+    font-family: 'Quicksand', sans-serif;
     font-weight: 700;
     background-color: var(--dark-pink);
     border-radius: .5rem;
@@ -1936,8 +1767,6 @@ a.doodle-link {
   .webdev-container button:hover {
     cursor: pointer;
     background-color: var(--light-pink);
-    
-    box-shadow: 0 0 10rem #e17d35;
     transition: all 500ms;
   }
 
@@ -1990,57 +1819,6 @@ a.doodle-link {
   }
 
   
-
-  .accordian-project h2 {
-
-  }
-
-  
-  .project-preview {
-
-    
-  }
-  
-
-  .blue-gradient {
-    filter: blur(2.5rem);
-    top: 6rem;
-    left: 30rem;
-    opacity: .3;
-    overflow: hidden;
-  }
-  
-  .orange-gradient {
-    filter: blur(4.5rem);
-    top: 40rem;
-    left: 55rem;
-    opacity: .3;
-    overflow: hidden;
-  }
-  
-  .yellow-gradient {
-    filter: blur(6rem);
-    top: 20rem;
-    right: 35rem;
-    opacity: .3;
-    overflow: hidden;
-  }
-  
-  .green-gradient {
-    filter: blur(5.5rem);
-    bottom: 30rem;
-    left: 45rem;
-    opacity: .3;
-    overflow: hidden;
-  }
-  
-  .blue-gradient-2 {
-    filter: blur(6.5rem);
-    bottom: 45rem;
-    left: 37rem;
-    opacity: .3;
-    overflow: hidden;
-  }
 
   .cloud1 {
     width:7rem;
