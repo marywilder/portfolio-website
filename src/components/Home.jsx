@@ -29,7 +29,7 @@ function Home() {
           UX designer blending research, creativity, and front-end thinking into experiences people actually enjoy using.
         </section>
         <div className="recent-work-wrapper">
-          <NavLink to='/projects' className="recent-work">see my recent work!</NavLink>
+          <NavLink to='/productdesign' className="recent-work">see my recent work!</NavLink>
           <div className="wavy-line"></div>
         </div>
       </div>
