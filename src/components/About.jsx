@@ -16,21 +16,31 @@ export default function About() {
          </h1>
          */}
          <br></br>
-         <div className="about-profileicon">
-        <img src={hello} className="profile-pic1"alt="headshot of Mary cropped in a circle, with the word 'hello!' and illustrated flowers bordering the top of the image."/>
-        </div>
+         
         <div className="about-intro">
+        <h2>
+</h2>
+<div className="about-profile">
+        <img src={hello} className="profile-pic1"alt="headshot of Mary cropped in a circle, with the word 'hello!' and illustrated flowers bordering the top of the image."/>
+        <div><h2>I’m Mary, a Product Designer based in Charlotte, NC.</h2>
         <p>
-        
-        Hi! I'm Mary, a UX/Product Designer based in <b>Charlotte, NC.</b> 
-        <br/>
+  <b>Curiosity and empathy</b> are at the foundation of how I approach design, and I’m most energized when solving messy problems or learning something new through the process. With a background in <b>digital art</b>, <b>front-end engineering</b>, and <b>UX</b>, I bring a blend of creative and technical thinking that helps me collaborate across teams and disciplines.
+</p>
+</div>
+        </div>
 
-        With my career starting in digital art and illustration, I learned <b>Front-end Engineering</b> which marked my transition into the tech industry. As I worked in the e-commerce world and then as a digital designer, I earned my <b>Master's in UX Design</b> from the Maryland Institute College of Art (MICA) in 2025. 
-        <br/>
-        That combination of <b>visual craft</b>, real-world <b>product experience</b>, and <b>rigorous research training</b> shapes how I approach every project.
-        <br/>
-        I've had the chance to work across cross-functional teams, collaborate with internal and external stakeholders, and <b>navigate the full design process from fuzzy problem space to polished, tested solution.</b> I care about asking the right questions before jumping to answers, and I believe <b>the best designs are built when user needs, business objectives, and technical constraints are all held in balance.</b>
-        </p>
+
+<p>
+  I recently earned my <b>Master’s in UX Design</b> from the <b>Maryland Institute College of Art (MICA)</b> in 2025, and previously completed a <b>Front-End Engineering certificate</b> through <b>Codecademy</b> in 2023. That combination of <b>visual craft</b>, <b>product experience</b>, and <b>research-driven design</b> shapes how I approach every project.
+</p>
+
+<p>
+  I’m always excited to learn new things and genuinely have a lot of fun doing it.
+</p>
+
+<p>
+  Outside of the digital world, you can usually find me rollerblading, rug tufting, or hanging out with my cat, <b>Lenny</b>.
+</p>
 
         <a
           href="https://docs.google.com/document/d/10OHxTkpYHKbpynRaW5ShkBiY3waKh6tDhuqj9qIR1KY/edit?usp=sharing"
@@ -38,7 +48,7 @@ export default function About() {
           rel="noopener noreferrer"
           className="resume-link"
         >
-          view my resume
+          view my resume <span>➜ </span>
         </a>
         </div>
         <div className="about-skills">

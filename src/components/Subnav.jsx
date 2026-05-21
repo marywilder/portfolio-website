@@ -8,10 +8,12 @@ export default function Subnav() {
                       <NavLink to='/productdesign' className="product-link">product design</NavLink>
                       <div className="wavy-line"></div>
                     </div>
+                    <span className="subnav-divider">✿</span>
                     <div className="web-dev-link-wrapper">
                       <NavLink to='/webdev' className="web-dev-link">web dev</NavLink>
                       <div className="wavy-line"></div>
                     </div>
+                    <span className="subnav-divider">✿</span>
                     <div className="illustration-link-wrapper">
                       <NavLink to='/illustration' className="illustration-link">graphic design</NavLink>
                       <div className="wavy-line"></div>

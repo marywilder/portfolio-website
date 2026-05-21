@@ -1,49 +1,41 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom';
-import { useRef } from "react";
-import navIcon from '../assets/sun.svg';
+import navIcon from '../assets/sun-mobile.svg';
 import "../App.css";
-import xIcon from '../assets/mobile-x.svg';
+import xIcon from '../assets/sun-nav-close.svg';
 
 
 function Navbar() {
-   const navRef = useRef();
-   
+  const navRef = useRef();
+  const [isOpen, setIsOpen] = useState(false);
 
-   const showNavbar = () => {
-    
-    navRef.current.classList.toggle("nav-expanded")
-    
-    
-   }
+  const openNavbar = () => {
+    navRef.current.classList.add("nav-expanded");
+    setIsOpen(true);
+  };
 
-   
-   
+  const closeNavbar = () => {
+    navRef.current.classList.remove("nav-expanded");
+    setIsOpen(false);
+  };
+
   return (
     <div className="nav-component">
-       
-        <img src={navIcon} alt="nav-icon" className="nav-mobile-menu" onClick={showNavbar}/>
-         
-        
-        <nav className="mobile-menu" ref={navRef}>
+      {isOpen && <div className="nav-overlay" onClick={closeNavbar} />}
 
+      <img src={navIcon} alt="open navigation" className="nav-mobile-menu" onClick={openNavbar}/>
+
+      <nav className="mobile-menu" ref={navRef}>
         <div className="x-icon">
-
-        <img src={xIcon} alt="nav-icon" className="nav-mobile-menu" onClick={showNavbar}/>
-
+          <img src={xIcon} alt="close navigation" className="nav-mobile-menu" onClick={closeNavbar}/>
         </div>
 
         <div className="nav-links-mobile nav-bar-desktop">
-        <NavLink to='/' className="home-link">home  </NavLink>
-        
-        <NavLink to='/about'  className="about-link">about me</NavLink>
-
-        
-
-        <NavLink to='/productdesign' className="projects-link">portfolio</NavLink>
+          <NavLink to='/' className="home-link" onClick={closeNavbar}>home</NavLink>
+          <NavLink to='/about' className="about-link" onClick={closeNavbar}>about me</NavLink>
+          <NavLink to='/productdesign' className="projects-link" onClick={closeNavbar}>portfolio</NavLink>
         </div>
-        
-    </nav>
+      </nav>
     </div>
   )
 }

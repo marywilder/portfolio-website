@@ -6,7 +6,17 @@ function Home() {
   return (
     <div className="home">
       <div className="name">
-        <div className="title">mary wilder</div>
+        <div className="title">
+          {'mary wilder'.split('').map((char, i) => (
+            <span
+              key={i}
+              className="title-letter"
+              style={{ animationDelay: `${i * 70}ms` }}
+            >
+              {char === ' ' ? ' ' : char}
+            </span>
+          ))}
+        </div>
         <div className="title-span">Product Designer</div>
         <div className="location-container">
           <img src={location} className="location-icon" alt="location pin"/>
