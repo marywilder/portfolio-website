@@ -5,7 +5,8 @@ import starbucksgif from '../assets/setprefs.gif'
 import shopifylogo from '../assets/shopifylogo.png'
 import prototypepng from '../assets/prototype-phone.png';
 import letterboxd from '../assets/letterboxdprototype.gif';
-import tbdprototype from '../assets/alignment-comparison-tbd.gif'
+import tbdprototype from '../assets/alignment-comparison-tbd.gif';
+import figma from '../assets/figma.svg';
 export default function Productdesign() {
   return (
     <section className="design-page">
@@ -22,7 +23,12 @@ export default function Productdesign() {
                     </div>
 
                     </div>
-                    <div><p>TBD is a personalized product comparison app designed to cut through the noise of online shopping. Built with a team of four during my graduate program at MICA, TBD guides users toward confident, value-aligned purchase decisions.</p> <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/tbd_case_study/#/"><button href="">View the case study</button></a></div>
+                    <div><p>TBD is a personalized product comparison app designed to cut through the noise of online shopping. Built with a team of four during my graduate program at MICA, TBD guides users toward confident, value-aligned purchase decisions.</p> 
+                    <div className="figma-icon"><img src={figma} alt="figma icon" /></div>
+                    <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/tbd_case_study/#/">
+                    
+                    <button href="">View the case study</button></a></div>
+                    
                     
                 </div>
                 <h2>Starbucks Case Study</h2>

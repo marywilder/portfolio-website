@@ -714,14 +714,31 @@ footer a:hover {
   position:relative;
   z-index: -1;
   border-radius: 1rem;
-  padding: 2rem;
   margin-top: 0rem;
-  
   border-top: none;
   text-align: left;
-  
+  font-weight: 500;
   font-size: 1.5rem;
   line-height: 2.8rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.figma-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: #272019;
+  border-radius: .5rem;
+}
+
+.figma-icon img {
+  width: 1.75rem;
+  height: 1.75rem;
 }
 
 .product-design-page h2 {
@@ -792,7 +809,7 @@ footer a:hover {
 /*///////////////////Web dev\\\\\\\\\\\\\\\\\*/
 /*//////////////////////////\\\\\\\\\\\\\\\\\\\\\\*/
 .webdev-page {
-  margin: 4.5rem;
+  margin: 2rem;
   margin-top: 5rem;
 }
 .webdev-page .sub-nav {
@@ -1004,7 +1021,7 @@ div img {
 .illustration-page {
   display: flex;
   flex-direction: column;
-  margin: 4.5rem;
+  margin: 2rem;
   margin-top: 5rem;
   overflow: visible;
   z-index: 0;
@@ -1082,7 +1099,7 @@ div img {
   
   font-weight: 500;
   text-align: left;
-  font-size: .8rem;
+  
   line-height: 2rem;
 }
 
@@ -1191,6 +1208,14 @@ div img {
 .webdev-container button:hover {
   cursor: pointer;
   background-color: var(--light-pink);
+  color: #df032f;
+  transition: all 500ms;
+}
+
+.product-design-page button:hover {
+  cursor: pointer;
+  background-color: var(--light-pink);
+  color: #df032f;
   transition: all 500ms;
 }
 
@@ -1811,9 +1836,15 @@ a.doodle-link {
   }
   .design-project {
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-content: center;
     align-items: center;
+    gap: 2rem;
+  }
+
+  .product-design-page .design-project:nth-of-type(even) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
   }
 
   .prototype-container {
