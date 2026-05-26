@@ -24,7 +24,8 @@ export default function Productdesign() {
 
                     </div>
                     <div><p>TBD is a personalized product comparison app designed to cut through the noise of online shopping. Built with a team of four during my graduate program at MICA, TBD guides users toward confident, value-aligned purchase decisions.</p> 
-                    <div className="figma-icon"><img src={figma} alt="figma icon" /></div>
+                    <div className='featured-skills'>
+                    <div className="figma-icon"><img src={figma} alt="figma icon" /></div> <div className='project-skill'>User Research</div> <div className='project-skill'>Prototyping</div> <div className='project-skill'>Design System</div></div>
                     <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/tbd_case_study/#/">
                     
                     <button href="">View the case study</button></a></div>
@@ -42,7 +43,10 @@ export default function Productdesign() {
                     </div>
 
                     </div>
-                    <div><p>During my MPS program, my design team of 3 worked to create a new feature set for an existing product. We chose to make some improvements to the Starbucks app, and we went through the full product design process from <b>wireframing</b> and <b>prototyping</b> to <b>usability testing.</b> After multiple design iterations, we landed on features that address the <b>dietary uncertainty users face</b> in the Starbucks app.</p> <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/starbucks-case-study/#/"><button href="">View the case study</button></a></div>
+                    <div><p>During my MPS program, my design team of 3 worked to create a new feature set for an existing product. We chose to make some improvements to the Starbucks app, and we went through the full product design process from <b>wireframing</b> and <b>prototyping</b> to <b>usability testing.</b> After multiple design iterations, we landed on features that address the <b>dietary uncertainty users face</b> in the Starbucks app.</p> 
+                    <div className='featured-skills'>
+                    <div className="figma-icon"><img src={figma} alt="figma icon" /></div> <div className='project-skill'>User Research</div> <div className='project-skill'>Prototyping</div> <div className='project-skill'>Design System</div></div>
+                    <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/starbucks-case-study/#/"><button href="">View the case study</button></a></div>
                     
                 </div>
                 <h2>Letterboxd Case Study</h2>
@@ -55,7 +59,9 @@ export default function Productdesign() {
                     </div>
 
                     </div>
-                    <div><p>As a Letterboxd user, I noticed that the platform lacks personalized recommendations, making it harder for users to organically discover new movies. To address this, I designed a "Film Finder" quiz, a personalized "Film DNA" feature, and improved movie suggestions to <b>enhance user engagement and discovery.</b> Through this project, I conducted <b>user research</b>, created <b>wireframes</b> that iterated through multiple designs, created a fully-functioning <b>prototype</b>, explored <b>UX choreography</b> ideas, and conducted <b>Usability Testing.</b> This project was part of my master's program.</p> <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/mOafiRr4yObVnkLl3kuKAz/MUXD5103.02?node-id=879-7633&t=GVj8JSBW43lkcfle-0&scaling=scale-down-width&content-scaling=fixed&page-id=857%3A1541&starting-point-node-id=879%3A7633"><button href="">View the case study</button></a></div>
+                    <div><p>As a Letterboxd user, I noticed that the platform lacks personalized recommendations, making it harder for users to organically discover new movies. To address this, I designed a "Film Finder" quiz, a personalized "Film DNA" feature, and improved movie suggestions to <b>enhance user engagement and discovery.</b> Through this project, I conducted <b>user research</b>, created <b>wireframes</b> that iterated through multiple designs, created a fully-functioning <b>prototype</b>, explored <b>UX choreography</b> ideas, and conducted <b>Usability Testing.</b> This project was part of my master's program.</p> 
+                    
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/mOafiRr4yObVnkLl3kuKAz/MUXD5103.02?node-id=879-7633&t=GVj8JSBW43lkcfle-0&scaling=scale-down-width&content-scaling=fixed&page-id=857%3A1541&starting-point-node-id=879%3A7633"><button href="">View the case study</button></a></div>
                     
                 </div>
                 <h2>Shopify Case Study</h2>

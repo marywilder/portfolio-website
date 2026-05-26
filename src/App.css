@@ -726,6 +726,26 @@ footer a:hover {
   width: 100%;
 }
 
+.featured-skills {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30vw;
+  justify-content: flex-start;
+  gap: .4rem;
+}
+
+.project-skill {
+  align-self: center;
+  align-items: center;
+  font-size: .6rem;
+  color: white;
+  background-color: #1265b3c1;
+  padding: .3rem;
+  border-radius: .5rem;
+  line-height: .8rem;
+  white-space: nowrap;
+}
+
 .figma-icon {
   display: flex;
   align-items: center;
@@ -796,8 +816,9 @@ footer a:hover {
   font-weight: 700;
   background-color: var(--dark-pink);
   border-radius: .5rem;
-  margin-left: 1rem;
   font-size: 1.25rem;
+  margin-top: 2rem;
+  color: white;
 }
 
 .design-project button:hover {
@@ -1202,7 +1223,7 @@ div img {
   font-weight: 700;
   background-color: var(--dark-pink);
   border-radius: .5rem;
-  margin-left: 2rem;
+  
 }
 
 .webdev-container button:hover {
