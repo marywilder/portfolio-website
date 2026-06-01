@@ -358,7 +358,7 @@ nav {
 .about-page {
   display: flex;
   flex-flow: column nowrap;
-  margin: 1rem;
+  
   
   padding-left: 0;
   position: relative;
@@ -435,6 +435,15 @@ nav {
   
   text-align: left;
   margin: 2rem;
+}
+
+.education {
+  border-radius: 1.5rem;
+  padding: 0px 0px 0px 2rem;
+  line-height: 2.2rem;
+  font-size: 1.35rem;
+  text-align: left;
+  margin: 0rem;
 }
 
 
@@ -1070,6 +1079,74 @@ div img {
   z-index: 0;
 }
 
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0 0.5rem;
+  width: 100%;
+}
+
+.carousel__viewport {
+  position: relative;
+  flex: 1;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.carousel__slide {
+  position: absolute;
+  max-height: 18rem;
+  max-width: 60%;
+  width: auto;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: contain;
+  transform-origin: center center;
+}
+
+.carousel__btn {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  font-size: 3rem;
+  color: var(--dark-pink);
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 0.25rem;
+  transition: transform 150ms ease;
+  flex-shrink: 0;
+}
+
+.carousel__btn:hover {
+  transform: scale(1.2);
+}
+
+.carousel__dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.carousel__dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  border: 2px solid var(--dark-pink);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: background 200ms ease;
+}
+
+.carousel__dot--active {
+  background: var(--dark-pink);
+}
+
 .art-project {
   display: flex;
   flex-direction: column;
@@ -1177,7 +1254,7 @@ div img {
 .illustration-page a {
   align-self: flex-start;
 }
-.illustration-page button {
+.illustration-page button:not(.carousel__dot):not(.carousel__btn) {
   cursor: pointer;
   padding: .5rem 1rem;
   width: 8rem;
@@ -1190,7 +1267,7 @@ div img {
   font-size: .8rem;
 }
 
-.illustration-page button:hover {
+.illustration-page button:not(.carousel__dot):not(.carousel__btn):hover {
   cursor: pointer;
   background-color: var(--light-pink);
   transition: all 500ms;
@@ -1290,6 +1367,16 @@ a.doodle-link {
 
 
 @media (max-width: 770px) {
+
+  .carousel__btn {
+    font-size: 5rem;
+    padding: 0 0.5rem;
+  }
+
+  .carousel__dot {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
 
   .wavy-line {
     display: none;
@@ -1863,16 +1950,11 @@ a.doodle-link {
   
 
 
-  .about-page div {
   
-    font-size: 1rem;
-    line-height: 1rem;
-    font-weight: 500;
-  }
   
 
 .about-intro {
-  margin-left: 3rem;
+  margin-left: 0;
 }
 
 .about-profile {
@@ -1891,11 +1973,6 @@ a.doodle-link {
     font-size: .8rem;
     line-height: 1.75rem;
   }
-
-  .about-page div:nth-of-type(2) {
-    
-    margin-right: 2rem;
-  }
   
   .hi-there {
     border: none;
@@ -1906,7 +1983,12 @@ a.doodle-link {
     right: 5rem;
     top: -4rem;
   }
-
+.education {
+  font-size: .8rem;
+  line-height: 1.6rem;
+  width: 100%;
+  padding-left: 2rem;
+}
 
   .about-skills {
     margin-left: 0;

@@ -51,6 +51,15 @@ export default function About() {
           view my resume <span>➜ </span>
         </a>
         </div>
+        <div className='education'>
+          <h2>Education:</h2>
+<br/>
+<b>2024-25</b> Masters of Professional Studies in UX Design, Maryland Institute College of Art
+<br/>
+<b>2022:</b> Front-end engineering Career path certificate, Codecademy
+<br/>
+<b>2015-2019</b> Bachelors in Communication Studies, Ohio University
+        </div>
         <div className="about-skills">
 
           <h2>Skills</h2>
@@ -76,13 +85,7 @@ export default function About() {
 
 
 
-<b>Education:</b>
-<br/>
-<b>2024-25</b> Masters of Professional Studies in UX Design, Maryland Institute College of Art
-<br/>
-<b>2022:</b> Front-end engineering Career path certificate, Codecademy
-<br/>
-<b>2015-2019</b> Bachelors in Communication Studies, Ohio University
+
 </p>
 
         </div>
