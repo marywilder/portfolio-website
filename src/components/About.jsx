@@ -39,7 +39,7 @@ export default function About() {
 </p>
 
 <p>
-  Outside of the digital world, you can usually find me rollerblading, rug tufting, or hanging out with my cat, <b>Lenny</b>.
+  Outside of the digital world, you can usually find me rollerblading, trying a new craft, or hanging out with my cat, Lenny.
 </p>
 
         <a
