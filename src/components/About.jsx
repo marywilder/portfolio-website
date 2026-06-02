@@ -1,5 +1,5 @@
 import React from 'react'
-import hello from '../assets/hello.png';
+import hello from '../assets/profile_pic.png';
 
 export default function About() {
   return (
