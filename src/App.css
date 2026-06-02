@@ -25,7 +25,8 @@ html {
   min-height: 100vh;
   width: 100vw;
   background: #b0d9ff url(./assets/noise.svg);
-  background-size: contain;
+  background-repeat: repeat;
+  background-size: 100px;
 
 
   overflow-x: hidden;
@@ -1201,17 +1202,18 @@ div img {
 }
 
 .illustration-section h5 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 700;
+  color: #064c8e;
 }
 
 .illustration-section p {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   font-weight: 500;
   text-align: left;
   line-height: 2rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .illustration-section img {
@@ -1790,6 +1792,17 @@ a.doodle-link {
   .illustration-page {
     margin-top: 8.5rem;
   }
+  .illustration-section h5 {
+    font-size: 1rem;
+  }
+  .illustration-section p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: left;
+  line-height: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
 
   .sub-nav .illustration-link {
     align-self: flex-end;
