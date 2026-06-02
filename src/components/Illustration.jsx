@@ -21,8 +21,10 @@ import bssthumbnail1 from '../assets/590900 - Web -Graphic - SharePoint Icons_pa
 import bssthumbnail2 from '../assets/590900 - Web -Graphic - SharePoint Icons_page-0002.jpg';
 import bssthumbnail3 from '../assets/590900 - Web -Graphic - SharePoint Icons_page-0003.jpg';
 import bssthumbnail4 from '../assets/590900 - Web -Graphic - SharePoint Icons_page-0004.jpg';
+import employeethumbnails from '../assets/Employee-Thumbnails.png';
+import pullupbanners from '../assets/Pull-Up-Banners.png';
 
-const bssImages = [greaselockad, bssthumbnail1, bssthumbnail2, bssthumbnail3, bssthumbnail4];
+const bssImages = [pullupbanners, greaselockad, employeethumbnails];
 
 const parkImages = [
   { src: mountrainier, alt: "illustrated poster of mount rainier national park" },
@@ -103,13 +105,15 @@ export default function Illustration() {
 
               <div>
                 <h2>Brooks Safety Solutions</h2>
-                <p>As a Digital Designer at Brooks, I wore many hats across multiple different brands - designing hundreds of digital and print assets, from UI elements to massive tradeshow banners. In addition to graphic design, I also doubled as a UX + Front-end specialist, conducting UX audits of our sites, and building responsive front-end code.
+                <h5>Digital Designer</h5>
+                <p>I wore many hats across multiple different brands - designing hundreds of digital and print assets, from UI elements to massive tradeshow banners. In addition to graphic design, I also doubled as a UX + Front-end specialist, conducting UX audits of our sites, and building responsive front-end code.
               </p>
                 <Carousel images={bssImages} altPrefix="Brooks Safety Solutions design" />
               </div>
 
               <div><h2>Paper Skyscraper</h2>
-              <p>As the e-commerce and marketing manager at Paper Skyscraper, I designed many marketing materials - digital and physical.
+              <h5>E-commerce and Marketing Manager</h5>
+              <p>At Paper Skyscraper, my job was to grow and develop our Shopify website. In addition to improving the UX & KPIs, I designed many marketing materials - digital and physical.
               </p>
               </div>
 
@@ -124,7 +128,9 @@ export default function Illustration() {
 
               <div className="art-project">
                 <div>
-                  <h2>Digital Illustrations</h2>
+                  <h2 style={{textAlign: 'center'}}>Digital Illustrations</h2>
+                  <p>A collection of digital illustrations I've made over the years - including personal work, commissions, and pieces sold through my online shop.</p>
+                  <h5>National Parks Collection</h5>
                 </div>
                 <Carousel images={parkImages} altPrefix="National park illustration" />
               </div>

@@ -1075,6 +1075,7 @@ div img {
   border-top: none;
   border-radius: 1rem;
   padding: 2rem;
+  Padding-top: 0rem;
   margin-top: 0;
   z-index: 0;
 }
@@ -1159,6 +1160,8 @@ div img {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
+  padding-bottom: 0rem;
 }
 
 .art-project h2 {
@@ -1192,13 +1195,23 @@ div img {
   flex-direction: column;
 }
 
+.illustration-section > div:nth-child(n+3) h2 {
+  padding-top: 2.5rem;
+  font-weight: 900;
+}
+
+.illustration-section h5 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 .illustration-section p {
-  
-  
+  font-size: 0.8rem;
   font-weight: 500;
   text-align: left;
-  
   line-height: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .illustration-section img {
