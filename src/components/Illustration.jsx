@@ -23,8 +23,18 @@ import bssthumbnail3 from '../assets/590900 - Web -Graphic - SharePoint Icons_pa
 import bssthumbnail4 from '../assets/590900 - Web -Graphic - SharePoint Icons_page-0004.jpg';
 import employeethumbnails from '../assets/Employee-Thumbnails.png';
 import pullupbanners from '../assets/Pull-Up-Banners.png';
+import brooksbanner from '../assets/10x10banner.png';
+import wscsheet from '../assets/479250_Print_ASSE-Device_Types_Reference_Sheet.png';
+import brooksemail from '../assets/Brooks-email.gif';
 
-const bssImages = [pullupbanners, greaselockad, employeethumbnails];
+const bssImages = [
+  pullupbanners,
+  wscsheet,
+  greaselockad,
+  employeethumbnails,
+  brooksbanner,
+  { src: brooksemail, alt: "Brooks email design", imgStyle: { borderRadius: '1.75rem' } },
+];
 
 const parkImages = [
   { src: mountrainier, alt: "illustrated poster of mount rainier national park" },
@@ -75,7 +85,7 @@ function Carousel({ images, altPrefix }) {
               key={i}
               src={img.src || img}
               className="carousel__slide"
-              style={makeSlideStyle(i, index, total)}
+              style={{ ...makeSlideStyle(i, index, total), ...(img.imgStyle || {}) }}
               alt={img.alt || `${altPrefix} ${i + 1}`}
             />
           ))}
