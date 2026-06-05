@@ -616,66 +616,32 @@ footer a:hover {
 .sub-nav {
   display: flex;
   justify-content: center;
-  overflow: visible;
-  
-  padding-bottom: 0;
-  text-decoration: none;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
   top: 3rem;
   z-index: 1;
   margin-bottom: 0;
-  
 }
 
-.sub-nav .web-dev-link, .illustration-link {
+.sub-nav .product-link,
+.sub-nav .web-dev-link,
+.sub-nav .illustration-link {
   text-decoration: none;
   font-weight: 700;
-  padding: 1rem;
-  padding-bottom: 0;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  font-size: 0.85rem;
+  padding: 0.4rem 1rem 0.5rem;
+  border-radius: 2rem;
   color: var(--black);
-  border-bottom: none;
-  transition: all 750ms ease-in-out;
-  
+  transition: color 250ms ease, font-family 0ms;
+  white-space: nowrap;
 }
 
 .sub-nav .web-dev-link:hover,
 .sub-nav .illustration-link:hover,
 .sub-nav .product-link:hover {
-  transition: all 300ms ease-out;
-  padding-bottom: .2rem;
-  font-weight: bolder;
+  color: var(--dark-pink);
   font-family: "Cherry Bomb One", serif;
-  font-size: 1.2rem;
-  color: #fe345d;
-}
-
-.sub-nav .product-link {
-  text-decoration: none;
-  font-weight: 700;
-  padding: 1rem;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  color: var(--black);
-  z-index: 0;
-  border-bottom: none;
-  transition: all 550ms ease-in-out;
-}
-
-
-
-
-.sub-nav .illustration-link {
-  text-decoration: none;
-  font-weight: 700;
-  padding: 1rem;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  border-bottom: none;
-  color: var(--black);
-  z-index: 0;
-  padding-bottom: 0.2rem;
-  transition: all 550ms ease-in-out;
 }
 
 
@@ -748,12 +714,16 @@ footer a:hover {
   align-self: center;
   align-items: center;
   font-size: .6rem;
-  color: white;
-  background-color: #1265b3c1;
+  color:#064c8e;
+  font-weight: 700;
   padding: .3rem;
   border-radius: .5rem;
   line-height: .8rem;
   white-space: nowrap;
+  gap: 0.25rem;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 3rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
 }
 
 .figma-icon {
@@ -818,22 +788,35 @@ footer a:hover {
   max-width: 10rem;
 }
 
-.design-project button, .letterboxd-button {
+.design-project button, .letterboxd-button,
+.webdev-container button,
+.illustration-page button:not(.carousel__dot):not(.carousel__btn) {
   cursor: pointer;
-  padding: .5rem 1rem;
+  background-color: transparent;
+  background-image: url("./assets/wavy_line.svg");
+  background-repeat: repeat-x;
+  background-position: bottom left;
+  background-size: 300px 50px;
+  animation: wave-flow 8s linear infinite;
   border: none;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
-  background-color: var(--dark-pink);
-  border-radius: .5rem;
-  font-size: 1.25rem;
-  margin-top: 2rem;
-  color: white;
+  border-radius: 0;
+  padding: 0 0 1.4rem;
+  font-family: "Cherry Bomb One", serif;
+  font-size: 1rem;
+  color: var(--black);
+  margin-top: 1rem;
+  margin-left: 1.2rem;
+  width: auto;
+  transition: font-size 300ms ease, color 300ms ease;
 }
 
-.design-project button:hover {
+.design-project button:hover, .letterboxd-button:hover,
+.webdev-container button:hover,
+.illustration-page button:not(.carousel__dot):not(.carousel__btn):hover {
   cursor: pointer;
-  transition: all 500ms;
+  font-size: 1.1rem;
+  color: var(--dark-pink);
+  background-color: transparent;
 }
 
 /*///////////////////////////\\\\\\\\\\\\\\\\\\\\\\*/
@@ -988,12 +971,41 @@ div img {
 /*//////////////////////////\\\\\\\\\\\\\\\\\\\\\\*/
 .illustration-link-wrapper,
 .product-link-wrapper,
-.web-dev-link-wrapper,
+.web-dev-link-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  z-index: 1;
+}
+
 .recent-work-wrapper {
   position: relative;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+}
+
+.sub-nav__track {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 3rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
+  padding: 0;
+}
+
+.sub-nav__indicator {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 3rem;
+  pointer-events: none;
+  z-index: 0;
+  transition: left 380ms cubic-bezier(0.34, 1.3, 0.64, 1),
+              width 380ms cubic-bezier(0.34, 1.3, 0.64, 1),
+              background-color 320ms ease;
 }
 
 .recent-work-wrapper {
@@ -1010,16 +1022,20 @@ div img {
 .wavy-line {
   display: none;
   position: absolute;
-  bottom: -8px;
-  left: 1rem;
-  right: 1rem;
-  height: 30px;
+  bottom: -16px;
+  left: 0.3rem;
+  right: 0.3rem;
+  height: 50px;
   background-image: url("./assets/wavy_line.svg");
   background-repeat: repeat-x;
-  background-size: 500px 80px;
+  background-size: 500px 50px;
   background-position-y: center;
-  animation: wave-flow 8s linear infinite;
+  animation: wave-flow 4s linear infinite;
   z-index: 2;
+}
+
+.sub-nav .wavy-line {
+  display: none;
 }
 
 .illustration-link.active ~ .wavy-line,
@@ -1033,7 +1049,7 @@ div img {
 .sub-nav .illustration-link.active {
   font-family: "Cherry Bomb One", serif;
   font-weight: 700;
-  color: var(--black);
+  color: white;
 }
 
 .subnav-divider {
@@ -1270,22 +1286,7 @@ div img {
   align-self: flex-start;
 }
 .illustration-page button:not(.carousel__dot):not(.carousel__btn) {
-  cursor: pointer;
-  padding: .5rem 1rem;
-  width: 8rem;
-  border: none;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
-  background-color: var(--dark-pink);
-  border-radius: .5rem;
-  margin-bottom: 2rem;
-  font-size: .8rem;
-}
-
-.illustration-page button:not(.carousel__dot):not(.carousel__btn):hover {
-  cursor: pointer;
-  background-color: var(--light-pink);
-  transition: all 500ms;
+  margin-bottom: 1rem;
 }
 
 .webdev-container section {
@@ -1306,30 +1307,8 @@ div img {
   flex-direction: column;
 }
 
-.webdev-container button {
-  cursor: pointer;
-  padding: .5rem 1rem;
-  width: auto;
-  border: none;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
-  background-color: var(--dark-pink);
-  border-radius: .5rem;
-  
-}
-
-.webdev-container button:hover {
-  cursor: pointer;
-  background-color: var(--light-pink);
-  color: #df032f;
-  transition: all 500ms;
-}
-
 .product-design-page button:hover {
   cursor: pointer;
-  background-color: var(--light-pink);
-  color: #df032f;
-  transition: all 500ms;
 }
 
 a.doodle-link {
@@ -1425,8 +1404,9 @@ a.doodle-link {
     width: 100%;
     z-index: 5;
     background: #b0d9ff url(./assets/noise.svg);
-    padding: 0.5rem 0.5rem;
-    gap: 0.25rem;
+    background-size: 200px;
+    padding: 0.9rem 0.5rem 0.6rem;
+    gap: 0.4rem;
   }
 
   .design-page .sub-nav,
@@ -1762,13 +1742,13 @@ a.doodle-link {
   .sub-nav {
     font-size: 1rem;
     position: fixed;
-    
     left: 0;
     width: 100%;
     z-index: 99;
     background: #b0d9ff url(./assets/noise.svg);
+    background-size: 200px;
     justify-content: center;
-    padding: 0 0;
+    padding: 0.8rem 1rem 0.6rem;
   }
 
   .design-page .sub-nav,
@@ -1805,10 +1785,7 @@ a.doodle-link {
 }
 
   .sub-nav .illustration-link {
-    align-self: flex-end;
-    padding-bottom:0.8rem;
-
-    vertical-align:bottom;
+    align-self: center;
   }
   .linkedin {
     width: 3rem;
@@ -1831,13 +1808,17 @@ a.doodle-link {
   }
   .nav-bar-desktop {
      display: flex;
-     justify-content: space-around;
      font-size: 1.2rem;
      padding-top: .5rem;
      margin-top: .5rem;
      letter-spacing: .25rem;
      font-weight: 700;
+  }
 
+  .nav-bar-desktop a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
   }
 
   .nav-links-mobile a {
@@ -2068,24 +2049,7 @@ a.doodle-link {
  
 
   .design-project button, .letterboxd-button {
-    padding: .5rem 1rem;
-    border: none;
-    border-radius: .5rem;
-    color: var(--black);
-    background-color: var(--dark-pink);
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
-    font-size: .75rem;
-  }
-
-  .design-project button:hover {
-    cursor: pointer;
-    transition: all 500ms;
-  }
-
-  .letterboxd-button:hover {
-    cursor: pointer;
-    transition: all 500ms;
+    font-size: .9rem;
   }
 
   .design-project p {
@@ -2120,21 +2084,8 @@ a.doodle-link {
   }
 
   .webdev-container button {
-    cursor: pointer;
-    padding: .5rem 1rem;
-    width: auto;
-    border: none;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
-    background-color: var(--dark-pink);
-    border-radius: .5rem;
-    margin-left: 2rem;
-  }
-
-  .webdev-container button:hover {
-    cursor: pointer;
-    background-color: var(--light-pink);
-    transition: all 500ms;
+    font-size: .9rem;
+    margin-left: 3rem;
   }
 
   a.doodle-link {
