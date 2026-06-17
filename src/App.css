@@ -306,7 +306,7 @@ nav {
 
 .intro {
   font-size: 1.6rem;
-  
+  font-weight: 800;
   padding: 2rem;
   color: var(--black);
   line-height: 2.8rem;
@@ -1442,6 +1442,10 @@ a.doodle-link {
     width: 100%;
   }
 
+  .recent-work-wrapper {
+    margin: 0 auto;
+  }
+
   .mobile-menu {
     width: 60%;
     height: 100%;
@@ -1873,9 +1877,10 @@ a.doodle-link {
   }
 
   .intro {
-    font-size: 1rem;
+    font-size: .9rem;
     padding: 0;
-    padding-top: 4rem;
+    padding-top: 5rem;
+    text-align: left;
   }
 
   .name, .home-intro {

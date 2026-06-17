@@ -17,7 +17,7 @@ function Home() {
             </span>
           ))}
         </div>
-        <div className="title-span">Product Designer</div>
+        <div className="title-span">UX & Visual Designer</div>
         <div className="location-container">
           <img src={location} className="location-icon" alt="location pin"/>
           Charlotte, NC
@@ -26,7 +26,7 @@ function Home() {
       </div>
       <div className="home-intro">
         <section className="intro">
-          UX designer blending research, creativity, and front-end thinking into experiences people actually enjoy using.
+          Designer blending research, visual craft, and front-end thinking - from brand assets to digital products.
         </section>
         <div className="recent-work-wrapper">
           <NavLink to='/productdesign' className="recent-work">see my recent work!</NavLink>
