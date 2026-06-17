@@ -1376,6 +1376,13 @@ a.doodle-link {
   .illustration-page button:not(.carousel__dot):not(.carousel__btn) {
     background-size: 300px 22px;
     padding-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+
+  .project-skill {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding: 0.5rem 0.6rem;
   }
 
   .nav-component {
