@@ -481,8 +481,10 @@ nav {
 
 footer {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 2rem;
+  padding: 0 3rem 2rem 3rem;
   font-family: "Cherry Bomb One", serif;
   background-image: url(./assets/footerimage.svg);
   background-size:cover;
@@ -494,27 +496,20 @@ footer {
   letter-spacing: .2rem;
   position: sticky;
   bottom: 0;
-  z-index: -1;
+  z-index: 0;
   width: 100vw;
   height: 20rem;
-  
-  
+  box-sizing: border-box;
 }
 
-.linkedincontainer {
-  padding-top: 10rem;
-  padding-left: 4rem;
-}
-
-.emailcontainer{
-  padding-left: 2rem;
-}
 .linkedincontainer, .emailcontainer {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
- 
-  
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #005A00;
+  border-radius: 2rem;
+  padding: 0.4rem 0.9rem;
 }
 
 
@@ -532,24 +527,15 @@ footer a:hover {
 
 
  .linkedin {
-  
   background-image: url(./assets/linkedin-svgrepo-com.svg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 3rem;
   height: 3rem;
-  margin-right: 2rem;
   filter: invert(41%) sepia(83%) saturate(289%) hue-rotate(191deg) brightness(86%) contrast(97%);
-  
-  
-  
 }
 
 
-.emailcontainer {
-  
-  margin-right: 2rem;
-}
 
 .email {
   background-image: url(./assets/email-svgrepo-com.svg);
@@ -558,8 +544,6 @@ footer a:hover {
   width: 3rem;
   height: 3rem;
   filter: invert(64%) sepia(83%) saturate(386%) hue-rotate(11deg) brightness(100%) contrast(84%);
-  margin-right: 6rem;
-
 }
 
 .email:hover {
@@ -1381,10 +1365,17 @@ a.doodle-link {
     height: 30px;
     background-image: url("./assets/wavy_line.svg");
     background-repeat: repeat-x;
-    background-size: 500px 40px;
+    background-size: 500px 50px;
     background-position-y: center;
     animation: wave-flow 6s linear infinite;
     z-index: 2;
+  }
+
+  .design-project button, .letterboxd-button,
+  .webdev-container button,
+  .illustration-page button:not(.carousel__dot):not(.carousel__btn) {
+    background-size: 300px 22px;
+    padding-bottom: 1rem;
   }
 
   .nav-component {
@@ -1392,7 +1383,7 @@ a.doodle-link {
     top: 0;
     left: 0;
     width: 100%;
-    height: 8rem;
+    height: 10rem;
     background: #b0d9ff url(./assets/noise.svg);
     z-index: 8;
   }
@@ -1584,11 +1575,10 @@ a.doodle-link {
   } 
   
   footer {
-    position: fixed;
+    position: sticky;
     bottom: 0;
-    left: 0;
     width: 100vw;
-    z-index: 100;
+    z-index: 0;
   }
 
   footer, footer a{
@@ -1596,9 +1586,6 @@ a.doodle-link {
 
   }
 
- .linkedin, .email {
-  margin-right: 4.3rem;
- }
   
  .letterboxd-gif-desktop {
   border-radius: 2rem;
@@ -1792,8 +1779,7 @@ a.doodle-link {
   }
 
   .email {
-    width: 5rem;
-    transform: translate(2rem, 1rem);
+    width: 3rem;
   }
 
 
@@ -1883,7 +1869,8 @@ a.doodle-link {
   .title {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    font-size: 4rem;
+    font-size: min(4rem, 9.5vw);
+    white-space: nowrap;
   }
   .title-span {
     text-align: center;

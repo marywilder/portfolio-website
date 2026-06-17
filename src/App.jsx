@@ -48,12 +48,11 @@ function App() {
 </Routes>
 
   <footer>
-    <div className="linkedincontainer"><div className="linkedin"></div>
-  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mary-wilder-ab13b5285/">get in touch</a></div>
-  <br/>
-  <div className="emailcontainer">
-  <div className="email"></div><div> marywilder717@gmail.com</div>
-  </div> </footer>
+    <a className="linkedincontainer" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mary-wilder-ab13b5285/"><div className="linkedin"></div> </a>
+    <a className="emailcontainer" href="mailto:marywilder717@gmail.com">
+  <div className="email"></div></a>
+  let's work together!
+   </footer>
 
   </div>
   )
