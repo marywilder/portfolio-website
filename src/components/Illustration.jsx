@@ -61,8 +61,8 @@ const makeSlideStyle = (i, activeIndex, total) => {
   return {
     top: '50%',
     left: `calc(50% + ${offset * 38}%)`,
-    transform: `translateX(-50%) translateY(-50%) scale(${absOffset === 0 ? 1 : 0.72})`,
-    opacity: absOffset === 0 ? 1 : absOffset === 1 ? 0.4 : 0,
+    transform: `translateX(-50%) translateY(-50%) scale(${absOffset === 0 ? 1 : 0.50})`,
+    opacity: absOffset === 0 ? 1 : absOffset === 1 ? 0.20 : 0,
     zIndex: absOffset === 0 ? 3 : 2,
     pointerEvents: absOffset === 0 ? 'auto' : 'none',
     transition: 'left 400ms ease, transform 400ms ease, opacity 400ms ease',

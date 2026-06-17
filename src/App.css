@@ -1390,7 +1390,7 @@ a.doodle-link {
 
   .sub-nav {
     position: fixed;
-    top: 8rem;
+    top: 10rem;
     left: 0;
     width: 100%;
     z-index: 5;
@@ -1404,7 +1404,7 @@ a.doodle-link {
   .webdev-page .sub-nav,
   .illustration-page .sub-nav {
     position: fixed;
-    top: 8rem;
+    top: 10rem;
     width: 100%;
     margin-left: 0;
     z-index: 5;
@@ -1413,7 +1413,7 @@ a.doodle-link {
   .design-page,
   .webdev-page,
   .illustration-page {
-    margin-top: 12rem;
+    margin-top: 15rem;
   }
 
   .sub-nav .web-dev-link,
@@ -1425,11 +1425,21 @@ a.doodle-link {
   }
 
  
+  .about-page {
+    padding-top: 5rem;
+  }
+
+  .about-page h2 {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    width: 100%;
+  }
+
   .mobile-menu {
     width: 60%;
     height: 100%;
     flex-direction: column;
-    align-items: flex-end;  
+    align-items: flex-end;
     z-index: 20;
     position: fixed;
     top: 0;
@@ -1716,7 +1726,7 @@ a.doodle-link {
   .sun-desktop {
     display: block;
     position: fixed;
-    top: 4.5rem;
+    top: 8.5rem;
     right: 5.5rem;
     width: 5rem;
     height: 5rem;
@@ -1735,7 +1745,7 @@ a.doodle-link {
     background: #b0d9ff url(./assets/noise.svg);
     background-size: 200px;
     justify-content: center;
-    padding: 0.8rem 1rem 0.6rem;
+    padding: 2rem 1rem 0.6rem;
   }
 
   .design-page .sub-nav,
