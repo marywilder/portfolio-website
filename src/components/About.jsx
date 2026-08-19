@@ -22,7 +22,7 @@ export default function About() {
 </h2>
 <div className="about-profile">
         <img src={hello} className="profile-pic1"alt="headshot of Mary cropped in a circle, with the word 'hello!' and illustrated flowers bordering the top of the image."/>
-        <div><h2>I’m Mary, a UX & Visual Designer based in Charlotte, NC.</h2>
+        <div><h2>I’m Mary, a UX, Web & Visual Designer based in Charlotte, NC.</h2>
         <p>
   <b>Curiosity and empathy</b> are at the foundation of how I approach design, and I’m most energized when solving messy problems or learning something new through the process. With a background in <b>graphic design</b>, <b>marketing</b>,<b>front-end engineering</b>,and <b>UX</b>, I bring a blend of creative and technical thinking that helps me collaborate across teams and disciplines.
 </p>

@@ -17,7 +17,7 @@ function Home() {
             </span>
           ))}
         </div>
-        <div className="title-span">UX & Visual Designer</div>
+        <div className="title-span">UX, Web & Visual Designer</div>
         <div className="location-container">
           <img src={location} className="location-icon" alt="location pin"/>
           Charlotte, NC
