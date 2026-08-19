@@ -9,6 +9,7 @@ import doodlejump from "../assets/Screenshot (11).png";
 import starbucks from '../assets/Starbucks-case-study.png';
 import Subnav from './Subnav';
 import Productdesign from './Productdesign';
+import extravaganza from '../assets/extravaganza screenshot.jpg'
 
 export default function Webdev() {
   return (
@@ -28,6 +29,17 @@ export default function Webdev() {
         <br></br>I'm proud of</h1>*/}
         
           <div className="webdev-container">
+            <section className="space-project" >
+            <h2 >Extravaganza Events</h2>
+            <div>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.extravaganzaevents.com">
+              <img className="project-preview" src={extravaganza} alt="screenshot of extravaganza events site"/>
+              </a>
+              <div className='web-description'><p>Full redesign and rebuild for a local events company, focused on rethinking the information architecture, clarifying navigation and calls to action, and improving organic visibility. Built to be easy for the client to maintain going forward.</p>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.extravaganzaevents.com"><button target="_blank" rel="noopener noreferrer" href="https://www.extravaganzaevents.com">View Here</button></a></div>
+            </div> 
+              
+            </section>
 
             <section className="space-project" >
             <h2 >Space Tourism Website</h2>
@@ -44,7 +56,7 @@ export default function Webdev() {
             <section className="space-project" >
             <h2 >Starbucks Case Study</h2>
             <div>
-              <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/space-travel-website/#/">
+              <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/starbucks-case-study/#/">
               <img className="project-preview" src={starbucks} alt="a screenshot of the starbucks case study website"/>
               </a>
               <div className='web-description'><p>During my MPS program, my design team of 3 worked to create a new feature set for the Starbucks app. I made this responsive website using HTML and CSS, with media quieres, smooth scrolling, and animations.</p>

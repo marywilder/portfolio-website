@@ -1331,6 +1331,7 @@ a.doodle-link {
 .webdev-container img {
   width: 20rem;
   height: 20rem;
+  object-fit: cover;
 }
 
 .letterboxd-gif {
@@ -2138,6 +2139,7 @@ a.doodle-link {
   .webdev-container img {
     width: 15rem;
     height: 15rem;
+    object-fit: cover;
   }
 
   .webdev-container div {
