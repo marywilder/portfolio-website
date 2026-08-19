@@ -24,14 +24,14 @@ export default function About() {
         <img src={hello} className="profile-pic1"alt="headshot of Mary cropped in a circle, with the word 'hello!' and illustrated flowers bordering the top of the image."/>
         <div><h2>I’m Mary, a UX & Visual Designer based in Charlotte, NC.</h2>
         <p>
-  <b>Curiosity and empathy</b> are at the foundation of how I approach design, and I’m most energized when solving messy problems or learning something new through the process. With a background in <b>digital art</b>, <b>front-end engineering</b>, and <b>UX</b>, I bring a blend of creative and technical thinking that helps me collaborate across teams and disciplines.
+  <b>Curiosity and empathy</b> are at the foundation of how I approach design, and I’m most energized when solving messy problems or learning something new through the process. With a background in <b>graphic design</b>, <b>marketing</b>,<b>front-end engineering</b>,and <b>UX</b>, I bring a blend of creative and technical thinking that helps me collaborate across teams and disciplines.
 </p>
 </div>
         </div>
 
 
 <p>
-  I recently earned my <b>Master’s in UX Design</b> from the <b>Maryland Institute College of Art (MICA)</b> in 2025, and previously completed a <b>Front-End Engineering certificate</b> through <b>Codecademy</b> in 2023. That combination of <b>visual craft</b>, <b>product experience</b>, and <b>research-driven design</b> shapes how I approach every project.
+  I recently earned my <b>Master’s in UX Design</b> from the <b>Maryland Institute College of Art (MICA)</b> in 2025, and previously completed a <b>Front-End Engineering certificate</b> through <b>Codecademy</b> in 2023. That combination of <b>technical thinking</b>, <b>product experience</b>, and <b>research-driven design</b> shapes how I approach every project.
 </p>
 
 <p>
@@ -66,10 +66,11 @@ export default function About() {
           
           <p >
             <ul>
-              <li><b>Wireframing & Prototyping:</b> Low-fi, hi-fi, functional prototypes. They’re all in my toolkit and I know when to leverage each of these tools.Creating everything from quick sketches to detailed, fully interactive prototypes.</li>
-              <li><b>Design Systems:</b> In all of my work, I prioritize creating design systems that are flexible, cohesive, and capable of supporting a dynamic and varied product. Organization is key for a successful product team; I’m skilled with using Figma’s wide range of advanced tools such as components, variables, auto-layout, styles, and everything in between.</li>
               <li><b>UX Research & Usability Testing:</b> Designing and conducting user interviews/usability testing, and analyzing data to uncover actionable insights.
               </li>
+              <li><b>Wireframing & Prototyping:</b> Low-fi, hi-fi, functional prototypes. They’re all in my toolkit and I know when to leverage each of these tools.Creating everything from quick sketches to detailed, fully interactive prototypes.</li>
+              <li><b>Design Systems:</b> In all of my work, I prioritize creating design systems that are flexible, cohesive, and capable of supporting a dynamic and varied product. Organization is key for a successful product team; I’m skilled with using Figma’s wide range of advanced tools such as components, variables, auto-layout, styles, and everything in between.</li>
+              
               <li><b>Interaction Design:</b> Mapping out intuitive user flows, microinteractions, and delightful animations to enhance usability and increase engagement.</li>
               <li><b>Technical and Software Skills:</b> Figma, Adobe Illustrator, Front-end development (HTML, CSS, JavaScript), responsive design, animation, accessibility, SEO.</li>
               <li><b>Creative Problem-Solving:</b> Tackling complex challenges by balancing user needs, business objectives, and technical constraints.</li>
