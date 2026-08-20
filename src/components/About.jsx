@@ -35,10 +35,6 @@ export default function About() {
 </p>
 
 <p>
-  I’m always excited to learn new things and genuinely have a lot of fun doing it.
-</p>
-
-<p>
   Outside of the digital world, you can usually find me rollerblading, trying a new craft, or hanging out with my cat, Lenny.
 </p>
 
