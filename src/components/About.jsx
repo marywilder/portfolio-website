@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import hello from '../assets/profile_pic.png';
+import caretIcon from '../assets/^.svg';
 
 export default function About() {
   const [eduOpen, setEduOpen] = useState(false);
   const [skillsOpen, setSkillsOpen] = useState(false);
+  const caretStyle = { '--caret-icon': `url(${caretIcon})` };
 
   return (
     <section className="about-page">
@@ -54,7 +56,7 @@ export default function About() {
             onClick={() => setEduOpen(!eduOpen)}
           >
             <h2>Education</h2>
-            <span className="accordion-arrow" aria-hidden="true"></span>
+            <span className="accordion-arrow" style={caretStyle} aria-hidden="true"></span>
           </button>
           <div className="accordion-panel">
             <div className="accordion-panel-inner">
@@ -75,7 +77,7 @@ export default function About() {
             onClick={() => setSkillsOpen(!skillsOpen)}
           >
             <h2>Skills</h2>
-            <span className="accordion-arrow" aria-hidden="true"></span>
+            <span className="accordion-arrow" style={caretStyle} aria-hidden="true"></span>
           </button>
           <div className="accordion-panel">
             <div className="accordion-panel-inner">
