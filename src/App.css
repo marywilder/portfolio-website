@@ -449,6 +449,38 @@ nav {
 
 
 
+.accordion summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion summary::before {
+  content: "";
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-right: 0.75rem;
+  border-right: 3px solid var(--dark-pink);
+  border-bottom: 3px solid var(--dark-pink);
+  transform: rotate(-45deg);
+  transition: transform 200ms ease-in-out;
+  flex-shrink: 0;
+}
+
+.accordion[open] summary::before {
+  transform: rotate(45deg);
+}
+
+.accordion summary h2 {
+  display: inline;
+}
+
 .about-skills:hover {
   
   transition: all 100ms ease-in;

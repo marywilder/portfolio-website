@@ -24,7 +24,7 @@ export default function About() {
         <img src={hello} className="profile-pic1"alt="headshot of Mary cropped in a circle, with the word 'hello!' and illustrated flowers bordering the top of the image."/>
         <div><h2>I’m Mary, a UX, Web & Visual Designer based in Charlotte, NC.</h2>
         <p>
-  <b>Curiosity and empathy</b> are at the foundation of how I approach design, and I’m most energized when solving messy problems or learning something new through the process. With a background in <b>graphic design</b>, <b>marketing</b>,<b>front-end engineering</b>,and <b>UX</b>, I bring a blend of creative and technical thinking that helps me collaborate across teams and disciplines.
+  <b>Curiosity and empathy</b> are at the foundation of how I approach design, and I’m most energized when solving messy problems or learning something new through the process. With a background in <b>graphic design</b>, <b> marketing</b>,<b> front-end engineering</b>, and <b>UX</b>, I bring a blend of creative and technical thinking that helps me collaborate across teams and disciplines.
 </p>
 </div>
         </div>
@@ -47,19 +47,19 @@ export default function About() {
           view my resume <span>➜ </span>
         </a>
         </div>
-        <div className='education'>
-          <h2>Education:</h2>
+        <details className='education accordion'>
+          <summary><h2>Education:</h2></summary>
 <br/>
 <b>2024-25</b> Masters of Professional Studies in UX Design, Maryland Institute College of Art
 <br/>
 <b>2022:</b> Front-end engineering Career path certificate, Codecademy
 <br/>
 <b>2015-2019</b> Bachelors in Communication Studies, Ohio University
-        </div>
-        <div className="about-skills">
+        </details>
+        <details className="about-skills accordion">
 
-          <h2>Skills</h2>
-          
+          <summary><h2>Skills</h2></summary>
+
           <p >
             <ul>
               <li><b>UX Research & Usability Testing:</b> Designing and conducting user interviews/usability testing, and analyzing data to uncover actionable insights.
@@ -85,7 +85,7 @@ export default function About() {
 
 </p>
 
-        </div>
+        </details>
 
 
         
