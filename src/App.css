@@ -333,7 +333,7 @@ nav {
   align-items: center;
   gap: .4rem;
   font-family: "Cherry Bomb One", serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: var(--dark-blue);
   text-decoration: none;
   margin-top: 1.5rem;
@@ -412,7 +412,7 @@ nav {
 
 .about-page h2 .body-font {
   font-family: 'Quicksand', sans-serif;
-  font-size: .8rem;
+  font-size: 1.35rem;
   font-weight: 500;
   letter-spacing: .1rem;
   line-height: inherit;
@@ -446,21 +446,53 @@ nav {
 .about-skills {
   border-radius: 1.5rem;
   align-self: stretch;
-  padding-left: 2rem;
   line-height: 2.2rem;
   font-size: 1.35rem;
   text-align: left;
-  margin-left: 2rem;
   margin-top: 1rem;
 }
 
 .education {
   border-radius: 1.5rem;
-  padding: 1rem 0px 0px 2rem;
+  padding: 1rem 0px 0px 0rem;
   line-height: 2.2rem;
   font-size: 1.35rem;
   text-align: left;
   margin: 0rem;
+}
+
+.accordions-row {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 771px) {
+  .accordions-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 1rem;
+  }
+
+  .accordions-row .education {
+    order: 1;
+    max-width: 12rem;
+  }
+
+  .accordions-row .education.open {
+    max-width: none;
+  }
+
+  .accordions-row .resume-link {
+    order: 2;
+    margin-left: auto;
+    margin-top: 0;
+  }
+
+  .accordions-row .about-skills {
+    order: 3;
+    flex-basis: 100%;
+  }
 }
 
 .accordion-toggle {
@@ -506,6 +538,7 @@ nav {
 .accordion-panel {
   display: grid;
   grid-template-rows: 0fr;
+  width: 100%;
   transition: grid-template-rows 450ms cubic-bezier(0.34, 1.1, 0.4, 1), opacity 350ms ease;
   opacity: 0;
 }
@@ -1514,6 +1547,10 @@ a.doodle-link {
     width: 100%;
   }
 
+  .resume-link {
+    font-size: 2.2rem;
+  }
+
   .recent-work-wrapper {
     margin: 0 auto;
   }
@@ -2047,21 +2084,20 @@ a.doodle-link {
 
 .about-profile {
   display: flex;
-  
-  align-items: center;
+
+  align-items: flex-start;
 
 }
-.about-profile div {
+.about-profile > div {
   padding-left: 2rem;
-  
 }
 
-  .about-intro p {
-    
+  .about-intro p, .about-outro, .about-page h2 .body-font {
+
     font-size: .8rem;
     line-height: 1.75rem;
   }
-  
+
   .hi-there {
     border: none;
     position: absolute;
@@ -2074,8 +2110,7 @@ a.doodle-link {
 .education {
   font-size: .8rem;
   line-height: 1.6rem;
-  width: 100%;
-  padding-left: 2rem;
+  padding-left: 0;
 }
 
   .about-skills {
