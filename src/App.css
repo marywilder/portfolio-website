@@ -396,7 +396,8 @@ nav {
   align-items: flex-start;
   font-size: 1.35rem;
   padding: 2rem;
-  
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   border-radius: 1.5rem;
   
   
@@ -434,19 +435,28 @@ nav {
 
 }
 
+.about-outro {
+  font-size: 1.35rem;
+  line-height: 2.5rem;
+  text-align: left;
+  padding: 2rem;
+  margin: 0;
+}
+
 .about-skills {
   border-radius: 1.5rem;
   align-self: stretch;
-  padding: 2rem;
+  padding-left: 2rem;
   line-height: 2.2rem;
   font-size: 1.35rem;
   text-align: left;
-  margin: 2rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
 }
 
 .education {
   border-radius: 1.5rem;
-  padding: 0px 0px 0px 2rem;
+  padding: 1rem 0px 0px 2rem;
   line-height: 2.2rem;
   font-size: 1.35rem;
   text-align: left;
@@ -474,7 +484,7 @@ nav {
 .accordion-arrow {
   display: inline-block;
   flex-shrink: 0;
-  width: 1.6rem;
+  width: 1rem;
   height: 1.05rem;
   background-color: var(--dark-pink);
   -webkit-mask-image: var(--caret-icon);

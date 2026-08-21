@@ -10,18 +10,18 @@ export default function About() {
   return (
     <section className="about-page">
        {/*  <h1 className="title title-span">
-         <span className="a-about">a</span>   
+         <span className="a-about">a</span>
          <span className="b-about">b</span>
          <span className="o-about">o</span>
          <span className="u-about">u</span>
          <span className="t-about">t</span>
          <span className="space-about">  </span>
          <span className="m-about">m</span>
-         <span className="e-about">e</span>       
+         <span className="e-about">e</span>
          </h1>
          */}
          <br></br>
-         
+
         <div className="about-intro">
         <h2>
 </h2>
@@ -30,24 +30,7 @@ export default function About() {
         <div><h2>I’m Mary<span className="body-font">, a UX, Web & Visual Designer based in Charlotte, NC.</span></h2>
         <p>
   My background spans <b>graphic design</b>, <b>marketing</b>, <b>front-end development</b>, and recently earned a Master's Degree in <b>UX Design</b>. I love solving messy problems, asking a lot of questions, and getting to the heart of what people actually need. I try to bring curiosity, empathy, and a little bit of fun to the things I make!
-
 </p>
-</div>
-        </div>
-
-<p>
-  Outside of the digital world, you can usually find me rollerblading, trying a new craft, or hanging out with my cat, Lenny.
-</p>
-
-        <a
-          href="https://docs.google.com/document/d/10OHxTkpYHKbpynRaW5ShkBiY3waKh6tDhuqj9qIR1KY/edit?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="resume-link"
-        >
-          view my resume <span>➜ </span>
-        </a>
-        </div>
         <div className={`education accordion${eduOpen ? ' open' : ''}`}>
           <button
             type="button"
@@ -94,19 +77,26 @@ export default function About() {
               <li><b>Collaboration & Communication:</b>  From my experiences in digital art and ecommerce, as well as my Master’s program, I’ve worked closely on cross-functional teams, and internal/external stakeholders to bring ideas to life.</li>
               <li><b>Continuous Learning:</b> I’m always experimenting with new tools, design trends, and methodologies to stay sharp and innovative. I lean into feedback and want to bring my best every day.</li>
             </ul>
-
-
-
-
-
-
-
 </p>
             </div>
           </div>
         </div>
+        <a
+          href="https://docs.google.com/document/d/10OHxTkpYHKbpynRaW5ShkBiY3waKh6tDhuqj9qIR1KY/edit?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="resume-link"
+        >
+          view my resume <span>➜ </span>
+        </a>
+</div>
+        </div>
 
+        </div>
 
+        <p className="about-outro">
+  Outside of the digital world, you can usually find me rollerblading, trying a new craft, or hanging out with my cat, Lenny.
+</p>
 
     </section>
   )
