@@ -1214,13 +1214,13 @@ div img {
 .carousel__btn {
   appearance: none;
   -webkit-appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: transparent;
   border: none;
   box-shadow: none;
-  font-size: 3rem;
-  color: var(--dark-pink);
   cursor: pointer;
-  line-height: 1;
   padding: 0 0.25rem;
   transition: transform 150ms ease;
   flex-shrink: 0;
@@ -1228,6 +1228,29 @@ div img {
 
 .carousel__btn:hover {
   transform: scale(1.2);
+}
+
+.carousel__arrow {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.7rem;
+  background-color: var(--dark-pink);
+  -webkit-mask-image: var(--caret-icon);
+  mask-image: var(--caret-icon);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+.carousel__arrow--prev {
+  transform: rotate(-90deg);
+}
+
+.carousel__arrow--next {
+  transform: rotate(90deg);
 }
 
 .carousel__dots {

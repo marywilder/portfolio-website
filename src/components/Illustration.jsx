@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Subnav from './Subnav';
+import caretIcon from '../assets/^.svg';
 import appleorchard from '../assets/appleorchard_.jpg'
 import birdwithbanjo from '../assets/birdwithbanjo_.jpg';
 import owls from '../assets/owls_.jpg';
@@ -74,11 +75,14 @@ function Carousel({ images, altPrefix }) {
   const total = images.length;
   const prev = () => setIndex(i => (i - 1 + total) % total);
   const next = () => setIndex(i => (i + 1) % total);
+  const caretStyle = { '--caret-icon': `url(${caretIcon})` };
 
   return (
     <>
       <div className="carousel">
-        <button className="carousel__btn" onClick={prev} aria-label="Previous image">&#8249;</button>
+        <button className="carousel__btn" onClick={prev} aria-label="Previous image">
+          <span className="carousel__arrow carousel__arrow--prev" style={caretStyle} aria-hidden="true"></span>
+        </button>
         <div className="carousel__viewport">
           {images.map((img, i) => (
             <img
@@ -90,7 +94,9 @@ function Carousel({ images, altPrefix }) {
             />
           ))}
         </div>
-        <button className="carousel__btn" onClick={next} aria-label="Next image">&#8250;</button>
+        <button className="carousel__btn" onClick={next} aria-label="Next image">
+          <span className="carousel__arrow carousel__arrow--next" style={caretStyle} aria-hidden="true"></span>
+        </button>
       </div>
       <div className="carousel__dots">
         {images.map((_, i) => (
