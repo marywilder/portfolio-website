@@ -1552,8 +1552,8 @@ a.doodle-link {
   }
 
   .accordion-arrow {
-    width: 2rem;
-    height: 2.1rem;
+    width: 1.6rem;
+    height: 1.8rem;
   }
 
   .recent-work-wrapper {
@@ -1730,9 +1730,27 @@ a.doodle-link {
 
   .home {
     align-items:baseline;
+    gap: 3rem;
   }
 
-  
+  .recent-work {
+    font-size: 3rem;
+  }
+
+  .intro {
+    line-height: 3rem;
+    font-size: 1.8rem;
+  }
+
+  .location-container {
+    font-size: 1.6rem;
+  }
+
+  .title-span {
+    padding-top: 1rem;
+    font-size: 2rem;
+  }
+
 }
 
 /*///////////////////////////\\\\\\\\\\\\\\\\\\\\\\*/
