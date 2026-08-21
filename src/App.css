@@ -405,15 +405,15 @@ nav {
 }
 
 .about-page h2 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: var(--black);
 }
 
 .about-page h2 .body-font {
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.2rem;
+  font-size: .8rem;
   font-weight: 500;
-  letter-spacing: normal;
+  letter-spacing: .1rem;
   line-height: inherit;
 }
 
@@ -436,12 +436,10 @@ nav {
 
 .about-skills {
   border-radius: 1.5rem;
-  
+  align-self: stretch;
   padding: 2rem;
   line-height: 2.2rem;
   font-size: 1.35rem;
-  align-self: center;
-  
   text-align: left;
   margin: 2rem;
 }
@@ -455,38 +453,65 @@ nav {
   margin: 0rem;
 }
 
-
-
-.accordion summary {
-  cursor: pointer;
-  list-style: none;
+.accordion-toggle {
   display: flex;
   align-items: center;
+  gap: 1rem;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
 }
 
-.accordion summary::-webkit-details-marker {
-  display: none;
+.accordion-toggle h2 {
+  margin: 0;
 }
 
-.accordion summary::before {
-  content: "";
-  display: inline-block;
-  width: 0.7rem;
-  height: 0.7rem;
-  margin-right: 0.75rem;
-  border-right: 3px solid var(--dark-pink);
-  border-bottom: 3px solid var(--dark-pink);
-  transform: rotate(-45deg);
-  transition: transform 200ms ease-in-out;
+.accordion-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background: var(--dark-pink);
+  transition: transform 450ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.accordion[open] summary::before {
-  transform: rotate(45deg);
+.accordion-arrow::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.5rem solid white;
+  margin-top: 0.15rem;
 }
 
-.accordion summary h2 {
-  display: inline;
+.accordion.open .accordion-arrow {
+  transform: rotate(180deg);
+}
+
+.accordion-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 450ms cubic-bezier(0.34, 1.1, 0.4, 1), opacity 350ms ease;
+  opacity: 0;
+}
+
+.accordion.open .accordion-panel {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.accordion-panel-inner {
+  overflow: hidden;
+  min-height: 0;
 }
 
 .about-skills:hover {
@@ -2049,7 +2074,7 @@ a.doodle-link {
 
   .about-skills {
     margin-left: 0;
-    align-self: center;
+    align-self: stretch;
     font-size: .8rem;
   }
 

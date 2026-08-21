@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import hello from '../assets/profile_pic.png';
 
 export default function About() {
+  const [eduOpen, setEduOpen] = useState(false);
+  const [skillsOpen, setSkillsOpen] = useState(false);
+
   return (
     <section className="about-page">
        {/*  <h1 className="title title-span">
@@ -22,7 +25,7 @@ export default function About() {
 </h2>
 <div className="about-profile">
         <img src={hello} className="profile-pic1"alt="headshot of Mary cropped in a circle, with the word 'hello!' and illustrated flowers bordering the top of the image."/>
-        <div><h2>I’m Mary, <span className="body-font">a UX, Web & Visual Designer based in Charlotte, NC.</span></h2>
+        <div><h2>I’m Mary<span className="body-font">, a UX, Web & Visual Designer based in Charlotte, NC.</span></h2>
         <p>
   My background spans <b>graphic design</b>, <b>marketing</b>, <b>front-end development</b>, and recently earned a Master's Degree in <b>UX Design</b>. I love solving messy problems, asking a lot of questions, and getting to the heart of what people actually need. I try to bring curiosity, empathy, and a little bit of fun to the things I make!
 
@@ -43,26 +46,46 @@ export default function About() {
           view my resume <span>➜ </span>
         </a>
         </div>
-        <details className='education accordion'>
-          <summary><h2>Education:</h2></summary>
+        <div className={`education accordion${eduOpen ? ' open' : ''}`}>
+          <button
+            type="button"
+            className="accordion-toggle"
+            aria-expanded={eduOpen}
+            onClick={() => setEduOpen(!eduOpen)}
+          >
+            <h2>Education</h2>
+            <span className="accordion-arrow" aria-hidden="true"></span>
+          </button>
+          <div className="accordion-panel">
+            <div className="accordion-panel-inner">
 <br/>
 <b>2024-25</b> Masters of Professional Studies in UX Design, Maryland Institute College of Art
 <br/>
 <b>2022:</b> Front-end engineering Career path certificate, Codecademy
 <br/>
 <b>2015-2019</b> Bachelors in Communication Studies, Ohio University
-        </details>
-        <details className="about-skills accordion">
-
-          <summary><h2>Skills</h2></summary>
-
+            </div>
+          </div>
+        </div>
+        <div className={`about-skills accordion${skillsOpen ? ' open' : ''}`}>
+          <button
+            type="button"
+            className="accordion-toggle"
+            aria-expanded={skillsOpen}
+            onClick={() => setSkillsOpen(!skillsOpen)}
+          >
+            <h2>Skills</h2>
+            <span className="accordion-arrow" aria-hidden="true"></span>
+          </button>
+          <div className="accordion-panel">
+            <div className="accordion-panel-inner">
           <p >
             <ul>
               <li><b>UX Research & Usability Testing:</b> Designing and conducting user interviews/usability testing, and analyzing data to uncover actionable insights.
               </li>
               <li><b>Wireframing & Prototyping:</b> Low-fi, hi-fi, functional prototypes. They’re all in my toolkit and I know when to leverage each of these tools.Creating everything from quick sketches to detailed, fully interactive prototypes.</li>
               <li><b>Design Systems:</b> In all of my work, I prioritize creating design systems that are flexible, cohesive, and capable of supporting a dynamic and varied product. Organization is key for a successful product team; I’m skilled with using Figma’s wide range of advanced tools such as components, variables, auto-layout, styles, and everything in between.</li>
-              
+
               <li><b>Interaction Design:</b> Mapping out intuitive user flows, microinteractions, and delightful animations to enhance usability and increase engagement.</li>
               <li><b>Technical and Software Skills:</b> Figma, Adobe Illustrator, Front-end development (HTML, CSS, JavaScript), responsive design, animation, accessibility, SEO.</li>
               <li><b>Creative Problem-Solving:</b> Tackling complex challenges by balancing user needs, business objectives, and technical constraints.</li>
@@ -76,15 +99,13 @@ export default function About() {
 
 
 
-
-
-
 </p>
+            </div>
+          </div>
+        </div>
 
-        </details>
 
 
-        
     </section>
   )
 }
