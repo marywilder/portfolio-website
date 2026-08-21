@@ -22,17 +22,13 @@ export default function About() {
 </h2>
 <div className="about-profile">
         <img src={hello} className="profile-pic1"alt="headshot of Mary cropped in a circle, with the word 'hello!' and illustrated flowers bordering the top of the image."/>
-        <div><h2>I’m Mary, a UX, Web & Visual Designer based in Charlotte, NC.</h2>
+        <div><h2>I’m Mary, <span className="body-font">a UX, Web & Visual Designer based in Charlotte, NC.</span></h2>
         <p>
-  <b>Curiosity and empathy</b> are at the foundation of how I approach design, and I’m most energized when solving messy problems or learning something new through the process. With a background in <b>graphic design</b>, <b> marketing</b>,<b> front-end engineering</b>, and <b>UX</b>, I bring a blend of creative and technical thinking that helps me collaborate across teams and disciplines.
+  My background spans <b>graphic design</b>, <b>marketing</b>, <b>front-end development</b>, and recently earned a Master's Degree in <b>UX Design</b>. I love solving messy problems, asking a lot of questions, and getting to the heart of what people actually need. I try to bring curiosity, empathy, and a little bit of fun to the things I make!
+
 </p>
 </div>
         </div>
-
-
-<p>
-  I recently earned my <b>Master’s in UX Design</b> from the <b>Maryland Institute College of Art (MICA)</b> in 2025, and previously completed a <b>Front-End Engineering certificate</b> through <b>Codecademy</b> in 2023. That combination of <b>technical thinking</b>, <b>product experience</b>, and <b>research-driven design</b> shapes how I approach every project.
-</p>
 
 <p>
   Outside of the digital world, you can usually find me rollerblading, trying a new craft, or hanging out with my cat, Lenny.

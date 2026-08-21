@@ -409,6 +409,14 @@ nav {
   color: var(--black);
 }
 
+.about-page h2 .body-font {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: inherit;
+}
+
 .about-page .aboutme-title {
   line-height: 3rem;
   padding-bottom: 2rem;
