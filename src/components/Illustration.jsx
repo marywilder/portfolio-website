@@ -27,6 +27,8 @@ import pullupbanners from '../assets/Pull-Up-Banners.png';
 import brooksbanner from '../assets/10x10banner.png';
 import wscsheet from '../assets/479250_Print_ASSE-Device_Types_Reference_Sheet.png';
 import brooksemail from '../assets/Brooks-email.mp4';
+import appleOrchardAnimation from '../assets/apple-orchard-animation.mp4';
+import lennyVideo from '../assets/lenny-video-compressed.mp4';
 
 const bssImages = [
   pullupbanners,
@@ -153,6 +155,17 @@ export default function Illustration() {
                 </div>
                 <div className="artworkimages">
                   <img src={postcard} className="pskyimg"/>
+                </div>
+              </div>
+
+              <div><h2>Animations</h2></div>
+
+              <div className="art-project art-project--row">
+                <div className="artworkimages">
+                  <video src={appleOrchardAnimation} className="pskyimg" autoPlay loop muted playsInline aria-label="apple orchard animation"/>
+                </div>
+                <div className="artworkimages">
+                  <video src={lennyVideo} className="pskyimg" autoPlay loop muted playsInline aria-label="Lenny the cat animation"/>
                 </div>
               </div>
 
