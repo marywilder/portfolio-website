@@ -1383,7 +1383,35 @@ div img {
   justify-content: center;
   flex-flow: row wrap;
   align-items: baseline;
-  
+
+}
+
+.animations-row {
+  align-items: stretch;
+  width: 100%;
+}
+
+.animations-item {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.animation-video {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  border-radius: .1rem;
+}
+
+@media (max-width: 770px) {
+  .animations-row {
+    flex-direction: column;
+  }
+
+  .animations-item {
+    width: 100%;
+  }
 }
 .design-project {
   display: flex;
@@ -1891,6 +1919,18 @@ a.doodle-link {
 @media (min-width: 1024px) {
   .app {
     padding-top: 4rem;
+  }
+
+  .animations-row {
+    align-items: center;
+  }
+
+  .lenny-animation-item {
+    flex: 0 0 25%;
+  }
+
+  .apple-orchard-item {
+    flex: 0 0 52.5%;
   }
 
   .sun-desktop {
