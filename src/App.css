@@ -866,6 +866,10 @@ footer a:hover {
   height: 19rem;
 }
 
+.starbucksimg.tbd-video {
+  border-radius: 1.5rem;
+}
+
 .starbucksimg, .shopify-logo {
   border: none;
 }
@@ -2206,6 +2210,10 @@ a.doodle-link {
     left: .35rem;
     width: 8.25rem;
     height: 18rem;
+  }
+
+  .starbucksimg.tbd-video {
+    border-radius: 1.8rem;
   }
 
  

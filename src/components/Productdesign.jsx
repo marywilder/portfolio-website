@@ -18,7 +18,7 @@ export default function Productdesign() {
                     <div className="prototype-container-of-container">
                     <div className="prototype-container">
                     <div className="prototype-img">
-                      <video src={tbdprototype} className="starbucksimg" autoPlay loop muted playsInline aria-label="Product comparison app"/>
+                      <video src={tbdprototype} className="starbucksimg tbd-video" autoPlay loop muted playsInline aria-label="Product comparison app"/>
                     </div>
                     </div>
 
