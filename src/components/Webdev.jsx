@@ -7,6 +7,7 @@ import todolist from "../assets/Screenshot (8).png";
 import weatherapp from "../assets/Screenshot (9).png";
 import doodlejump from "../assets/Screenshot (11).png";
 import starbucks from '../assets/Starbucks-case-study.png';
+import tbdsite from '../assets/tbd-site.jpg';
 import Subnav from './Subnav';
 import Productdesign from './Productdesign';
 import extravaganza from '../assets/extravaganza screenshot.jpg'
@@ -53,6 +54,8 @@ export default function Webdev() {
               
             </section>
 
+            
+
             <section className="space-project" >
             <h2 >Starbucks Case Study</h2>
             <div>
@@ -63,6 +66,18 @@ export default function Webdev() {
               <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/starbucks-case-study/#/"><button target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/starbucks-case-study/#/">View Here</button></a></div>
             </div> 
               
+            </section>
+
+            <section className="space-project" >
+            <h2 >Product Comparison App Case Study</h2>
+            <div>
+              <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/tbd_case_study/#/">
+              <img className="project-preview" src={tbdsite} alt="a screenshot of the TBD product comparison app case study website"/>
+              </a>
+              <div className='web-description'><p>During my MPS program, my team of four designed TBD, a personalized product comparison app that helps users cut through the noise of online shopping and make confident, value-aligned purchase decisions. After wrapping up the UX process, I built this responsive case study website using HTML and CSS, working alongside Claude Code to help speed up development and polish the front-end.</p>
+              <a target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/tbd_case_study/#/"><button target="_blank" rel="noopener noreferrer" href="https://marywilder.github.io/tbd_case_study/#/">View case study</button></a></div>
+            </div>
+
             </section>
 
             <section className="weather-project"  >
