@@ -13,7 +13,7 @@ export default function Productdesign() {
         <Subnav />
         <div className="design-rect"></div>
             <section className="product-design-page">
-            <h2>TBD</h2>
+            <h2>Product Comparison App Case Study</h2>
                <div className="design-project">
                     <div className="prototype-container-of-container">
                     <div className="prototype-container">
