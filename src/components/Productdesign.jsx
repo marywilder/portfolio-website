@@ -1,11 +1,11 @@
 import React from 'react'
 import Subnav from './Subnav';
 import starbucksimg from '../assets/phonemockup_.png'
-import starbucksgif from '../assets/setprefs.gif'
+import starbucksgif from '../assets/setprefs.mp4'
 import shopifylogo from '../assets/shopifylogo.png'
 import prototypepng from '../assets/prototype-phone.png';
-import letterboxd from '../assets/letterboxdprototype.gif';
-import tbdprototype from '../assets/alignment-comparison-tbd.gif';
+import letterboxd from '../assets/letterboxdprototype.mp4';
+import tbdprototype from '../assets/alignment-comparison-tbd.mp4';
 import figma from '../assets/figma.svg';
 export default function Productdesign() {
   return (
@@ -18,7 +18,7 @@ export default function Productdesign() {
                     <div className="prototype-container-of-container">
                     <div className="prototype-container">
                     <div className="prototype-img">
-                      <img src={tbdprototype} className="starbucksimg" alt="Product coparison app"/>
+                      <video src={tbdprototype} className="starbucksimg" autoPlay loop muted playsInline aria-label="Product comparison app"/>
                     </div>
                     </div>
 
@@ -38,7 +38,7 @@ export default function Productdesign() {
                     <div className="prototype-container">
                     <div className="prototype-img">
                       <img src={prototypepng} className="proto-phone"alt="iphone displaying starbucks app"/>
-                      <img src={starbucksgif} className="starbucksimg" alt="taste preferences page for starbucks app, displaying how settings are selected through checkboxes"/>
+                      <video src={starbucksgif} className="starbucksimg" autoPlay loop muted playsInline aria-label="taste preferences page for starbucks app, displaying how settings are selected through checkboxes"/>
                     </div>
                     </div>
 
@@ -54,7 +54,7 @@ export default function Productdesign() {
                     <div className="prototype-container-of-container">
                     <div className="prototype-container">
                     <div className="prototype-img">
-                     <img src={letterboxd} alt="letterboxd prototype" className="letterboxd-gif-desktop"/>
+                     <video src={letterboxd} aria-label="letterboxd prototype" className="letterboxd-gif-desktop" autoPlay loop muted playsInline/>
                     </div>
                     </div>
 

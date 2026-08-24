@@ -26,7 +26,7 @@ import employeethumbnails from '../assets/Employee-Thumbnails.png';
 import pullupbanners from '../assets/Pull-Up-Banners.png';
 import brooksbanner from '../assets/10x10banner.png';
 import wscsheet from '../assets/479250_Print_ASSE-Device_Types_Reference_Sheet.png';
-import brooksemail from '../assets/Brooks-email.gif';
+import brooksemail from '../assets/Brooks-email.mp4';
 
 const bssImages = [
   pullupbanners,
@@ -34,7 +34,7 @@ const bssImages = [
   greaselockad,
   employeethumbnails,
   brooksbanner,
-  { src: brooksemail, alt: "Brooks email design", imgStyle: { borderRadius: '1.75rem' } },
+  { src: brooksemail, type: 'video', alt: "Brooks email design", imgStyle: { borderRadius: '1.75rem' } },
 ];
 
 const parkImages = [
@@ -85,13 +85,27 @@ function Carousel({ images, altPrefix }) {
         </button>
         <div className="carousel__viewport">
           {images.map((img, i) => (
-            <img
-              key={i}
-              src={img.src || img}
-              className="carousel__slide"
-              style={{ ...makeSlideStyle(i, index, total), ...(img.imgStyle || {}) }}
-              alt={img.alt || `${altPrefix} ${i + 1}`}
-            />
+            img.type === 'video' ? (
+              <video
+                key={i}
+                src={img.src}
+                className="carousel__slide"
+                style={{ ...makeSlideStyle(i, index, total), ...(img.imgStyle || {}) }}
+                aria-label={img.alt || `${altPrefix} ${i + 1}`}
+                autoPlay
+                loop
+                muted
+                playsInline
+              />
+            ) : (
+              <img
+                key={i}
+                src={img.src || img}
+                className="carousel__slide"
+                style={{ ...makeSlideStyle(i, index, total), ...(img.imgStyle || {}) }}
+                alt={img.alt || `${altPrefix} ${i + 1}`}
+              />
+            )
           ))}
         </div>
         <button className="carousel__btn" onClick={next} aria-label="Next image">
