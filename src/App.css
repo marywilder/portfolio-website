@@ -2213,7 +2213,8 @@ a.doodle-link {
   }
 
   .starbucksimg.tbd-video {
-    border-radius: 1.8rem;
+    border-radius: 1.5rem;
+    width: auto;
   }
 
  
