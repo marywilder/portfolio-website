@@ -1412,6 +1412,11 @@ div img {
   .animations-item {
     width: 100%;
   }
+
+  .lenny-animation-item {
+    width: 80%;
+    align-self: center;
+  }
 }
 .design-project {
   display: flex;
