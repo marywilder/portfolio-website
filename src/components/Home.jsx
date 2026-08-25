@@ -26,7 +26,7 @@ function Home() {
       </div>
       <div className="home-intro">
         <section className="intro">
-          Designer blending research, visual craft, and front-end thinking - from brand assets to digital products.
+          I design and build digital experiences, bringing together UX, visual design, and front-end development to turn ideas into something real.
         </section>
         <div className="recent-work-wrapper">
           <NavLink to='/productdesign' className="recent-work">see my recent work!</NavLink>

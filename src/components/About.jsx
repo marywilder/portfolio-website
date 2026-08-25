@@ -27,7 +27,7 @@ export default function About() {
 </h2>
 <div className="about-profile">
         <img src={hello} className="profile-pic1"alt="headshot of Mary cropped in a circle, with the word 'hello!' and illustrated flowers bordering the top of the image."/>
-        <div><h2>I’m Mary<span className="body-font">, a UX, Web & Visual Designer based in Charlotte, NC.</span></h2>
+        <div><h2>I’m Mary<span className="body-font">, a designer who loves bringing digital ideas to life, based in Charlotte, NC.</span></h2>
         <p>
   My background spans <b>design</b>, <b>front-end development</b>, <b>marketing</b>, and recently earned a Master's Degree in <b>UX Design</b>. I love solving messy problems, asking a lot of questions, and getting to the heart of what people actually need. I try to bring curiosity, empathy, and a little bit of fun to all the things I make!
 </p>
@@ -69,14 +69,15 @@ export default function About() {
             <ul>
               <li><b>UX Research & Usability Testing:</b> Designing and conducting user interviews/usability testing, and analyzing data to uncover actionable insights.
               </li>
-              <li><b>Wireframing & Prototyping:</b> Low-fi, hi-fi, functional prototypes. They’re all in my toolkit and I know when to leverage each of these tools.Creating everything from quick sketches to detailed, fully interactive prototypes.</li>
-              <li><b>Design Systems:</b> In all of my work, I prioritize creating design systems that are flexible, cohesive, and capable of supporting a dynamic and varied product. Organization is key for a successful product team; I’m skilled with using Figma’s wide range of advanced tools such as components, variables, auto-layout, styles, and everything in between.</li>
+              <li><b>Wireframing & Prototyping:</b> From quick sketches to detailed, interactive prototypes, I use the level of fidelity that makes sense for the problem and the stage of the project.</li>
+              <li><b>Design Systems:</b> Creating flexible, cohesive systems that make products easier to design and maintain. I’m well-versed working with Figma components, variables, auto-layout, styles, and more.</li>
 
               <li><b>Interaction Design:</b> Mapping out intuitive user flows, microinteractions, and delightful animations to enhance usability and increase engagement.</li>
-              <li><b>Technical and Software Skills:</b> Figma, Adobe Illustrator, Front-end development (HTML, CSS, JavaScript), responsive design, animation, accessibility, SEO.</li>
+              <li><b>Front-End Development:</b> Building responsive experiences with HTML, CSS, and JavaScript, with an understanding of accessibility, SEO, and the realities of implementation.</li>
+              <li><b>AI-Assisted Development:</b> Experimenting with tools like Claude Code to turn ideas into working prototypes, troubleshoot problems, and iterate quickly. I like using AI as a tool for learning, building, and exploring what's possible.</li>
               <li><b>Creative Problem-Solving:</b> Tackling complex challenges by balancing user needs, business objectives, and technical constraints.</li>
-              <li><b>Collaboration & Communication:</b>  From my experiences in digital art and ecommerce, as well as my Master’s program, I’ve worked closely on cross-functional teams, and internal/external stakeholders to bring ideas to life.</li>
-              <li><b>Continuous Learning:</b> I’m always experimenting with new tools, design trends, and methodologies to stay sharp and innovative. I lean into feedback and want to bring my best every day.</li>
+              <li><b>Collaboration & Communication:</b>  I’ve worked across design, marketing, ecommerce, development, and UX, collaborating with both internal teams and external stakeholders to turn ideas into something real.</li>
+              <li><b>Continuous Learning:</b> I’m always experimenting with new tools, techniques, and ideas. I like learning by making things, and I’m not afraid to ask questions, try something different, or change direction when something isn’t working.</li>
             </ul>
 </p>
             </div>
