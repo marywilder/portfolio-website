@@ -29,7 +29,7 @@ export default function About() {
         <img src={hello} className="profile-pic1"alt="headshot of Mary cropped in a circle, with the word 'hello!' and illustrated flowers bordering the top of the image."/>
         <div><h2>I’m Mary<span className="body-font">, a UX, Web & Visual Designer based in Charlotte, NC.</span></h2>
         <p>
-  My background spans <b>graphic design</b>, <b>marketing</b>, <b>front-end development</b>, and recently earned a Master's Degree in <b>UX Design</b>. I love solving messy problems, asking a lot of questions, and getting to the heart of what people actually need. I try to bring curiosity, empathy, and a little bit of fun to all the things I make!
+  My background spans <b>design</b>, <b>front-end development</b>, <b>marketing</b>, and recently earned a Master's Degree in <b>UX Design</b>. I love solving messy problems, asking a lot of questions, and getting to the heart of what people actually need. I try to bring curiosity, empathy, and a little bit of fun to all the things I make!
 </p>
         <div className="accordions-row">
         <div className={`education accordion${eduOpen ? ' open' : ''}`}>
