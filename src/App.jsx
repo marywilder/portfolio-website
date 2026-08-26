@@ -3,12 +3,9 @@ import {Route, Routes,  } from 'react-router-dom'
 import Home from './components/Home'
 
 import './App.css'
-import Projects from './components/Projects'
 import About from './components/About'
 import Navbar from './components/Navbar'
-import Illustration from './components/Illustration'
-import Productdesign from './components/Productdesign'
-import Webdev from './components/Webdev'
+import Portfolio from './components/Portfolio'
 import cloud1 from './assets/cloud1.svg';
 import cloud2 from './assets/cloud2.svg';
 import cloud3 from './assets/cloud3.svg';
@@ -39,10 +36,10 @@ function App() {
 <Routes>
     <Route path="/portfolio-website/"element={<Home />} />
     <Route path='about' element={<About />} />
-    <Route path='projects' element={<Productdesign/>} />
-    <Route path='illustration' element={<Illustration />} />
-    <Route path='productdesign' element={<Productdesign />}/>
-    <Route path='webdev' element={<Webdev/>}/>
+    <Route path='projects' element={<Portfolio/>} />
+    <Route path='illustration' element={<Portfolio />} />
+    <Route path='productdesign' element={<Portfolio />}/>
+    <Route path='webdev' element={<Portfolio/>}/>
     <Route path="/" element={<Home />} />
 
 </Routes>
